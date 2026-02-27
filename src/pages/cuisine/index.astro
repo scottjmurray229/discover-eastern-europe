@@ -1,0 +1,1002 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Eastern European Cuisine Guide', url: '/cuisine/' },
+];
+
+const pageTitle = 'Eastern European Cuisine Guide — Eat Your Way Across Eastern Europe';
+const pageDescription = 'A region-by-region menu of the dishes that define Eastern European food culture — from Czech knedliky to Hungarian goulash, Polish pierogi to Balkan cevapi.';
+
+interface Dish {
+  name: string;
+  image?: string;
+  destination: string;
+  slug: string;
+  price: string;
+  description: string;
+  tag?: string;
+}
+
+interface MenuSection {
+  region: string;
+  tagline: string;
+  gradient: string;
+  dishes: Dish[];
+}
+
+const menu: MenuSection[] = [
+  {
+    region: 'Central Europe',
+    tagline: 'Hearty dumplings, craft beer, thermal bath brunches, and centuries-old coffeehouse culture',
+    gradient: 'linear-gradient(135deg, #BF360C 0%, #E8654A 100%)',
+    dishes: [
+      {
+        name: 'Svickova na Smetane',
+        destination: 'Prague',
+        slug: 'prague',
+        price: '€8–14 / $9–15 USD',
+        description: 'Slow-braised beef sirloin in a creamy root vegetable sauce, served with bread dumplings (knedliky) and a dollop of cranberry compote. The definitive Czech comfort dish — order it at a traditional hospoda.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Trdelnik',
+        destination: 'Prague',
+        slug: 'prague',
+        price: '€3–5 / $3–5 USD',
+        description: 'Spiral-wound pastry dough grilled on a cylinder, coated in sugar and cinnamon. Originally Slovak, now Prague\'s most famous street food — best fresh from Old Town stalls.',
+        tag: 'Must-Try',
+      },
+      {
+        name: 'Czech Craft Beer',
+        destination: 'Prague',
+        slug: 'prague',
+        price: '€1.50–3 / $2–3 USD',
+        description: 'Czechia drinks more beer per capita than anywhere on earth. Start with a Pilsner Urquell at the source, then explore microbreweries in Zizkov. A half-liter costs less than a coffee.',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Goulash (Gulyas)',
+        destination: 'Budapest',
+        slug: 'budapest',
+        price: '€6–12 / $7–13 USD',
+        description: 'Rich paprika-spiced beef stew with potatoes and caraway — Hungary\'s national dish. The real thing is thinner than you expect, more soup than stew. Best in the market halls or old-town restaurants.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Langos',
+        destination: 'Budapest',
+        slug: 'budapest',
+        price: '€2–4 / $2–4 USD',
+        description: 'Deep-fried flatbread topped with sour cream and grated cheese. Hungary\'s ultimate street food, found at every market and thermal bath. Add garlic butter for the full experience.',
+        tag: 'Must-Try',
+      },
+      {
+        name: 'Chimney Cake (Kurtoskalacs)',
+        destination: 'Budapest',
+        slug: 'budapest',
+        price: '€3–5 / $3–5 USD',
+        description: 'Cylindrical pastry baked over charcoal and rolled in cinnamon sugar, walnut, or cocoa. A Transylvanian-Hungarian classic that fills Budapest\'s ruin bars with its sweet aroma.',
+      },
+      {
+        name: 'Pierogi',
+        destination: 'Krakow',
+        slug: 'krakow',
+        price: '€4–8 / $4–9 USD',
+        description: 'Poland\'s beloved dumplings — stuffed with potato and cheese (ruskie), sauerkraut and mushroom, or meat. Boiled or pan-fried, served with sour cream. Every milk bar (bar mleczny) has its own version.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Obwarzanek Krakowski',
+        destination: 'Krakow',
+        slug: 'krakow',
+        price: '€0.50–1 / $0.50–1 USD',
+        description: 'Krakow\'s signature braided bread ring — boiled then baked, topped with poppy seeds, sesame, or salt. Sold from blue carts on every corner. The city\'s cheapest and most satisfying snack.',
+      },
+      {
+        name: 'Bryndzove Halusky',
+        destination: 'Bratislava',
+        slug: 'bratislava',
+        price: '€6–10 / $7–11 USD',
+        description: 'Slovakia\'s national dish — small potato dumplings smothered in tangy sheep\'s cheese (bryndza) and topped with crispy bacon bits. Humble, hearty, and absolutely addictive.',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Potica',
+        destination: 'Ljubljana',
+        slug: 'ljubljana',
+        price: '€3–5 / $3–5 USD per slice',
+        description: 'Traditional Slovenian rolled pastry filled with walnut, tarragon, or poppy seed paste. A celebration bread baked for holidays but available year-round in Ljubljana\'s bakeries.',
+        tag: 'Heritage',
+      },
+    ],
+  },
+  {
+    region: 'Balkans',
+    tagline: 'Grilled meats, Adriatic seafood, Ottoman-influenced pastries, and wine valleys',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #4DB6AC 100%)',
+    dishes: [
+      {
+        name: 'Cevapi',
+        destination: 'Belgrade',
+        slug: 'belgrade',
+        price: '€4–7 / $4–8 USD',
+        description: 'Skinless grilled minced-meat sausages served in flatbread (lepinja) with raw onions and kajmak (clotted cream). The Balkans\' most iconic street food — Belgrade\'s Skadarlija district does them best.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Pljeskavica',
+        destination: 'Belgrade',
+        slug: 'belgrade',
+        price: '€3–6 / $3–7 USD',
+        description: 'Serbia\'s answer to the hamburger — a spiced, grilled meat patty served in bread with ajvar (roasted pepper relish) and kajmak. Bigger, bolder, and better than fast food.',
+        tag: 'Must-Try',
+      },
+      {
+        name: 'Black Risotto (Crni Rizot)',
+        destination: 'Dubrovnik',
+        slug: 'dubrovnik',
+        price: '€12–20 / $13–22 USD',
+        description: 'Adriatic risotto stained jet-black with cuttlefish ink, loaded with squid, mussels, and prawns. A Croatian coastal classic best enjoyed at harbor-side konobas with a glass of Posip white wine.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Peka',
+        destination: 'Split',
+        slug: 'split',
+        price: '€15–25 / $16–27 USD',
+        description: 'Lamb or octopus slow-roasted under a bell-shaped lid (peka) with potatoes and vegetables, covered in hot coals. Dalmatia\'s ultimate meal — order hours ahead, it\'s worth the wait.',
+        tag: 'Must-Try',
+      },
+      {
+        name: 'Burek',
+        destination: 'Sofia',
+        slug: 'sofia',
+        price: '€1–3 / $1–3 USD',
+        description: 'Flaky phyllo pastry spiraled around fillings of cheese (sirene), spinach, or meat. The Balkans\' universal breakfast — best grabbed hot from a banitsa shop with a cup of ayran (yogurt drink).',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Shopska Salata',
+        destination: 'Sofia',
+        slug: 'sofia',
+        price: '€3–5 / $3–5 USD',
+        description: 'Bulgaria\'s national salad — diced tomatoes, cucumbers, peppers, and onions blanketed in grated white sirene cheese. Simple, refreshing, and served at every single meal.',
+      },
+      {
+        name: 'Sarmale (Stuffed Cabbage Rolls)',
+        destination: 'Bucharest',
+        slug: 'bucharest',
+        price: '€5–9 / $5–10 USD',
+        description: 'Pickled cabbage leaves stuffed with spiced pork and rice, slow-cooked for hours and served with sour cream and polenta (mamaliga). Romania\'s most beloved home-cooking dish.',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Mici (Mititei)',
+        destination: 'Bucharest',
+        slug: 'bucharest',
+        price: '€3–5 / $3–5 USD',
+        description: 'Romanian grilled ground-meat rolls seasoned with garlic, cumin, and thyme — served with mustard and fresh bread. Best at outdoor terraces with a cold Ursus beer.',
+      },
+    ],
+  },
+  {
+    region: 'Baltics',
+    tagline: 'Dark rye bread, smoked fish, forest mushrooms, and the Nordic-Eastern European crossover',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #6A1B9A 50%, #D4A853 100%)',
+    dishes: [
+      {
+        name: 'Black Rye Bread',
+        destination: 'Riga',
+        slug: 'riga',
+        price: '€1–2 / $1–2 USD per loaf',
+        description: 'Dense, dark, slightly sweet sourdough rye — the foundation of Baltic cuisine. Latvia takes bread seriously: it\'s served at every meal and even has its own museum in Riga.',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Smoked Fish',
+        destination: 'Riga',
+        slug: 'riga',
+        price: '€4–8 / $4–9 USD',
+        description: 'Smoked sprats, mackerel, and eel from the Baltic Sea — best sampled at Riga Central Market, one of Europe\'s largest, housed in former Zeppelin hangars.',
+        tag: 'Must-Try',
+      },
+      {
+        name: 'Cepelinai (Zeppelins)',
+        destination: 'Vilnius',
+        slug: 'vilnius',
+        price: '€5–8 / $5–9 USD',
+        description: 'Lithuania\'s national dish — massive potato dumplings stuffed with seasoned meat, curd cheese, or mushrooms, served with sour cream and bacon bits. Named for their Zeppelin airship shape.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Sakotis (Tree Cake)',
+        destination: 'Vilnius',
+        slug: 'vilnius',
+        price: '€15–30 / $16–32 USD whole',
+        description: 'Spectacular spit-roasted cake with a spiky, branch-like exterior — batter dripped onto a rotating spit layer by layer. Lithuania\'s celebration masterpiece, often the centerpiece at weddings.',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Verivorst (Blood Sausage)',
+        destination: 'Tallinn',
+        slug: 'tallinn',
+        price: '€5–8 / $5–9 USD',
+        description: 'Estonian blood sausage with barley and pork, traditionally served with lingonberry jam and sauerkraut. A winter staple in medieval Tallinn — hearty, rich, and deeply satisfying.',
+      },
+      {
+        name: 'Kohuke',
+        destination: 'Tallinn',
+        slug: 'tallinn',
+        price: '€0.50–1 / $0.50–1 USD',
+        description: 'Chocolate-coated curd cheese bars — Estonia\'s beloved convenience store snack. Dozens of flavors from vanilla to poppy seed. Addictive and impossibly cheap.',
+        tag: 'Must-Try',
+      },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="menu-hero">
+    <video class="menu-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/cuisine-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="menu-hero-gradient"></div>
+    <div class="menu-hero-noise"></div>
+    <div class="menu-hero-content">
+      <h1 class="menu-hero-title">The Eastern European Menu</h1>
+      <p class="menu-hero-subtitle">Hearty goulash, flaky burek, hand-rolled pierogi, Adriatic black risotto — eat your way across three regions and discover the dishes that define each destination.</p>
+      <div class="menu-hero-meta">
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Dishes</span>
+          <span class="menu-hero-meta-value">24</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Regions</span>
+          <span class="menu-hero-meta-value">3</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Destinations</span>
+          <span class="menu-hero-meta-value">13</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="menu-personal reveal">
+    <div class="container-content">
+      <blockquote class="menu-personal-quote">
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Menu Intro -->
+  <section class="menu-intro reveal">
+    <div class="container-content">
+      <div class="menu-intro-card">
+        <p class="menu-intro-text">Think of this as your tasting menu for Eastern Europe. We've organized the region's essential dishes by area — <strong>Central Europe</strong> with its beer halls and dumplings, the <strong>Balkans</strong> with grilled meats and Adriatic seafood, and the <strong>Baltics</strong> with dark rye and smoked fish. Click any dish to explore the destination where it's famous.</p>
+        <div class="menu-intro-legend">
+          <span class="menu-tag menu-tag--heritage">Heritage</span>
+          <span class="menu-tag menu-tag--musttry">Must-Try</span>
+          <span class="menu-tag menu-tag--iconic">Iconic</span>
+          <span class="menu-tag menu-tag--fresh">Fresh Catch</span>
+          <span class="menu-tag menu-tag--rare">Rare</span>
+          <span class="menu-tag menu-tag--pasalubong">Pasalubong</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Sections by Region -->
+  {menu.map((section) => (
+    <section class="menu-region reveal">
+      <div class="container-content">
+        <div class="menu-region-header" style={`background: ${section.gradient};`}>
+          <div class="menu-region-header-inner">
+            <h2 class="menu-region-name">{section.region}</h2>
+            <p class="menu-region-tagline">{section.tagline}</p>
+            <span class="menu-region-count">{section.dishes.length} dishes</span>
+          </div>
+          <div class="menu-region-ornament">&#9733;</div>
+        </div>
+
+        <div class="menu-dish-grid">
+          {section.dishes.map((dish) => (
+            <a href={`/destinations/${dish.slug}/`} class="menu-dish-card">
+              <div class="menu-dish-media" style={`background: ${section.gradient};`}>
+                {dish.image && (
+                  <img src={dish.image} alt={`${dish.name} — ${dish.destination}`} class="menu-dish-img" loading="lazy" />
+                )}
+                {dish.tag && (
+                  <span class={`menu-tag menu-tag--${dish.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{dish.tag}</span>
+                )}
+              </div>
+              <div class="menu-dish-body">
+                <div class="menu-dish-top">
+                  <h3 class="menu-dish-name">{dish.name}</h3>
+                  <span class="menu-dish-price">{dish.price}</span>
+                </div>
+                <p class="menu-dish-destination">{dish.destination}</p>
+                <p class="menu-dish-desc">{dish.description}</p>
+                <span class="menu-dish-cta">Explore {dish.destination} &rarr;</span>
+              </div>
+              <div class="menu-dish-overlay">
+                <p class="menu-dish-overlay-desc">{dish.description}</p>
+                <span class="menu-dish-overlay-cta">Explore {dish.destination} &rarr;</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="menu-cta-section reveal">
+    <div class="container-content">
+      <div class="menu-cta-card">
+        <h2 class="menu-cta-heading">Plan Your Food Trip</h2>
+        <p class="menu-cta-text">Tell our AI planner which cuisines you want to try and it will build a multi-country itinerary — with the best restaurants, markets, and food experiences.</p>
+        <a href="/plan/" class="menu-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={[
+    { question: "What are the must-try foods in Eastern Europe?", answer: "Every country has a signature dish. Czech Republic: svickova (braised beef with cream sauce and dumplings) and beer. Hungary: goulash and langos. Poland: pierogi and bigos (hunter's stew). Croatia: peka (slow-roasted lamb or octopus) and black risotto. Serbia: cevapi. Romania: sarmale (stuffed cabbage rolls). Lithuania: cepelinai (potato dumplings). The common thread: hearty, generous portions at prices that make Western Europe jealous." },
+    { question: "Is Eastern European food vegetarian-friendly?", answer: "Traditional cuisine is heavily meat-based, but every country has vegetarian options. Polish pierogi ruskie (potato and cheese), Hungarian lecso (pepper stew), Bulgarian shopska salata, and Serbian ajvar (roasted pepper relish) are all meat-free. Cities like Prague, Budapest, and Ljubljana have thriving vegetarian and vegan restaurant scenes. Smaller towns can be more challenging — learn to say 'bez mesa' (without meat) in the local language." },
+    { question: "How much does food cost in Eastern Europe?", answer: "Eastern Europe is one of the best-value food destinations on the continent. Street food: €1-4. Local restaurants: €5-12 for a full meal. Mid-range dining: €12-25. Fine dining: €30-60. A daily food budget of €15-25 covers three meals comfortably in most capitals. Prague, Dubrovnik, and Tallinn run slightly higher; Sofia, Bucharest, and Belgrade are the cheapest." },
+    { question: "What should I drink in Eastern Europe?", answer: "Czech Republic has the world's best beer (Pilsner Urquell, Budvar, craft microbrews). Hungary is famous for Tokaji dessert wine and Unicum digestif. Poland does vodka (Zubrowka bison grass vodka is iconic). Serbia has rakija (fruit brandy). The Balkans share a coffee culture inherited from the Ottoman Empire — Turkish-style coffee is the default. The Baltics have their own craft beer scene, and Riga has excellent cocktail bars." },
+    { question: "Are there food markets worth visiting?", answer: "Absolutely. Budapest's Great Market Hall (Nagycsarnok) is the most impressive — three floors of produce, paprika, and langos stalls. Riga Central Market fills five former Zeppelin hangars with smoked fish, dairy, and bread. Prague's farmers' markets at Naplavka (riverside on Saturdays) are excellent. Bucharest's Obor Market is authentic and untouristy. Every capital has a central market worth a morning visit." },
+    { question: "What are the best food tours in Eastern Europe?", answer: "Budapest, Prague, and Krakow have the most developed food tour scenes. In Budapest, try a ruin bar and market tour. In Krakow, a pierogi-making class or Kazimierz food walk. In Belgrade, Skadarlija (bohemian quarter) food tours cover cevapi, rakija, and live music. Most tours run €30-60 per person and include enough food to replace a full meal." },
+  ]} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Eastern European Food Guide"
+      description="A region-by-region PDF guide to Eastern European cuisine — with the best restaurants, markets, and dishes you can't miss."
+      bullets={[
+        'All 24 dishes with where to find the best version',
+        'Price guide — from €1 street food to €25 restaurant meals',
+        'Vegetarian options and dietary tips by country',
+        'Best food markets and food tour recommendations',
+      ]}
+      guideTag="pillar-cuisine"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="menu-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="menu-crosslinks-heading">Explore More</h3>
+      <div class="menu-crosslinks-grid">
+        <a href="/history/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#127963;</span>
+          <span class="menu-crosslink-label">History Guide</span>
+          <span class="menu-crosslink-desc">From medieval kingdoms to the fall of the Iron Curtain</span>
+        </a>
+        <a href="/hiking/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#9968;</span>
+          <span class="menu-crosslink-label">Hiking & Nature</span>
+          <span class="menu-crosslink-desc">Tatra Mountains, Plitvice Lakes, Julian Alps, and more</span>
+        </a>
+        <a href="/destinations/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#127965;</span>
+          <span class="menu-crosslink-label">All Destinations</span>
+          <span class="menu-crosslink-desc">13 destinations across 3 regions with honest reviews</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO — Warm, food-inspired gradient
+     ================================================================ */
+  .menu-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .menu-hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .menu-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%);
+  }
+
+  .menu-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .menu-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .menu-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .menu-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .menu-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .menu-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .menu-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .menu-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .menu-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: menuBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes menuBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     MENU INTRO
+     ================================================================ */
+  .menu-intro {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .menu-intro-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    padding: var(--space-5) var(--space-6);
+    text-align: center;
+  }
+
+  .menu-intro-text {
+    font-size: 1rem;
+    color: var(--color-slate);
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto var(--space-4);
+  }
+
+  .menu-intro-legend {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  /* ================================================================
+     TAGS
+     ================================================================ */
+  .menu-tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    border-radius: 6px;
+    line-height: 1.4;
+  }
+
+  .menu-tag--heritage {
+    background: rgba(191, 54, 12, 0.1);
+    color: #BF360C;
+  }
+
+  .menu-tag--musttry, .menu-tag--mustry {
+    background: rgba(13, 115, 119, 0.1);
+    color: var(--color-ocean-teal);
+  }
+
+  .menu-tag--iconic {
+    background: rgba(212, 168, 83, 0.15);
+    color: #9A7B2E;
+  }
+
+  .menu-tag--freshcatch {
+    background: rgba(33, 150, 243, 0.1);
+    color: #1565C0;
+  }
+
+  .menu-tag--rare {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  .menu-tag--pasalubong {
+    background: rgba(232, 101, 74, 0.1);
+    color: var(--color-warm-coral);
+  }
+
+  .menu-tag--legendary {
+    background: rgba(212, 168, 83, 0.15);
+    color: #9A7B2E;
+  }
+
+  .menu-tag--nationaldish {
+    background: rgba(191, 54, 12, 0.1);
+    color: #BF360C;
+  }
+
+  /* ================================================================
+     REGION SECTION
+     ================================================================ */
+  .menu-region {
+    padding: var(--space-6) 0;
+  }
+
+  .menu-region-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+    margin-bottom: var(--space-6);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-region-header-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-region-name {
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0 0 var(--space-1);
+    line-height: 1.1;
+  }
+
+  .menu-region-tagline {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 var(--space-3);
+    max-width: 480px;
+    line-height: 1.5;
+  }
+
+  .menu-region-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  .menu-region-ornament {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.08);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ================================================================
+     DISH GRID — Menu-style cards
+     ================================================================ */
+  .menu-dish-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 1024px) {
+    .menu-dish-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .menu-dish-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .menu-dish-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .menu-dish-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Media placeholder */
+  .menu-dish-media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: var(--space-2);
+    overflow: hidden;
+  }
+
+  .menu-dish-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transition: transform 0.4s ease;
+  }
+
+  .menu-dish-card:hover .menu-dish-img {
+    transform: scale(1.06);
+  }
+
+  .menu-dish-media .menu-tag {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Card body */
+  .menu-dish-body {
+    padding: var(--space-3) var(--space-4) var(--space-4);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .menu-dish-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin-bottom: 4px;
+  }
+
+  .menu-dish-name {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  .menu-dish-price {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    color: var(--color-warm-coral);
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .menu-dish-destination {
+    font-size: 0.72rem;
+    color: var(--color-ocean-teal);
+    font-weight: var(--weight-medium);
+    margin: 0 0 var(--space-2);
+  }
+
+  .menu-dish-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.55;
+    margin: 0 0 var(--space-3);
+    flex: 1;
+  }
+
+  .menu-dish-cta {
+    font-size: 0.72rem;
+    font-weight: var(--weight-semibold);
+    color: var(--color-ocean-teal);
+    letter-spacing: 0.02em;
+  }
+
+  /* Hover overlay — visible on non-touch hover */
+  .menu-dish-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 35, 50, 0.93);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .menu-dish-card:hover .menu-dish-overlay {
+    opacity: 1;
+  }
+
+  .menu-dish-overlay-desc {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.92);
+    line-height: 1.6;
+    margin: 0 0 var(--space-3);
+  }
+
+  .menu-dish-overlay-cta {
+    font-size: 0.75rem;
+    font-weight: var(--weight-semibold);
+    color: var(--color-warm-coral);
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .menu-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .menu-cta-card {
+    background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .menu-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .menu-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .menu-cta-button {
+    display: inline-block;
+    background: var(--color-warm-coral);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .menu-cta-button:hover {
+    background: #d4553b;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .menu-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .menu-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .menu-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .menu-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .menu-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .menu-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .menu-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .menu-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+  }
+
+  .menu-crosslink-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     RESPONSIVE — Hero & misc
+     ================================================================ */
+  @media (max-width: 640px) {
+    .menu-hero {
+      min-height: 55vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .menu-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .menu-scroll-hint {
+      display: none;
+    }
+
+    .menu-region-header {
+      padding: var(--space-5) var(--space-4);
+    }
+
+    .menu-region-ornament {
+      display: none;
+    }
+  }
+
+  /* Personal intro */
+  .menu-personal {
+    padding-block: var(--space-8);
+  }
+
+  .menu-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid var(--color-warm-coral);
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .menu-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .menu-personal-quote cite {
+    font-size: var(--text-caption);
+    color: var(--color-warm-coral);
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+</style>

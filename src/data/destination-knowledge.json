@@ -1,0 +1,226 @@
+{
+  "destinations": {
+    "prague": {
+      "title": "Prague",
+      "tagline": "The City of a Hundred Spires",
+      "region": "central-europe",
+      "bestMonths": ["Apr", "May", "Jun", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 40, "midRange": 90, "luxury": 220 },
+      "gettingThere": "Fly to Vaclav Havel Airport (PRG) — major hub with direct flights from most European cities. 30-minute bus or taxi to city center.",
+      "highlights": ["Charles Bridge sunrise walk", "Prague Castle & St. Vitus Cathedral", "Old Town Square astronomical clock", "Petrin Hill & tower panorama", "John Lennon Wall", "Craft beer scene & traditional pubs", "Jewish Quarter (Josefov)", "Vysehrad fortress"],
+      "essentials": {
+        "gettingAround": "Metro, tram, and bus system is excellent. 24-hour pass ~110 CZK (~$5). Walking is best for Old Town.",
+        "airport": "Vaclav Havel Airport (PRG)",
+        "trainConnections": ["Budapest (6.5 hr direct, ~$20)", "Bratislava (4 hr, ~$15)", "Krakow (7 hr, ~$20)"],
+        "language": "Czech, English widely spoken in tourist areas"
+      }
+    },
+    "budapest": {
+      "title": "Budapest",
+      "tagline": "The Pearl of the Danube",
+      "region": "central-europe",
+      "bestMonths": ["Apr", "May", "Jun", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 35, "midRange": 80, "luxury": 200 },
+      "gettingThere": "Fly to Budapest Ferenc Liszt Airport (BUD). Bus 100E to city center (~35 min, 2,200 HUF). Or train connections from Vienna (2.5 hr), Prague (6.5 hr).",
+      "highlights": ["Szechenyi Thermal Baths", "Fisherman's Bastion & Buda Castle", "Ruin bars of the Jewish Quarter", "Parliament Building night illumination", "Gellert Hill citadel panorama", "Great Market Hall", "Danube river cruise", "Margaret Island park"],
+      "essentials": {
+        "gettingAround": "Metro, trams, and buses. 24-hour travel card ~2,500 HUF (~$7). Tram 2 along the Danube is scenic.",
+        "airport": "Budapest Ferenc Liszt (BUD)",
+        "trainConnections": ["Prague (6.5 hr, ~$20)", "Bratislava (2.5 hr, ~$12)", "Belgrade (8 hr, ~$25)"],
+        "language": "Hungarian, English in tourist areas"
+      }
+    },
+    "krakow": {
+      "title": "Krakow",
+      "tagline": "Poland's Cultural Capital",
+      "region": "central-europe",
+      "bestMonths": ["Apr", "May", "Jun", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 30, "midRange": 70, "luxury": 160 },
+      "gettingThere": "Fly to John Paul II Airport (KRK) — budget airlines from across Europe. Train from Warsaw (2.5 hr) or Prague (7 hr).",
+      "highlights": ["Wawel Castle & Cathedral", "Main Market Square (Rynek Glowny)", "Auschwitz-Birkenau Memorial", "Wieliczka Salt Mine", "Kazimierz Jewish Quarter", "St. Mary's Basilica trumpet call", "Cloth Hall (Sukiennice)", "Planty Park ring walk"],
+      "essentials": {
+        "gettingAround": "Old Town is compact and walkable. Trams for longer trips. Uber and Bolt available.",
+        "airport": "John Paul II International (KRK)",
+        "trainConnections": ["Prague (7 hr, ~$20)", "Budapest (9 hr via change, ~$30)", "Vilnius (10 hr, ~$25)"],
+        "language": "Polish, English in tourist areas"
+      }
+    },
+    "dubrovnik": {
+      "title": "Dubrovnik",
+      "tagline": "The Pearl of the Adriatic",
+      "region": "balkans",
+      "bestMonths": ["May", "Jun", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 50, "midRange": 120, "luxury": 300 },
+      "gettingThere": "Fly to Dubrovnik Airport (DBV). Airport shuttle bus 30 min to Old Town (~40 HRK). Ferry from Split or Bari (Italy).",
+      "highlights": ["Walk the city walls (2 km loop)", "Old Town Stradun promenade", "Cable car to Mount Srd", "Lokrum Island day trip", "Game of Thrones filming locations", "Kayaking around the walls", "Banje Beach", "Lovrijenac Fortress"],
+      "essentials": {
+        "gettingAround": "Old Town is pedestrian-only. Local buses connect Lapad and Gruz. Water taxis to nearby islands.",
+        "airport": "Dubrovnik Airport (DBV)",
+        "trainConnections": ["No rail — bus to Split (4.5 hr, ~$15)", "Ferry to Split (8 hr, ~$20)", "Bus to Mostar (3 hr, ~$12)"],
+        "language": "Croatian, English widely spoken"
+      }
+    },
+    "split": {
+      "title": "Split",
+      "tagline": "Living Inside a Roman Palace",
+      "region": "balkans",
+      "bestMonths": ["May", "Jun", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 40, "midRange": 100, "luxury": 250 },
+      "gettingThere": "Fly to Split Airport (SPU). Bus 37 to city center (30 min, ~30 HRK). Major ferry hub for Croatian islands.",
+      "highlights": ["Diocletian's Palace — living Roman ruin", "Riva waterfront promenade", "Marjan Hill forest park", "Cathedral of Saint Domnius", "Green Market (Pazar)", "Krka National Park day trip", "Hvar and Brac island ferries", "Bacvice Beach"],
+      "essentials": {
+        "gettingAround": "Old Town is walkable. Local buses and ferries from the Riva. Uber available.",
+        "airport": "Split Airport (SPU)",
+        "trainConnections": ["Bus to Dubrovnik (4.5 hr, ~$15)", "Ferry to Hvar (1 hr, ~$10)", "Bus to Zagreb (5 hr, ~$18)"],
+        "language": "Croatian, English widely spoken"
+      }
+    },
+    "ljubljana": {
+      "title": "Ljubljana",
+      "tagline": "Europe's Hidden Green Gem",
+      "region": "central-europe",
+      "bestMonths": ["May", "Jun", "Jul", "Aug", "Sep"],
+      "budgetPerDay": { "backpacker": 40, "midRange": 85, "luxury": 190 },
+      "gettingThere": "Fly to Ljubljana Joze Pucnik Airport (LJU). Bus to center (45 min, ~4 EUR). Train from Vienna (6 hr) or Zagreb (2.5 hr).",
+      "highlights": ["Ljubljana Castle & funicular", "Triple Bridge & Dragon Bridge", "Open Kitchen Friday food market", "Metelkova autonomous cultural zone", "Tivoli Park stroll", "Ljubljanica River cafe cruise", "Day trip to Lake Bled", "Central Market (Plecnik Colonnade)"],
+      "essentials": {
+        "gettingAround": "Very walkable and bike-friendly. BicikeLJ bike-share system. Buses for outskirts.",
+        "airport": "Ljubljana Joze Pucnik (LJU)",
+        "trainConnections": ["Zagreb (2.5 hr, ~$15)", "Vienna (6 hr, ~$30)", "Budapest (8 hr via change, ~$30)"],
+        "language": "Slovenian, English widely spoken"
+      }
+    },
+    "bratislava": {
+      "title": "Bratislava",
+      "tagline": "Compact Charm on the Danube",
+      "region": "central-europe",
+      "bestMonths": ["Apr", "May", "Jun", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 35, "midRange": 75, "luxury": 170 },
+      "gettingThere": "Fly to Bratislava Airport (BTS) or use nearby Vienna Airport (VIE, 1 hr by bus). Frequent trains from Vienna (1 hr), Budapest (2.5 hr), Prague (4 hr).",
+      "highlights": ["Bratislava Castle hilltop panorama", "Old Town walking tour", "UFO Bridge observation deck", "St. Martin's Cathedral", "Devin Castle ruins day trip", "Blue Church (Art Nouveau gem)", "Michael's Gate medieval tower", "Danube riverfront promenade"],
+      "essentials": {
+        "gettingAround": "Compact Old Town easily walked. Trams and buses for wider city. Day trip to Vienna easy.",
+        "airport": "Bratislava (BTS) / Vienna (VIE)",
+        "trainConnections": ["Vienna (1 hr, ~$10)", "Budapest (2.5 hr, ~$12)", "Prague (4 hr, ~$15)"],
+        "language": "Slovak, English in tourist areas"
+      }
+    },
+    "bucharest": {
+      "title": "Bucharest",
+      "tagline": "The Little Paris of the East",
+      "region": "balkans",
+      "bestMonths": ["Apr", "May", "Jun", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 25, "midRange": 60, "luxury": 150 },
+      "gettingThere": "Fly to Henri Coanda Airport (OTP). Express bus 783 to city center (~40 min, 3.50 RON). Direct flights from most European capitals.",
+      "highlights": ["Palace of the Parliament — world's heaviest building", "Old Town Lipscani nightlife", "Romanian Athenaeum concert hall", "Village Museum open-air", "Herastrau Park & lake", "Revolution Square", "Day trip to Bran Castle (Dracula's Castle)", "Caru' cu Bere historic beer hall"],
+      "essentials": {
+        "gettingAround": "Metro system covers the city well. Uber and Bolt widely used. Old Town is walkable.",
+        "airport": "Henri Coanda International (OTP)",
+        "trainConnections": ["Sofia (10 hr, ~$20)", "Budapest (13 hr, ~$30)", "Brasov/Bran Castle (2.5 hr, ~$8)"],
+        "language": "Romanian, English in tourist areas"
+      }
+    },
+    "sofia": {
+      "title": "Sofia",
+      "tagline": "2,000 Years of History at Your Feet",
+      "region": "balkans",
+      "bestMonths": ["May", "Jun", "Jul", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 20, "midRange": 50, "luxury": 130 },
+      "gettingThere": "Fly to Sofia Airport (SOF). Metro line M4 to city center (~20 min, 1.60 BGN). Budget airline hub.",
+      "highlights": ["Alexander Nevsky Cathedral", "Vitosha Mountain hiking", "Serdica Roman ruins (under the city)", "National Palace of Culture", "Boyana Church (UNESCO)", "Central Mineral Baths & hot springs", "Women's Market (Zhenski Pazar)", "Free Sofia Walking Tour"],
+      "essentials": {
+        "gettingAround": "Metro, trams, and buses. Single ticket 1.60 BGN (~$0.90). Center is walkable.",
+        "airport": "Sofia Airport (SOF)",
+        "trainConnections": ["Belgrade (8 hr, ~$15)", "Bucharest (10 hr, ~$20)", "Plovdiv (2.5 hr, ~$5)"],
+        "language": "Bulgarian, English in tourist areas"
+      }
+    },
+    "belgrade": {
+      "title": "Belgrade",
+      "tagline": "Where East Meets West at the Confluence",
+      "region": "balkans",
+      "bestMonths": ["May", "Jun", "Jul", "Sep", "Oct"],
+      "budgetPerDay": { "backpacker": 25, "midRange": 55, "luxury": 140 },
+      "gettingThere": "Fly to Belgrade Nikola Tesla Airport (BEG). Bus A1 to city center (~30 min, 300 RSD). Train connections from Budapest (8 hr).",
+      "highlights": ["Kalemegdan Fortress & park", "Skadarlija bohemian quarter", "Floating river clubs (splavovi)", "Temple of Saint Sava", "Knez Mihailova pedestrian street", "Ada Ciganlija lake beach", "Zemun riverside quarter", "Serbian kafana dining culture"],
+      "essentials": {
+        "gettingAround": "Buses, trams, trolleybuses. BusPlus card required. Center walkable. Taxi apps: CarGo, Yandex.",
+        "airport": "Belgrade Nikola Tesla (BEG)",
+        "trainConnections": ["Budapest (8 hr, ~$25)", "Sofia (8 hr, ~$15)", "Novi Sad (1.5 hr, ~$5)"],
+        "language": "Serbian, English in tourist areas"
+      }
+    },
+    "tallinn": {
+      "title": "Tallinn",
+      "tagline": "Medieval Fairy Tale on the Baltic",
+      "region": "baltics",
+      "bestMonths": ["May", "Jun", "Jul", "Aug", "Sep"],
+      "budgetPerDay": { "backpacker": 40, "midRange": 85, "luxury": 200 },
+      "gettingThere": "Fly to Tallinn Airport (TLL) — 15 min tram ride to Old Town. Ferry from Helsinki (2 hr). Bus from Riga (4.5 hr).",
+      "highlights": ["Tallinn Old Town (UNESCO)", "Toompea Castle viewpoints", "Alexander Nevsky Cathedral", "Telliskivi Creative City", "KGB Museum at Hotel Viru", "Kadriorg Palace & park", "Tallinn TV Tower observation deck", "Seaplane Harbour Maritime Museum"],
+      "essentials": {
+        "gettingAround": "Old Town is compact and walkable. Trams and buses for outer areas. Bolt ride-hailing popular.",
+        "airport": "Tallinn Airport (TLL)",
+        "trainConnections": ["Bus to Riga (4.5 hr, ~$15)", "Ferry to Helsinki (2 hr, ~$25)", "Bus to Vilnius (9 hr direct, ~$20)"],
+        "language": "Estonian, English widely spoken"
+      }
+    },
+    "riga": {
+      "title": "Riga",
+      "tagline": "Art Nouveau Capital of Europe",
+      "region": "baltics",
+      "bestMonths": ["May", "Jun", "Jul", "Aug", "Sep"],
+      "budgetPerDay": { "backpacker": 35, "midRange": 75, "luxury": 180 },
+      "gettingThere": "Fly to Riga International Airport (RIX). Bus 22 to city center (~30 min, ~2 EUR). Ryanair and Wizz Air hub.",
+      "highlights": ["Riga Old Town (UNESCO)", "Art Nouveau district (Alberta Street)", "Central Market in Zeppelin hangars", "House of the Blackheads", "St. Peter's Church tower panorama", "Latvian National Opera", "Riga Canal park walk", "Jurmala beach resort day trip"],
+      "essentials": {
+        "gettingAround": "Trams, buses, trolleybuses. Old Town walkable. Bolt available. e-scooters in summer.",
+        "airport": "Riga International (RIX)",
+        "trainConnections": ["Bus to Tallinn (4.5 hr, ~$15)", "Bus to Vilnius (4 hr, ~$12)", "Bus to Jurmala (30 min, ~$2)"],
+        "language": "Latvian, English widely spoken"
+      }
+    },
+    "vilnius": {
+      "title": "Vilnius",
+      "tagline": "Baroque Beauty of the Baltics",
+      "region": "baltics",
+      "bestMonths": ["May", "Jun", "Jul", "Aug", "Sep"],
+      "budgetPerDay": { "backpacker": 30, "midRange": 65, "luxury": 160 },
+      "gettingThere": "Fly to Vilnius Airport (VNO) — 15 min bus ride to Old Town. Budget airline hub with Ryanair and Wizz Air.",
+      "highlights": ["Vilnius Old Town (UNESCO, largest in Europe)", "Gediminas Tower & castle", "Uzupis Republic (bohemian quarter)", "Gate of Dawn pilgrimage site", "Three Crosses Hill panorama", "Vilnius Cathedral & bell tower", "Halles Market food hall", "Trakai Island Castle day trip"],
+      "essentials": {
+        "gettingAround": "Old Town very walkable. Buses and trolleybuses. Bolt ride-hailing. Bike-friendly city.",
+        "airport": "Vilnius Airport (VNO)",
+        "trainConnections": ["Bus to Riga (4 hr, ~$12)", "Bus to Tallinn (9 hr, ~$20)", "Bus to Krakow (10 hr, ~$25)"],
+        "language": "Lithuanian, English widely spoken"
+      }
+    }
+  },
+  "connections": {
+    "prague-budapest": { "mode": "train", "duration": "6.5 hours", "operator": "RegioJet / Czech Railways", "cost": "~$20 (500 CZK)" },
+    "prague-bratislava": { "mode": "train", "duration": "4 hours", "operator": "RegioJet / Czech Railways", "cost": "~$15 (380 CZK)" },
+    "prague-krakow": { "mode": "train/bus", "duration": "7 hours", "operator": "Leo Express / FlixBus", "cost": "~$20 (480 CZK)" },
+    "budapest-bratislava": { "mode": "train", "duration": "2.5 hours", "operator": "MAV / RegioJet", "cost": "~$12 (4,500 HUF)" },
+    "budapest-belgrade": { "mode": "train", "duration": "8 hours", "operator": "MAV / Serbian Railways", "cost": "~$25 (9,000 HUF)" },
+    "budapest-ljubljana": { "mode": "train", "duration": "8 hours via change", "operator": "MAV / Slovenian Railways", "cost": "~$30" },
+    "belgrade-sofia": { "mode": "train/bus", "duration": "8 hours", "operator": "Serbian Railways / FlixBus", "cost": "~$15 (1,800 RSD)" },
+    "belgrade-bucharest": { "mode": "train", "duration": "12 hours", "operator": "Serbian Railways", "cost": "~$25 (3,000 RSD)" },
+    "sofia-bucharest": { "mode": "train/bus", "duration": "10 hours", "operator": "BDZ / FlixBus", "cost": "~$20 (35 BGN)" },
+    "split-dubrovnik": { "mode": "bus/ferry", "duration": "4.5 hr bus / 8 hr ferry", "operator": "FlixBus / Jadrolinija", "cost": "~$15 (100 HRK)" },
+    "split-ljubljana": { "mode": "bus", "duration": "6 hours", "operator": "FlixBus", "cost": "~$20 (130 HRK)" },
+    "tallinn-riga": { "mode": "bus", "duration": "4.5 hours", "operator": "Lux Express / FlixBus", "cost": "~$15" },
+    "riga-vilnius": { "mode": "bus", "duration": "4 hours", "operator": "Lux Express / FlixBus", "cost": "~$12" },
+    "tallinn-vilnius": { "mode": "bus", "duration": "9 hours", "operator": "Lux Express", "cost": "~$20" },
+    "krakow-vilnius": { "mode": "bus/flight", "duration": "10 hr bus / 1.5 hr flight", "operator": "FlixBus / Ryanair", "cost": "~$25 bus / ~$40 flight" },
+    "bratislava-vienna": { "mode": "train/bus", "duration": "1 hour", "operator": "RegioJet / FlixBus / Twin City Liner", "cost": "~$10" },
+    "bucharest-sofia": { "mode": "train/bus", "duration": "10 hours", "operator": "CFR / FlixBus", "cost": "~$20 (90 RON)" }
+  },
+  "travelTips": {
+    "currency": "Mixed currencies. EUR used in Estonia, Latvia, Lithuania, Slovakia, Slovenia. Local currencies: CZK (Czech), HUF (Hungary), PLN (Poland), HRK (Croatia), RON (Romania), BGN (Bulgaria), RSD (Serbia). Cards widely accepted.",
+    "visaFree": "EU/Schengen zone for most destinations. Non-EU citizens: check Schengen 90-day rule. Serbia is non-Schengen but visa-free for most nationalities.",
+    "bestOverallMonths": "May to September for warm weather. December for Christmas markets. April and October for shoulder season value.",
+    "winterNote": "Cold winters (Nov-Mar) but magical Christmas markets in Prague, Budapest, Krakow, Tallinn, and Riga.",
+    "simCard": "EU roaming makes one SIM work across most destinations. Buy a Vodafone, T-Mobile, or local SIM at any airport for ~$10-15/month.",
+    "transport": "FlixBus and RegioJet connect most cities affordably. Trains excellent in Czech Republic, Hungary, Poland. Budget flights via Ryanair and Wizz Air."
+  }
+}

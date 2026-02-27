@@ -1,0 +1,279 @@
+{
+  "name": "Prague & Budapest Explorer",
+  "subtitle": "Prague \u2192 Budapest",
+  "dates": "Jun 12\u2013Jun 14, 2026",
+  "days": [
+    {
+      "day": 1,
+      "date": "Fri, Jun 12",
+      "title": "Arrive Prague",
+      "location": "Prague, Czech Republic",
+      "items": [
+        {
+          "id": "d1-1",
+          "time": "10:00 AM",
+          "icon": "\u2708\ufe0f",
+          "type": "transport",
+          "title": "Arrive Vaclav Havel Airport",
+          "detail": "Flight arrives at PRG Terminal 1. Take Airport Express bus to Praha hlavni nadrazi (main station) for 100 CZK, or Uber/Bolt to Old Town ~400 CZK (25 min).",
+          "status": "confirmed",
+          "lat": 50.1008,
+          "lng": 14.2600
+        },
+        {
+          "id": "d1-2",
+          "time": "11:30 AM",
+          "icon": "\ud83c\udfe8",
+          "type": "accommodation",
+          "title": "Check In \u2014 Old Town Hotel",
+          "detail": "Hotel near Old Town Square. Drop bags and freshen up after flight. Walking distance to all major sights.",
+          "status": "confirmed",
+          "lat": 50.0874,
+          "lng": 14.4213
+        },
+        {
+          "id": "d1-3",
+          "time": "12:30 PM",
+          "icon": "\ud83c\udf5e",
+          "type": "food",
+          "title": "Lunch at Lokaal Dlouha",
+          "detail": "Czech-European fusion in the Old Town. Try the svickova (marinated beef with cream sauce) or duck confit. Mains ~250\u2013400 CZK ($11\u201318).",
+          "status": "confirmed",
+          "lat": 50.0900,
+          "lng": 14.4230
+        },
+        {
+          "id": "d1-4",
+          "time": "2:00 PM",
+          "icon": "\ud83c\udff0",
+          "type": "activity",
+          "title": "Prague Castle & St. Vitus Cathedral",
+          "detail": "The world's largest ancient castle complex. Circuit B ticket (250 CZK) covers St. Vitus Cathedral, Old Royal Palace, St. George's Basilica, and Golden Lane. Allow 2\u20133 hours.",
+          "status": "confirmed",
+          "lat": 50.0911,
+          "lng": 14.4003
+        },
+        {
+          "id": "d1-5",
+          "time": "5:00 PM",
+          "icon": "\ud83c\udf09",
+          "type": "activity",
+          "title": "Walk Charles Bridge at Golden Hour",
+          "detail": "The iconic 14th-century stone bridge lined with 30 baroque statues. Walk from the Castle side (Lesser Town) to Old Town. Best light for photos in late afternoon. Street musicians and artists along the way.",
+          "status": "confirmed",
+          "lat": 50.0865,
+          "lng": 14.4114
+        },
+        {
+          "id": "d1-6",
+          "time": "6:00 PM",
+          "icon": "\ud83c\udf7a",
+          "type": "food",
+          "title": "Czech Beer & Dinner at U Fleku",
+          "detail": "Prague's oldest brewpub, operating since 1499. House-brewed dark lager and traditional Czech dishes. Try the roasted pork knee (veprove koleno). Budget ~500\u2013700 CZK/person.",
+          "status": "confirmed",
+          "lat": 50.0789,
+          "lng": 14.4167
+        },
+        {
+          "id": "d1-7",
+          "time": "8:30 PM",
+          "icon": "\ud83c\udf03",
+          "type": "activity",
+          "title": "Old Town Square Night Walk",
+          "detail": "See the illuminated Astronomical Clock, Tyn Church, and Old Town Hall. The square transforms beautifully at night. Great for photos.",
+          "status": "confirmed",
+          "lat": 50.0874,
+          "lng": 14.4213
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "Sat, Jun 13",
+      "title": "Prague \u2192 Budapest",
+      "location": "Prague \u2192 Budapest",
+      "items": [
+        {
+          "id": "d2-1",
+          "time": "7:30 AM",
+          "icon": "\u2615",
+          "type": "food",
+          "title": "Breakfast at Caf\u00e9 Savoy",
+          "detail": "Elegant Neo-Renaissance cafe with superb pastries, eggs benedict, and coffee. A Prague institution since 1893. Budget 250\u2013400 CZK.",
+          "status": "confirmed",
+          "lat": 50.0819,
+          "lng": 14.4050
+        },
+        {
+          "id": "d2-2",
+          "time": "9:00 AM",
+          "icon": "\ud83d\udeb6",
+          "type": "activity",
+          "title": "Jewish Quarter (Josefov) Walking Tour",
+          "detail": "Visit the Old Jewish Cemetery, Spanish Synagogue, and Old-New Synagogue (Europe's oldest active). Combined ticket 350 CZK. Rich history spanning 700+ years.",
+          "status": "confirmed",
+          "lat": 50.0900,
+          "lng": 14.4178
+        },
+        {
+          "id": "d2-3",
+          "time": "11:30 AM",
+          "icon": "\ud83e\uddf3",
+          "type": "activity",
+          "title": "Check Out & Head to Station",
+          "detail": "Pack up, check out of hotel, and walk or taxi to Praha hlavni nadrazi (main train station). 15-min walk from Old Town.",
+          "status": "confirmed",
+          "lat": 50.0833,
+          "lng": 14.4347
+        },
+        {
+          "id": "d2-4",
+          "time": "12:30 PM",
+          "icon": "\ud83d\ude84",
+          "type": "transport",
+          "title": "Train: Prague \u2192 Budapest",
+          "detail": "RegioJet or Czech Railways direct service. ~6.5 hours through Moravia and Slovakia. Comfortable seats, WiFi, cafe car. Tickets from ~$20 if booked ahead. Scenic route along the Danube into Budapest.",
+          "status": "confirmed",
+          "lat": 50.0833,
+          "lng": 14.4347
+        },
+        {
+          "id": "d2-5",
+          "time": "7:00 PM",
+          "icon": "\ud83d\ude89",
+          "type": "transport",
+          "title": "Arrive Budapest Keleti Station",
+          "detail": "Budapest's main international terminal. Keleti is on Metro line M2 (red) or take a Bolt/Uber to hotel (~1,500 HUF / $4).",
+          "status": "confirmed",
+          "lat": 47.5002,
+          "lng": 19.0840
+        },
+        {
+          "id": "d2-6",
+          "time": "7:30 PM",
+          "icon": "\ud83c\udfe8",
+          "type": "accommodation",
+          "title": "Check In \u2014 Budapest Hotel",
+          "detail": "Hotel in the Jewish Quarter (District VII) \u2014 central location near ruin bars, restaurants, and metro. Walk to most sights.",
+          "status": "confirmed",
+          "lat": 47.4983,
+          "lng": 19.0620
+        },
+        {
+          "id": "d2-7",
+          "time": "8:30 PM",
+          "icon": "\ud83c\udf5d",
+          "type": "food",
+          "title": "Dinner & Ruin Bars",
+          "detail": "Start at Szimpla Kert \u2014 the original and most famous ruin bar, built in an abandoned apartment complex. Eclectic decor, live music, street food stalls. Then wander the Jewish Quarter for more bars and restaurants. Budget 4,000\u20136,000 HUF ($11\u201317).",
+          "status": "confirmed",
+          "lat": 47.4983,
+          "lng": 19.0620
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "Sun, Jun 14",
+      "title": "Budapest Highlights",
+      "location": "Budapest, Hungary",
+      "items": [
+        {
+          "id": "d3-1",
+          "time": "8:00 AM",
+          "icon": "\u2615",
+          "type": "food",
+          "title": "Breakfast at New York Caf\u00e9",
+          "detail": "The most beautiful cafe in the world \u2014 opulent Italian Renaissance interior from 1894. Breakfast set ~5,000 HUF ($14). Worth it for the ambiance alone. Arrive early to avoid the queue.",
+          "status": "confirmed",
+          "lat": 47.4975,
+          "lng": 19.0733
+        },
+        {
+          "id": "d3-2",
+          "time": "9:30 AM",
+          "icon": "\u267b\ufe0f",
+          "type": "activity",
+          "title": "Szechenyi Thermal Baths",
+          "detail": "One of Europe's largest thermal bath complexes. Outdoor pools open year-round at 38\u00b0C. Entry ~7,500 HUF ($21) with locker. Arrive when it opens to enjoy the pools before crowds. Bring swimsuit and towel (or rent).",
+          "status": "confirmed",
+          "lat": 47.5186,
+          "lng": 19.0813
+        },
+        {
+          "id": "d3-3",
+          "time": "12:00 PM",
+          "icon": "\ud83d\uded2",
+          "type": "food",
+          "title": "Lunch at Great Market Hall",
+          "detail": "Budapest's largest indoor market in a stunning 19th-century iron hall. Ground floor: fresh produce, paprika, salami. Upper floor: food stalls with langos (fried dough with sour cream), goulash, and chimney cake. Budget 2,000\u20134,000 HUF.",
+          "status": "confirmed",
+          "lat": 47.4871,
+          "lng": 19.0590
+        },
+        {
+          "id": "d3-4",
+          "time": "1:30 PM",
+          "icon": "\ud83c\udff0",
+          "type": "activity",
+          "title": "Buda Castle & Fisherman's Bastion",
+          "detail": "Take the funicular or walk up Castle Hill. Explore Buda Castle, then walk to Fisherman's Bastion for the best panoramic view of Budapest and Parliament across the river. Matthias Church nearby. Allow 2\u20133 hours.",
+          "status": "confirmed",
+          "lat": 47.5019,
+          "lng": 19.0348
+        },
+        {
+          "id": "d3-5",
+          "time": "4:00 PM",
+          "icon": "\ud83d\udcf7",
+          "type": "activity",
+          "title": "Walk the Danube & Parliament",
+          "detail": "Walk along the Danube embankment from Chain Bridge toward Parliament. Stop at the Shoes on the Danube Bank memorial. See the Parliament Building up close \u2014 Europe's largest. Best photos from the Buda side at sunset.",
+          "status": "confirmed",
+          "lat": 47.5044,
+          "lng": 19.0449
+        },
+        {
+          "id": "d3-6",
+          "time": "6:00 PM",
+          "icon": "\ud83c\udf75",
+          "type": "activity",
+          "title": "Gellert Hill Sunset",
+          "detail": "Hike up Gellert Hill (20 min) for a 360-degree panorama of Budapest at golden hour. The Citadella fortress at the top and the Liberty Statue are iconic. Bring water \u2014 the climb is steep.",
+          "status": "confirmed",
+          "lat": 47.4862,
+          "lng": 19.0403
+        },
+        {
+          "id": "d3-7",
+          "time": "8:00 PM",
+          "icon": "\ud83c\udf7d\ufe0f",
+          "type": "food",
+          "title": "Farewell Dinner at Menza",
+          "detail": "Modern Hungarian cuisine in a retro-communist chic setting. Try the duck leg with red cabbage or chicken paprikash. Excellent wine list of Hungarian varietals. Mains 3,500\u20136,000 HUF ($10\u201317).",
+          "status": "confirmed",
+          "lat": 47.5008,
+          "lng": 19.0583
+        }
+      ]
+    }
+  ],
+  "weather": [
+    { "day": "Fri", "icon": "\u2600\ufe0f", "high": 26, "low": 15, "rain": 10 },
+    { "day": "Sat", "icon": "\u26c5", "high": 24, "low": 14, "rain": 20 },
+    { "day": "Sun", "icon": "\u2600\ufe0f", "high": 27, "low": 16, "rain": 5 }
+  ],
+  "contacts": [
+    { "icon": "\ud83d\udea8", "name": "EU Emergency", "role": "Emergency Services", "phone": "112" },
+    { "icon": "\ud83c\udfe5", "name": "Na Homolce Hospital", "role": "Prague (English-speaking)", "phone": "+420-257-271-111" },
+    { "icon": "\ud83c\udfe5", "name": "Semmelweis Medical Center", "role": "Budapest", "phone": "+36-1-459-1500" },
+    { "icon": "\ud83d\ude84", "name": "RegioJet Customer Service", "role": "Train bookings", "phone": "+420-542-424-242" },
+    { "icon": "\ud83c\udfe8", "name": "Hotel Concierge", "role": "Accommodation help", "phone": "+420-222-000-000" }
+  ],
+  "group": [
+    { "id": "g1", "name": "Scott", "avatar": "\ud83e\udd20", "role": "host", "color": "#0D7377" }
+  ],
+  "notifications": [],
+  "changeLog": []
+}

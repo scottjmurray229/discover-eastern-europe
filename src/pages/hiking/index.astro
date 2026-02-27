@@ -1,0 +1,404 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Hiking & Nature', url: '/hiking/' },
+];
+
+const pageTitle = 'Eastern Europe Hiking & Nature Guide — Mountains, Lakes & National Parks';
+const pageDescription = 'From the Tatra Mountains to Plitvice Lakes, Julian Alps to the Carpathians — the best hiking trails, national parks, and natural wonders across Eastern Europe.';
+
+interface Trail {
+  name: string;
+  destination: string;
+  slug: string;
+  difficulty: string;
+  duration: string;
+  description: string;
+  highlight: string;
+  tag?: string;
+}
+
+interface RegionSection {
+  region: string;
+  tagline: string;
+  gradient: string;
+  trails: Trail[];
+}
+
+const regions: RegionSection[] = [
+  {
+    region: 'Central Europe',
+    tagline: 'Alpine peaks, sandstone gorges, thermal caves, and fairytale forests',
+    gradient: 'linear-gradient(135deg, #065F46 0%, #059669 100%)',
+    trails: [
+      {
+        name: 'Tatra Mountains (High Tatras)',
+        destination: 'Bratislava / Krakow',
+        slug: 'bratislava',
+        difficulty: 'Moderate to Challenging',
+        duration: '1–3 days',
+        description: 'The smallest alpine mountain range in the world, straddling the Slovak-Polish border. Dramatic granite peaks, glacial lakes, and well-marked trails that reach over 2,500m. The High Tatras pack Alpine-scale scenery into a compact area you can hike without technical gear.',
+        highlight: 'Rysy Peak (2,499m) — the highest point in Poland, reachable as a challenging day hike from Morskie Oko lake.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Bohemian Switzerland National Park',
+        destination: 'Prague',
+        slug: 'prague',
+        difficulty: 'Easy to Moderate',
+        duration: '1 day',
+        description: 'Towering sandstone arches, misty gorges, and the iconic Pravcicka Gate — Europe\'s largest natural sandstone arch. A day trip from Prague that feels like stepping into a fantasy film (Narnia was filmed here).',
+        highlight: 'The Kamenice Gorge boat ride through narrow, moss-covered canyon walls.',
+        tag: 'Day Trip',
+      },
+      {
+        name: 'Triglav National Park & Julian Alps',
+        destination: 'Ljubljana',
+        slug: 'ljubljana',
+        difficulty: 'Easy to Challenging',
+        duration: '1–5 days',
+        description: 'Slovenia\'s only national park encompasses the Julian Alps, emerald-green rivers, alpine meadows, and Lake Bohinj. Triglav (2,864m) is a national symbol — climbing it is a rite of passage for Slovenians. Shorter trails around Vintgar Gorge and the Soča Valley are equally stunning.',
+        highlight: 'The Soča Trail — following the impossibly turquoise Soča River through gorges and cascades.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Buda Hills & Normafa',
+        destination: 'Budapest',
+        slug: 'budapest',
+        difficulty: 'Easy',
+        duration: 'Half day',
+        description: 'Forested hills on Budapest\'s western edge with well-marked trails, lookout towers, and the charming Children\'s Railway (built and operated by kids). A perfect escape from the city — take the cogwheel railway up and hike down through beech forests.',
+        highlight: 'Sunset from Hármashatár-hegy peak overlooking the Danube and the city skyline.',
+      },
+    ],
+  },
+  {
+    region: 'Balkans',
+    tagline: 'Mediterranean coastlines, karst wonders, canyon trails, and island-dotted lakes',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #14B8A6 100%)',
+    trails: [
+      {
+        name: 'Plitvice Lakes National Park',
+        destination: 'Split / Dubrovnik',
+        slug: 'split',
+        difficulty: 'Easy',
+        duration: '1 day',
+        description: 'Sixteen terraced lakes connected by waterfalls, cascading through a forested karst canyon. Croatia\'s most visited natural wonder and a UNESCO World Heritage Site. Wooden boardwalks wind through the park — go early morning to beat the crowds.',
+        highlight: 'The Great Waterfall (Veliki Slap) — 78 meters of thundering water, the tallest in Croatia.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Dubrovnik Coastal Trail',
+        destination: 'Dubrovnik',
+        slug: 'dubrovnik',
+        difficulty: 'Easy to Moderate',
+        duration: 'Half day',
+        description: 'A clifftop path connecting Dubrovnik to the Lokrum island ferry, with side trails up Mount Srđ. The views over the terracotta rooftops and the Adriatic are some of the most photographed in the Mediterranean.',
+        highlight: 'Cable car to Mount Srđ summit for panoramic views of the Old Town, Lokrum island, and the Elafiti archipelago.',
+      },
+      {
+        name: 'Vitosha Mountain',
+        destination: 'Sofia',
+        slug: 'sofia',
+        difficulty: 'Moderate',
+        duration: '1 day',
+        description: 'Sofia is one of the few European capitals where you can hike a 2,000m+ mountain by city bus. Vitosha looms over the city with well-maintained trails, alpine meadows, and the striking Cherni Vrah peak (2,290m). In winter, it\'s a ski resort; in summer, a walker\'s paradise.',
+        highlight: 'The Golden Bridges stone rivers — massive moraine fields of huge boulders from the Ice Age.',
+        tag: 'Urban Escape',
+      },
+      {
+        name: 'Carpathian Mountains',
+        destination: 'Bucharest',
+        slug: 'bucharest',
+        difficulty: 'Moderate to Challenging',
+        duration: '2–5 days',
+        description: 'Romania\'s Carpathians are wild, vast, and home to Europe\'s largest populations of brown bears, wolves, and lynx. The Făgăraș Ridge is a spectacular multi-day trek along the spine of the Southern Carpathians, reaching Moldoveanu Peak (2,544m).',
+        highlight: 'Transfăgărășan Highway viewpoints — Jeremy Clarkson called it "the best road in the world."',
+        tag: 'Adventure',
+      },
+    ],
+  },
+  {
+    region: 'Baltics',
+    tagline: 'Coastal trails, boreal forests, bog walks, and the quiet beauty of the north',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #3B82F6 100%)',
+    trails: [
+      {
+        name: 'Lahemaa National Park',
+        destination: 'Tallinn',
+        slug: 'tallinn',
+        difficulty: 'Easy',
+        duration: '1 day',
+        description: 'Estonia\'s oldest and largest national park, an hour from Tallinn. Bog boardwalks lead through misty wetlands, coastal trails pass fishing villages and old manor houses, and forests harbor elk and lynx. A completely different landscape from the medieval city.',
+        highlight: 'Viru Bog Trail — an elevated boardwalk through a surreal moss-and-pool landscape, best at dawn.',
+        tag: 'Day Trip',
+      },
+      {
+        name: 'Gauja National Park',
+        destination: 'Riga',
+        slug: 'riga',
+        difficulty: 'Easy to Moderate',
+        duration: '1–2 days',
+        description: 'Latvia\'s largest national park, centered on the sandstone cliffs and caves of the Gauja River valley. The Sigulda-Turaida area is nicknamed "the Switzerland of Latvia" — medieval castle ruins perch on forested ridges above the winding river.',
+        highlight: 'Gutmanis Cave — the largest cave in the Baltics, with inscriptions dating to the 17th century.',
+      },
+      {
+        name: 'Curonian Spit',
+        destination: 'Vilnius',
+        slug: 'vilnius',
+        difficulty: 'Easy',
+        duration: '1–2 days',
+        description: 'A 98km sand dune peninsula shared between Lithuania and Russia, designated a UNESCO World Heritage Site. The shifting "dead dunes" reach 60m high, and the spit is barely 400m wide in places. Cycling paths and walking trails traverse forests, beaches, and charming fishing villages.',
+        highlight: 'Parnidis Dune — a massive shifting dune with views over the lagoon and the Baltic Sea simultaneously.',
+        tag: 'UNESCO',
+      },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="hike-hero">
+    <video class="hike-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/hiking-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hike-hero-gradient"></div>
+    <div class="hike-hero-noise"></div>
+    <div class="hike-hero-content">
+      <h1 class="hike-hero-title">Hiking & Nature</h1>
+      <p class="hike-hero-subtitle">Alpine peaks, glacial lakes, Mediterranean coastlines, ancient forests, and bog boardwalks — Eastern Europe's natural landscapes are as dramatic as its history.</p>
+      <div class="hike-hero-meta">
+        <div class="hike-hero-meta-item">
+          <span class="hike-hero-meta-label">Trails</span>
+          <span class="hike-hero-meta-value">11</span>
+        </div>
+        <div class="hike-hero-meta-item">
+          <span class="hike-hero-meta-label">Regions</span>
+          <span class="hike-hero-meta-value">3</span>
+        </div>
+        <div class="hike-hero-meta-item">
+          <span class="hike-hero-meta-label">National Parks</span>
+          <span class="hike-hero-meta-value">7</span>
+        </div>
+      </div>
+    </div>
+    <div class="hike-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="hike-personal reveal">
+    <div class="container-content">
+      <blockquote class="hike-personal-quote">
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Region Sections -->
+  {regions.map((section) => (
+    <section class="hike-region reveal">
+      <div class="container-content">
+        <div class="hike-region-header" style={`background: ${section.gradient};`}>
+          <div class="hike-region-header-inner">
+            <h2 class="hike-region-name">{section.region}</h2>
+            <p class="hike-region-tagline">{section.tagline}</p>
+            <span class="hike-region-count">{section.trails.length} trails</span>
+          </div>
+        </div>
+
+        <div class="hike-trail-grid">
+          {section.trails.map((trail) => (
+            <a href={`/destinations/${trail.slug}/`} class="hike-trail-card">
+              <div class="hike-trail-media" style={`background: ${section.gradient};`}>
+                {trail.tag && (
+                  <span class={`hike-tag hike-tag--${trail.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{trail.tag}</span>
+                )}
+              </div>
+              <div class="hike-trail-body">
+                <h3 class="hike-trail-name">{trail.name}</h3>
+                <p class="hike-trail-dest">{trail.destination}</p>
+                <div class="hike-trail-meta">
+                  <span class="hike-trail-difficulty">{trail.difficulty}</span>
+                  <span class="hike-trail-duration">{trail.duration}</span>
+                </div>
+                <p class="hike-trail-desc">{trail.description}</p>
+                <div class="hike-trail-highlight">
+                  <span class="hike-trail-highlight-label">Highlight:</span> {trail.highlight}
+                </div>
+                <span class="hike-trail-cta">Explore {trail.destination.split('/')[0].trim()} &rarr;</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="hike-cta-section reveal">
+    <div class="container-content">
+      <div class="hike-cta-card">
+        <h2 class="hike-cta-heading">Plan Your Nature Trip</h2>
+        <p class="hike-cta-text">Tell our AI planner you love hiking and nature and it will build a multi-country itinerary connecting the best national parks, trails, and scenic routes.</p>
+        <a href="/plan/" class="hike-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={[
+    { question: "What is the best time for hiking in Eastern Europe?", answer: "June through September is ideal for mountain hiking in the Tatras, Julian Alps, and Carpathians — trails are snow-free and days are long. Spring (April-May) and autumn (September-October) are best for lower-altitude hikes like Plitvice, coastal Croatia, and the Baltics, with fewer crowds and pleasant temperatures. Avoid the Tatras and high-altitude trails in winter unless you're an experienced mountaineer." },
+    { question: "Do I need hiking gear for Eastern European trails?", answer: "For day hikes at national parks (Plitvice, Bohemian Switzerland, Lahemaa), comfortable walking shoes are sufficient. For mountain hikes in the Tatras, Julian Alps, or Carpathians, bring proper hiking boots, layered clothing, rain gear, and plenty of water. Mountain huts are available in the Tatras and Julian Alps for multi-day treks, but book ahead in July-August." },
+    { question: "Are Eastern European national parks expensive?", answer: "Very affordable compared to Western Europe. Plitvice Lakes costs about €24 in peak season. Most Baltic and Balkan parks are free or under €5. The Tatras are free to hike (parking fees only). Guided tours and cable cars add costs but are optional. Budget €5-25 per park visit including transport." },
+    { question: "Can I combine city trips with nature in Eastern Europe?", answer: "Absolutely — that's one of the region's biggest strengths. Sofia has Vitosha Mountain accessible by city bus. Budapest has the Buda Hills. Ljubljana is 30 minutes from Triglav National Park. Tallinn is an hour from Lahemaa. Prague is a day trip from Bohemian Switzerland. You can alternate city days and nature days easily." },
+    { question: "Is wildlife a concern when hiking?", answer: "Romania's Carpathians have Europe's largest brown bear population — carry bear spray and make noise on trails. Wolves and lynx exist but are extremely shy and rarely seen. Ticks are present in forested areas across the region from spring through autumn — use repellent and check yourself after hikes. No dangerous snakes are commonly encountered on popular trails." },
+  ]} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Eastern Europe Hiking Guide"
+      description="A PDF guide to the best hiking trails and national parks across Eastern Europe — with difficulty ratings, gear tips, and seasonal recommendations."
+      bullets={[
+        '11 trails with maps and difficulty ratings',
+        'Best time to visit each national park',
+        'Gear checklist for mountain and coastal hikes',
+        'Mountain hut booking info for multi-day treks',
+      ]}
+      guideTag="pillar-hiking"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="hike-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="hike-crosslinks-heading">Explore More</h3>
+      <div class="hike-crosslinks-grid">
+        <a href="/cuisine/" class="hike-crosslink-card">
+          <span class="hike-crosslink-icon">&#127860;</span>
+          <span class="hike-crosslink-label">Food & Cuisine</span>
+          <span class="hike-crosslink-desc">24 dishes across 3 regions with where to find the best version</span>
+        </a>
+        <a href="/history/" class="hike-crosslink-card">
+          <span class="hike-crosslink-icon">&#127963;</span>
+          <span class="hike-crosslink-label">History Guide</span>
+          <span class="hike-crosslink-desc">From medieval kingdoms to the fall of the Iron Curtain</span>
+        </a>
+        <a href="/destinations/" class="hike-crosslink-card">
+          <span class="hike-crosslink-icon">&#127965;</span>
+          <span class="hike-crosslink-label">All Destinations</span>
+          <span class="hike-crosslink-desc">13 destinations across 3 regions with honest reviews</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* HERO */
+  .hike-hero { position: relative; min-height: 60vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; }
+  .hike-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .hike-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%); }
+  .hike-hero-noise { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+  .hike-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .hike-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .hike-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .hike-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .hike-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .hike-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .hike-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .hike-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.35); text-align: center; animation: hikeBounce 2s ease-in-out infinite; }
+  @keyframes hikeBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+  /* PERSONAL */
+  .hike-personal { padding-block: var(--space-8); }
+  .hike-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid var(--color-warm-coral); background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .hike-personal-quote cite { font-size: var(--text-caption); color: var(--color-warm-coral); font-weight: var(--weight-semibold); font-style: normal; }
+
+  /* REGION */
+  .hike-region { padding: var(--space-6) 0; }
+  .hike-region-header { position: relative; border-radius: 20px; padding: var(--space-6); margin-bottom: var(--space-6); overflow: hidden; }
+  .hike-region-header-inner { position: relative; z-index: 1; }
+  .hike-region-name { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: var(--weight-bold); color: #fff; margin: 0 0 var(--space-1); line-height: 1.1; }
+  .hike-region-tagline { font-size: 0.95rem; color: rgba(255,255,255,0.8); margin: 0 0 var(--space-3); max-width: 480px; line-height: 1.5; }
+  .hike-region-count { font-size: 0.7rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; }
+
+  /* TRAIL GRID */
+  .hike-trail-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+  @media (max-width: 768px) { .hike-trail-grid { grid-template-columns: 1fr; } }
+
+  .hike-trail-card { display: flex; flex-direction: column; background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 14px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hike-trail-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+
+  .hike-trail-media { position: relative; aspect-ratio: 16/7; display: flex; align-items: flex-start; justify-content: flex-end; padding: var(--space-2); }
+
+  .hike-tag { display: inline-block; font-size: 0.6rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 6px; position: relative; z-index: 1; background: rgba(255,255,255,0.9); color: #065F46; }
+  .hike-tag--mustdo { color: #065F46; }
+  .hike-tag--daytrip { color: #0D7377; }
+  .hike-tag--adventure { color: #C62828; }
+  .hike-tag--urbanescape { color: #1565C0; }
+  .hike-tag--unesco { color: #6A1B9A; }
+
+  .hike-trail-body { padding: var(--space-3) var(--space-4) var(--space-4); display: flex; flex-direction: column; flex: 1; }
+  .hike-trail-name { font-size: 1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 4px; line-height: 1.3; }
+  .hike-trail-dest { font-size: 0.72rem; color: var(--color-ocean-teal); font-weight: var(--weight-medium); margin: 0 0 var(--space-2); }
+  .hike-trail-meta { display: flex; gap: var(--space-3); margin-bottom: var(--space-2); }
+  .hike-trail-difficulty, .hike-trail-duration { font-size: 0.65rem; font-weight: var(--weight-semibold); color: var(--color-slate); background: var(--color-sky); padding: 2px 8px; border-radius: 6px; }
+  .hike-trail-desc { font-size: 0.8rem; color: var(--color-slate); line-height: 1.6; margin: 0 0 var(--space-3); flex: 1; }
+  .hike-trail-highlight { font-size: 0.75rem; color: var(--color-slate); line-height: 1.5; background: var(--color-sky); border-radius: 8px; padding: var(--space-2) var(--space-3); margin-bottom: var(--space-3); }
+  .hike-trail-highlight-label { font-weight: var(--weight-bold); color: var(--color-ocean-teal); }
+  .hike-trail-cta { font-size: 0.72rem; font-weight: var(--weight-semibold); color: var(--color-ocean-teal); }
+
+  /* CTA */
+  .hike-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .hike-cta-card { background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .hike-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .hike-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .hike-cta-button { display: inline-block; background: var(--color-warm-coral); color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .hike-cta-button:hover { background: #d4553b; transform: translateY(-2px); }
+
+  /* CROSS-LINKS */
+  .hike-crosslinks { padding: 0 0 var(--space-10); }
+  .hike-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .hike-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  .hike-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hike-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .hike-crosslink-icon { font-size: 1.8rem; }
+  .hike-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .hike-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+
+  @media (max-width: 640px) {
+    .hike-hero { min-height: 55vh; padding: 0 var(--space-4) 40px; }
+    .hike-scroll-hint { display: none; }
+    .hike-crosslinks-grid { grid-template-columns: 1fr; }
+  }
+</style>
