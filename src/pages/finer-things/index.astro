@@ -1,0 +1,1002 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'The Finer Things', url: '/finer-things/' },
+];
+
+const pageTitle = 'The Finer Things — Luxury Eastern Europe: Fine Dining, Spas, Opera & Boutique Hotels';
+const pageDescription = 'Budapest thermal baths, Prague Michelin stars, Dubrovnik luxury villas, Danube river cruises, Tokaj wine cellars, and the opera houses that define elegant Eastern European travel.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  items: { label: string; text: string; link?: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'fine-dining',
+    icon: '\u{1F37D}\u{FE0F}',
+    title: 'Fine Dining',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #78350F 100%)',
+    items: [
+      { label: 'La Degustation Boheme Bourgeoise, Prague', text: 'One Michelin star and arguably the best dining experience in the Czech Republic. A seven-course tasting menu reinventing classic Bohemian cuisine with modern technique. Expect duck liver with plum, trout with horseradish, and beetroot in forms you\'ve never imagined. Tasting menu around \u20AC120\u2013150 per person. Reservations essential \u2014 book at least two weeks ahead.', link: '/destinations/prague/' },
+      { label: 'Onyx, Budapest', text: 'Two Michelin stars in the heart of Budapest\'s Vorosmarty Square. Hungarian fine dining at its peak \u2014 mangalica pork, foie gras with Tokaj reduction, pike-perch with paprika foam. The tasting menu runs \u20AC150\u2013200 with wine pairing. The dining room overlooks the square, and the service is impeccable without being stuffy.', link: '/destinations/budapest/' },
+      { label: 'Nausica, Dubrovnik', text: 'Mediterranean fine dining overlooking the Adriatic. Fresh Dalmatian seafood \u2014 Ston oysters, black risotto, lobster with truffles from Istria \u2014 presented with precision. Main courses \u20AC35\u201365. The terrace seating at sunset is worth every cent. Dubrovnik\'s dining scene has matured dramatically in the past decade.', link: '/destinations/dubrovnik/' },
+      { label: 'Costes, Budapest', text: 'Budapest\'s first Michelin-starred restaurant and still going strong. Modern European cuisine with Hungarian ingredients \u2014 think duck with cherry and lavender, or veal sweetbreads with truffle. Tasting menu \u20AC100\u2013140. The interior is sleek and contemporary, a sharp contrast to the Baroque grandeur outside.', link: '/destinations/budapest/' },
+      { label: 'Strelec, Ljubljana', text: 'Set inside Ljubljana Castle with panoramic views over the old town. Slovenian tasting menus featuring Karst prosciutto, Adriatic langoustines, and Brkini truffle. \u20AC80\u2013120 for the full experience. The castle setting alone makes this special \u2014 the food makes it unforgettable.', link: '/destinations/ljubljana/' },
+    ],
+  },
+  {
+    id: 'thermal-baths',
+    icon: '\u2668\u{FE0F}',
+    title: 'Thermal Baths & Spa Experiences',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #14B8A6 100%)',
+    items: [
+      { label: 'Gellert Thermal Bath, Budapest', text: 'The crown jewel of Budapest\'s bath culture. Art Nouveau architecture from 1918, ornate mosaic pools, and thermal waters that have been healing visitors for centuries. The VIP experience includes a private cabin, robe service, and access to the exclusive upper terrace. General admission \u20AC25\u201330, VIP cabin \u20AC60\u201380. Go on a weekday morning to avoid the crowds.', link: '/destinations/budapest/' },
+      { label: 'Szechenyi Thermal Bath, Budapest', text: 'The largest medicinal bath in Europe \u2014 bright yellow Neo-Baroque palace with 18 pools. The outdoor pools steaming in winter are iconic. Saturday night "sparties" (spa parties with DJs and light shows) are a Budapest-only experience. General admission \u20AC25, sparty tickets \u20AC60\u201380. Come for the spectacle, stay for the thermal healing.', link: '/destinations/budapest/' },
+      { label: 'Rogner Hotel & Spa, Ljubljana', text: 'Natural thermal springs feeding indoor and outdoor pools in Ljubljana\'s premier wellness hotel. The spa complex includes saunas, salt rooms, and treatment suites using local Slovenian botanicals. Day pass \u20AC35\u201350. The outdoor pool surrounded by mature gardens feels like a hidden oasis in the city center.' },
+      { label: 'Aqua Palace, Bratislava', text: 'Slovakia\'s modern thermal wellness center with panoramic city views. Thermal pools, infinity edge features, and a full menu of massage and facial treatments. Day pass \u20AC20\u201330, premium treatments \u20AC60\u2013120. Less crowded than Budapest\'s famous baths and excellent value.' },
+      { label: 'Terme Olimia, Slovenia', text: 'A world-class spa resort near the Croatian border. Thermal pools, a wellness center with Ayurvedic treatments, and wine therapy using local Stajerska vintages. Full-day wellness package \u20AC80\u2013150. This is where Slovenians go to truly unwind \u2014 far from the tourist trail.' },
+    ],
+  },
+  {
+    id: 'boutique-hotels',
+    icon: '\u{1F3E8}',
+    title: 'Boutique Hotels & Luxury Stays',
+    gradient: 'linear-gradient(135deg, #4C1D95 0%, #7C3AED 100%)',
+    items: [
+      { label: 'The Emblem Hotel, Prague', text: 'Boutique luxury steps from Old Town Square. Rooftop terrace with Prague Castle views, a whisky bar, and rooms that blend Art Deco bones with contemporary design. From \u20AC200/night. The rooftop hot tub overlooking the spires of Prague is the kind of moment that defines a trip.', link: '/destinations/prague/' },
+      { label: 'Aria Hotel, Budapest', text: 'A music-themed boutique hotel where each floor is dedicated to a genre \u2014 opera, jazz, classical, contemporary. Rooftop bar with St. Stephen\'s Basilica views, an indoor pool, and rooms designed around musical legends. From \u20AC250/night. Ask for a corner room on the opera floor for the best views.', link: '/destinations/budapest/' },
+      { label: 'Villa Dubrovnik', text: 'Cliffside luxury on the Adriatic, a short water taxi from the Old Town walls. Private beach, infinity pool overlooking Lokrum Island, and suites with floor-to-ceiling sea views. From \u20AC400/night in season. This is the Dubrovnik experience the guidebooks dream about.', link: '/destinations/dubrovnik/' },
+      { label: 'Hotel & Residence U Cerne Hvezdy, Prague', text: 'Hidden in the Prague Castle district, this 14th-century building has been converted into an intimate luxury hotel with exposed stone walls, vaulted ceilings, and modern comforts. From \u20AC180/night. Waking up inside the castle complex before the tourists arrive is priceless.', link: '/destinations/prague/' },
+      { label: 'InterContinental Ljubljana', text: 'Ljubljana\'s premier five-star property with a top-floor restaurant, rooftop bar, and spa. Rooms feature floor-to-ceiling windows with views of Ljubljana Castle and the Julian Alps beyond. From \u20AC180/night. The B Restaurant on the top floor is worth a visit even if you\'re not staying.', link: '/destinations/ljubljana/' },
+    ],
+  },
+  {
+    id: 'opera-ballet',
+    icon: '\u{1F3AD}',
+    title: 'Opera, Ballet & Cultural Performances',
+    gradient: 'linear-gradient(135deg, #78350F 0%, #D4A574 100%)',
+    items: [
+      { label: 'Hungarian State Opera House, Budapest', text: 'Neo-Renaissance splendor that rivals Vienna\'s Staatsoper at a fraction of the price. VIP box seats for a full opera performance run \u20AC40\u201380 \u2014 less than standing room in Vienna. The building itself is the performance: gilded balconies, a frescoed ceiling by Karoly Lotz, and acoustics that make every seat feel intimate. Dress code is smart casual minimum.', link: '/destinations/budapest/' },
+      { label: 'National Theatre, Prague', text: 'The golden chapel on the Vltava \u2014 Prague\'s cultural crown since 1883. Opera, ballet, and drama in a building the Czech nation built through public donations. Tickets \u20AC15\u201360 for world-class performances. The gold-leaf roof catches the sunset in a way that stops you mid-bridge.', link: '/destinations/prague/' },
+      { label: 'Estonian National Opera, Tallinn', text: 'A beautifully restored venue offering opera and ballet performances that rival Western European capitals. Tickets \u20AC15\u201340, and the quality is outstanding. Tallinn\'s cultural scene is one of the Baltic\'s best-kept secrets. Check the winter season for Nutcracker performances.', link: '/destinations/tallinn/' },
+      { label: 'Latvian National Opera, Riga', text: 'Grand Neo-Classical opera house in the heart of Riga\'s Art Nouveau district. The Latvian National Ballet is world-renowned, and tickets rarely exceed \u20AC30. Combine with a walk through Riga\'s stunning Jugendstil architecture quarter.', link: '/destinations/riga/' },
+      { label: 'Cankarjev Dom, Ljubljana', text: 'Slovenia\'s premier cultural center hosts international orchestras, contemporary dance, and jazz festivals. The architecture is brutalist-meets-modern, and the programming is eclectic. Tickets \u20AC15\u201350. Check for the Ljubljana Festival summer program for open-air performances.', link: '/destinations/ljubljana/' },
+    ],
+  },
+  {
+    id: 'wine-spirits',
+    icon: '\u{1F377}',
+    title: 'Wine Regions & Premium Spirits',
+    gradient: 'linear-gradient(135deg, #7C2D12 0%, #B91C1C 100%)',
+    items: [
+      { label: 'Tokaj Wine Region, Hungary', text: 'The world\'s first classified wine region \u2014 predating Bordeaux. Tokaji Aszu is the legendary sweet wine that once graced the tables of European royalty (Louis XIV called it "the wine of kings, the king of wines"). A cellar tasting of 5\u20136 wines with the winemaker runs \u20AC20\u201340. The Disznoko and Oremus estates offer VIP experiences with vineyard tours and private tastings from \u20AC60.', link: '/destinations/budapest/' },
+      { label: 'Goriska Brda, Slovenia', text: 'Slovenia\'s answer to Tuscany \u2014 rolling hills, stone villages, and vineyards producing world-class Rebula (Ribolla Gialla) and Merlot. The skin-contact orange wines from Goriska Brda are gaining international acclaim. A half-day wine tour with tastings and lunch runs \u20AC50\u201380. Less crowded than any Italian wine region and twice as charming.', link: '/destinations/ljubljana/' },
+      { label: 'Moravian Wine Trail, Czech Republic', text: 'South Moravia produces excellent whites \u2014 Gruner Veltliner, Riesling, Palava \u2014 from cellars carved into chalky hillsides. The village of Mikulov is the gateway, with wine cellars lining every street. Tasting flights \u20AC8\u201315. The annual wine harvest festival in September is the best time to visit.', link: '/destinations/prague/' },
+      { label: 'Rakia & Palinka Culture', text: 'Every Balkan and Central European country has its fruit brandy \u2014 rakia in Serbia and Bulgaria, palinka in Hungary, slivovice in Czech Republic. The good stuff is aged, single-fruit, and dangerously smooth. In Serbia, homemade rakia is offered as a welcome gesture \u2014 refusing is impolite. Premium bottles run \u20AC15\u201340 and make excellent souvenirs. Plum (slivovice) and apricot (barackpalinka) are the classics.' },
+      { label: 'Craft Beer Revolution', text: 'Eastern Europe\'s craft beer scene has exploded. Budapest\'s ruin bars serve local craft alongside Czech classics. Prague\'s craft scene rivals its lager heritage. Tallinn\'s Purtse Brewery and Riga\'s Labietis produce world-class styles. A craft pint runs \u20AC3\u20135 \u2014 still a fraction of Western European prices. The quality-to-price ratio is unbeatable.' },
+    ],
+  },
+  {
+    id: 'river-cruises',
+    icon: '\u{1F6F3}\u{FE0F}',
+    title: 'Luxury River Cruises & Private Tours',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
+    items: [
+      { label: 'Danube River Cruises', text: 'The classic European river cruise route \u2014 Budapest to Vienna (or reverse) over 3\u20137 nights. Premium lines like Viking, AmaWaterways, and Uniworld offer all-inclusive luxury with excursions at every port. Expect \u20AC2,000\u20134,000 per person for a week. The Budapest departure passing under the illuminated Chain Bridge at night is cinematic. Book the French Balcony cabin for river views from bed.', link: '/destinations/budapest/' },
+      { label: 'Private Walking Tours', text: 'Skip the group tours. Private guided walks in Prague\'s Castle District (\u20AC60\u2013100 for 3 hours), Budapest\'s Jewish Quarter (\u20AC50\u201380), and Dubrovnik\'s Old Town walls (\u20AC80\u2013120) offer depth and flexibility that group tours can\'t match. The best guides are local historians who bring centuries of context to every cobblestone.' },
+      { label: 'Luxury Transfers & Day Trips', text: 'Private car transfers between cities transform travel days into experiences. A chauffeured drive from Budapest to Vienna (\u20AC200\u2013300) can include a stop at the Pannonhalma Archabbey. Prague to Cesky Krumlov (\u20AC150\u2013200) with a beer tasting stop. Ljubljana to Bled (\u20AC100\u2013150) with a Vintgar Gorge walk. Worth every euro versus a cramped bus.' },
+      { label: 'Helicopter Tours', text: 'See the Dalmatian coast from above. Helicopter transfers from Dubrovnik to Hvar or Split (\u20AC400\u2013800 per group) double as sightseeing. Budapest helicopter tours over the Parliament and Buda Castle run \u20AC150\u2013250 per person. These are splurge-worthy moments that compress hours of sightseeing into twenty breathtaking minutes.' },
+      { label: 'Baltic Amber Trail', text: 'The Baltic states \u2014 Lithuania, Latvia, Estonia \u2014 sit on the ancient Amber Road. Luxury amber jewelry shopping in Vilnius, Riga, and Tallinn offers heirloom-quality pieces at prices far below Western European equivalents. Commission a custom piece from a Vilnius artisan for \u20AC100\u2013500. The Amber Museum in Palanga (Lithuania) provides context for this 40-million-year-old gem.' },
+    ],
+  },
+  {
+    id: 'art-galleries',
+    icon: '\u{1F5BC}\u{FE0F}',
+    title: 'Art Galleries & Cultural Treasures',
+    gradient: 'linear-gradient(135deg, #4A5568 0%, #1A2332 100%)',
+    items: [
+      { label: 'Museum of Fine Arts, Budapest', text: 'One of Europe\'s great art museums, reopened after a stunning renovation. Spanish masters (El Greco, Goya), Italian Renaissance, and one of the best Egyptian collections outside Cairo. VIP guided tours (\u20AC30\u201350) provide private access to restoration areas. General admission \u20AC12\u201316. The building itself, facing Heroes\' Square, is worth the visit.', link: '/destinations/budapest/' },
+      { label: 'National Gallery, Prague', text: 'Spread across multiple venues including the Trade Fair Palace (modern art) and St. Agnes Convent (medieval). Mucha\'s Slav Epic \u2014 20 massive canvases of Slavic history \u2014 is the centerpiece. Combined ticket \u20AC15\u201320. The Mucha Museum in New Town is a separate, more intimate experience worth adding.', link: '/destinations/prague/' },
+      { label: 'Kumu Art Museum, Tallinn', text: 'Estonia\'s flagship art museum in a striking limestone-and-glass building. Soviet-era art, Estonian contemporary works, and rotating international exhibitions. \u20AC12 admission. The Soviet Nonconformist Art collection \u2014 works that were hidden or banned \u2014 is unlike anything you\'ll see elsewhere in Europe.', link: '/destinations/tallinn/' },
+      { label: 'MSUM (Museum of Contemporary Art Metelkova), Ljubljana', text: 'Part of Ljubljana\'s creative Metelkova district \u2014 a former military barracks turned cultural hub. Cutting-edge Slovenian and Balkan contemporary art in a beautifully converted space. \u20AC5\u20137 admission. Combine with an evening exploring Metelkova\'s bars and live music venues.' },
+      { label: 'War Photo Limited, Dubrovnik', text: 'A powerful gallery of conflict photography housed in Dubrovnik\'s Old Town. Images from the Yugoslav Wars, Kosovo, and global conflicts by award-winning photojournalists. \u20AC8 admission. Moving, important, and a necessary counterpoint to Dubrovnik\'s beauty. Visit before walking the walls for context.', link: '/destinations/dubrovnik/' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="ft-hero">
+    <div class="ft-hero-gradient"></div>
+    <div class="ft-hero-noise"></div>
+    <div class="ft-hero-content">
+      <h1 class="ft-hero-title">The Finer Things</h1>
+      <p class="ft-hero-subtitle">Michelin-starred dining in Prague and Budapest, VIP thermal bath experiences, boutique hotels in medieval castles, opera at a fraction of Western prices, Tokaj wine cellars, luxury Danube cruises, and the art galleries that make Eastern Europe the continent's best-kept luxury secret.</p>
+      <div class="ft-hero-meta">
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Topics</span>
+          <span class="ft-hero-meta-value">7</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Cities</span>
+          <span class="ft-hero-meta-value">13</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Luxury Picks</span>
+          <span class="ft-hero-meta-value">35+</span>
+        </div>
+      </div>
+    </div>
+    <div class="ft-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="ft-personal ft-reveal">
+    <div class="container-content">
+      <blockquote class="ft-personal-quote">
+        <p>Eastern Europe redefined luxury travel for me. A Michelin-starred tasting menu in Budapest costs what an appetizer does in Paris. VIP opera seats in Prague are cheaper than nosebleeds in London. And the thermal baths in Budapest? There's nothing like floating in 38-degree mineral water inside a building that's been standing since the Ottoman Empire. The quality is world-class. The prices are still catching up. That window won't stay open forever.</p>
+        <cite>&mdash; Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Quick Facts Strip -->
+  <section class="ft-quickfacts ft-reveal">
+    <div class="container-content">
+      <div class="ft-quickfacts-bar">
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Fine Dining</span>
+          <span class="ft-quickfact-value">&euro;80&ndash;200</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Thermal Bath VIP</span>
+          <span class="ft-quickfact-value">&euro;25&ndash;80</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Boutique Hotel</span>
+          <span class="ft-quickfact-value">&euro;180&ndash;400/nt</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Opera VIP</span>
+          <span class="ft-quickfact-value">&euro;15&ndash;80</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Wine Tasting</span>
+          <span class="ft-quickfact-value">&euro;20&ndash;60</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="ft-quicknav ft-reveal">
+    <div class="container-content">
+      <div class="ft-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="ft-quicknav-chip">
+            <span class="ft-quicknav-icon">{t.icon}</span>
+            <span class="ft-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Topic Sections -->
+  {topics.map((topic) => (
+    <section class="ft-topic ft-reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="ft-topic-header" style={`background: ${topic.gradient};`}>
+          <div class="ft-topic-header-inner">
+            <span class="ft-topic-icon">{topic.icon}</span>
+            <h2 class="ft-topic-title">{topic.title}</h2>
+            <span class="ft-topic-count">{topic.items.length} picks</span>
+          </div>
+        </div>
+
+        <div class="ft-tip-grid">
+          {topic.items.map((item) => (
+            <div class="ft-tip-card">
+              <h3 class="ft-tip-label">{item.label}</h3>
+              <p class="ft-tip-text" set:html={item.text} />
+              {item.link && (
+                <a href={item.link} class="ft-tip-link">Explore {item.label.split(',')[0]} &rarr;</a>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Scott's Pro Tips -->
+  <section class="ft-protips ft-reveal">
+    <div class="container-content">
+      <div class="ft-protips-card">
+        <h2 class="ft-protips-heading">Scott's Pro Tips</h2>
+        <div class="scott-tips">
+          <ul>
+            <li><strong>Book Restaurants Early:</strong> Michelin-starred restaurants in Prague and Budapest book out 2&ndash;3 weeks ahead, especially on weekends. Lunch tasting menus are often 30&ndash;40% cheaper than dinner with the same kitchen quality.</li>
+            <li><strong>Thermal Bath Strategy:</strong> Gellert and Szechenyi are busiest 11am&ndash;3pm on weekends. Go before 9am or after 5pm for a fraction of the crowd. Bring your own towel and flip-flops to avoid rental fees.</li>
+            <li><strong>Opera Hack:</strong> Budapest and Prague opera tickets can be purchased day-of at the box office for significant discounts. Dress code is relaxed compared to Vienna &mdash; smart casual is fine. Box seats often cost less than orchestra in Western Europe.</li>
+            <li><strong>Wine Regions by Car:</strong> Tokaj, Goriska Brda, and South Moravia are all best explored with a rental car or private driver. Public transport exists but limits you to one or two cellars. A private driver for the day runs &euro;100&ndash;150 &mdash; split with another couple and it's a bargain.</li>
+            <li><strong>Shoulder Season:</strong> April&ndash;May and September&ndash;October deliver the best luxury value. Hotels drop 30&ndash;50% from summer peaks, restaurants are easier to book, and the weather is ideal for walking tours.</li>
+            <li><strong>Currency Tips:</strong> Always pay in local currency (CZK, HUF, HRK, EUR depending on country). The "pay in your home currency" option at restaurants and hotels always includes a 3&ndash;7% markup. Carry euros as a backup &mdash; widely accepted in Slovenia, Croatia, and the Baltics.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="ft-faq ft-reveal">
+    <div class="container-content">
+      <h2 class="ft-faq-heading">Frequently Asked Questions</h2>
+      <div class="ft-faq-list">
+        <details class="ft-faq-item">
+          <summary class="ft-faq-question">Is Eastern Europe actually luxury-level quality?</summary>
+          <p class="ft-faq-answer">Absolutely. Budapest has more Michelin-starred restaurants than many Western European capitals. Prague's hotel scene rivals any city in Europe. The difference is price &mdash; you get Western quality at 40&ndash;60% of the cost. The thermal bath culture in Budapest is world-class and has been for centuries.</p>
+        </details>
+        <details class="ft-faq-item">
+          <summary class="ft-faq-question">What's the best city for a luxury long weekend?</summary>
+          <p class="ft-faq-answer">Budapest is the clear winner for a 3&ndash;4 day luxury trip. You get world-class dining, thermal baths, opera, river views, and boutique hotels in a compact, walkable city. Prague is a close second, and combining the two with a 2.5-hour train ride is the ultimate Central European luxury itinerary.</p>
+        </details>
+        <details class="ft-faq-item">
+          <summary class="ft-faq-question">Do I need to dress up for opera and fine dining?</summary>
+          <p class="ft-faq-answer">Smart casual is the baseline for both. Men should have a collared shirt and closed-toe shoes; women, a nice top and dress shoes. Black tie is not expected outside of gala nights. Michelin restaurants in Prague and Budapest are less formal than their Paris or London equivalents.</p>
+        </details>
+        <details class="ft-faq-item">
+          <summary class="ft-faq-question">When is the best time to visit for luxury travel?</summary>
+          <p class="ft-faq-answer">September and October offer the perfect combination: mild weather, harvest season wine events, start of the opera and ballet season, and hotel prices 30&ndash;40% below summer peaks. May is equally excellent before the summer crowds arrive.</p>
+        </details>
+        <details class="ft-faq-item">
+          <summary class="ft-faq-question">Are Danube river cruises worth the price?</summary>
+          <p class="ft-faq-answer">For the right traveler, yes. A 7-night Budapest-to-Amsterdam cruise with Viking or Uniworld is all-inclusive and covers four countries without unpacking twice. The value is in the convenience and the onboard experience. If you prefer independence, the same cities are easily connected by train for a fraction of the cost.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="ft-cta-section ft-reveal">
+    <div class="container-content">
+      <div class="ft-cta-card">
+        <h2 class="ft-cta-heading">Plan Your Luxury Eastern European Trip</h2>
+        <p class="ft-cta-text">Tell our AI planner your dates and interests &mdash; it'll build a custom itinerary with the best restaurants, hotels, and cultural experiences across Eastern Europe.</p>
+        <a href="/plan/" class="ft-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Capture -->
+  <div class="container-content ft-reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Eastern Europe Luxury Travel Guide"
+      description="Fine dining, thermal baths, opera, boutique hotels, and wine regions — packed into one PDF."
+      bullets={[
+        'Top Michelin restaurants in Prague, Budapest, and Ljubljana',
+        'VIP thermal bath experiences and booking tips',
+        'Boutique hotel picks across 13 Eastern European cities',
+        'Wine region itineraries for Tokaj, Moravia, and Goriska Brda',
+      ]}
+      guideTag="pillar-finer-things"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="ft-crosslinks ft-reveal">
+    <div class="container-content">
+      <h3 class="ft-crosslinks-heading">Explore More</h3>
+      <div class="ft-crosslinks-grid">
+        <a href="/cuisine/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127860;</span>
+          <span class="ft-crosslink-label">Food & Cuisine</span>
+          <span class="ft-crosslink-desc">Traditional dishes and regional specialties across Eastern Europe</span>
+        </a>
+        <a href="/hiking/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#9968;</span>
+          <span class="ft-crosslink-label">Hiking & Nature</span>
+          <span class="ft-crosslink-desc">Mountains, lakes, and national parks from the Tatras to the Julian Alps</span>
+        </a>
+        <a href="/history/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127963;</span>
+          <span class="ft-crosslink-label">History & Heritage</span>
+          <span class="ft-crosslink-desc">Castles, old towns, and centuries of Central European culture</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer (uses ft-reveal/ft-visible to avoid Tailwind .visible conflict) -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const ftRevealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('ft-visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.ft-reveal').forEach((el) => ftRevealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.ft-reveal').forEach((el) => el.classList.add('ft-visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO
+     ================================================================ */
+  .ft-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .ft-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #1A2332 0%, #4C1D95 40%, #D4A574 100%);
+  }
+
+  .ft-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .ft-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .ft-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .ft-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .ft-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .ft-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ft-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .ft-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .ft-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: ftBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes ftBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     PERSONAL INTRO
+     ================================================================ */
+  .ft-personal {
+    padding-block: var(--space-8);
+  }
+
+  .ft-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #D4A574;
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .ft-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .ft-personal-quote cite {
+    font-size: var(--text-caption);
+    color: #78350F;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     QUICK FACTS STRIP
+     ================================================================ */
+  .ft-quickfacts {
+    padding: 0 0 var(--space-4);
+  }
+
+  .ft-quickfacts-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-5);
+    background: var(--color-sky);
+    border-radius: 16px;
+    padding: var(--space-4) var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .ft-quickfact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+  }
+
+  .ft-quickfact-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-slate);
+  }
+
+  .ft-quickfact-value {
+    font-size: 1.05rem;
+    font-weight: var(--weight-extrabold);
+    color: var(--color-deep-night);
+  }
+
+  .ft-quickfact-divider {
+    width: 1px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  /* ================================================================
+     QUICK NAV
+     ================================================================ */
+  .ft-quicknav {
+    padding: 0 0 var(--space-6);
+  }
+
+  .ft-quicknav-grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .ft-quicknav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: var(--weight-medium);
+    color: #4A5568;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .ft-quicknav-chip:hover {
+    background: #FDF8F0;
+    color: #78350F;
+    transform: translateY(-2px);
+  }
+
+  .ft-quicknav-icon {
+    font-size: 1rem;
+  }
+
+  .ft-quicknav-label {
+    white-space: nowrap;
+  }
+
+  /* ================================================================
+     TOPIC SECTION
+     ================================================================ */
+  .ft-topic {
+    padding: var(--space-4) 0 var(--space-6);
+    scroll-margin-top: 80px;
+  }
+
+  .ft-topic-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-5) var(--space-6);
+    margin-bottom: var(--space-5);
+    overflow: hidden;
+  }
+
+  .ft-topic-header-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .ft-topic-icon {
+    font-size: 1.6rem;
+  }
+
+  .ft-topic-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .ft-topic-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /* ================================================================
+     TIP CARDS
+     ================================================================ */
+  .ft-tip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .ft-tip-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ft-tip-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    padding: var(--space-5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ft-tip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ft-tip-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-2);
+    line-height: 1.3;
+  }
+
+  .ft-tip-text {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .ft-tip-text :global(a) {
+    color: #78350F;
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(120, 53, 15, 0.3);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .ft-tip-text :global(a:hover) {
+    text-decoration-color: #78350F;
+  }
+
+  .ft-tip-link {
+    display: inline-block;
+    margin-top: var(--space-3);
+    font-size: 0.8rem;
+    font-weight: var(--weight-semibold);
+    color: #78350F;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .ft-tip-link:hover {
+    color: #D4A574;
+  }
+
+  /* ================================================================
+     SCOTT'S PRO TIPS
+     ================================================================ */
+  .ft-protips {
+    padding: var(--space-4) 0 var(--space-6);
+  }
+
+  .ft-protips-card {
+    background: linear-gradient(135deg, #1A2332 0%, #2D3748 100%);
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+  }
+
+  .ft-protips-heading {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #D4A574;
+    margin: 0 0 var(--space-4);
+  }
+
+  .ft-protips-card .scott-tips {
+    background: transparent;
+    border-left: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ft-protips-card .scott-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .ft-protips-card .scott-tips li {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.65;
+    padding-left: var(--space-4);
+    position: relative;
+  }
+
+  .ft-protips-card .scott-tips li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #D4A574;
+  }
+
+  .ft-protips-card .scott-tips :global(strong) {
+    color: #D4A574;
+    font-weight: var(--weight-semibold);
+  }
+
+  .ft-protips-card .scott-tips :global(a) {
+    color: #FB923C;
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(251, 146, 60, 0.4);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .ft-protips-card .scott-tips :global(a:hover) {
+    text-decoration-color: #FB923C;
+  }
+
+  /* ================================================================
+     FAQ SECTION
+     ================================================================ */
+  .ft-faq {
+    padding: var(--space-4) 0 var(--space-6);
+  }
+
+  .ft-faq-heading {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-5);
+  }
+
+  .ft-faq-list {
+    max-width: 720px;
+    margin: 0 auto;
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .ft-faq-item {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .ft-faq-question {
+    padding: var(--space-4) var(--space-5);
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .ft-faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .ft-faq-question::after {
+    content: '+';
+    float: right;
+    font-size: 1.2rem;
+    color: var(--color-slate);
+    transition: transform 0.2s ease;
+  }
+
+  .ft-faq-item[open] .ft-faq-question::after {
+    content: '\2212';
+  }
+
+  .ft-faq-answer {
+    padding: 0 var(--space-5) var(--space-4);
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .ft-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .ft-cta-card {
+    background: linear-gradient(135deg, #4C1D95 0%, #D4A574 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .ft-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .ft-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .ft-cta-button {
+    display: inline-block;
+    background: var(--color-deep-night);
+    color: #D4A574;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .ft-cta-button:hover {
+    background: #0D1117;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .ft-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .ft-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .ft-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .ft-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ft-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ft-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ft-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .ft-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: #1A2332;
+  }
+
+  .ft-crosslink-desc {
+    font-size: 0.78rem;
+    color: #4A5568;
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     SCROLL REVEAL
+     ================================================================ */
+  .ft-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ft-reveal.ft-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes ftRevealFallback {
+    to { opacity: 1; transform: none; }
+  }
+
+  .ft-reveal {
+    animation: ftRevealFallback 0s 3s forwards;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .ft-hero {
+      min-height: 50vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .ft-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .ft-scroll-hint {
+      display: none;
+    }
+
+    .ft-topic-header {
+      padding: var(--space-4) var(--space-4);
+    }
+
+    .ft-quickfacts-bar {
+      gap: var(--space-3);
+      padding: var(--space-3) var(--space-4);
+    }
+
+    .ft-quickfact-divider {
+      display: none;
+    }
+
+    .ft-quickfact {
+      min-width: 80px;
+    }
+
+    .ft-personal-quote {
+      padding: var(--space-4) var(--space-5);
+    }
+
+    .ft-protips-card {
+      padding: var(--space-5) var(--space-4);
+    }
+  }
+</style>
