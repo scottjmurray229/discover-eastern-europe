@@ -1,0 +1,338 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Eastern Europe Festival Calendar', url: '/festivals/' },
+];
+
+const pageTitle = 'Eastern Europe Festival Calendar 2026 — Events Worth Planning Your Trip Around';
+const pageDescription = "Prague Spring, Sziget Budapest, Exit Festival Serbia, Krakow Film Festival, Warsaw Film Festival — Eastern Europe's festivals combine world-class culture with some of Europe's most affordable and spectacular cities.";
+
+const festivals = [
+  {
+    name: 'Prague Spring International Music Festival',
+    location: 'Prague, Czech Republic',
+    dates: 'May (3 weeks)',
+    description: 'One of Europe\'s most prestigious classical music festivals — running since 1946, always opening on May 12 with a performance of Smetana\'s "Má vlast" in Smetana Hall at the Municipal House. The festival draws top orchestras and soloists from around the world for three weeks of concerts across Prague\'s magnificent concert halls and historic venues. The Rudolfinum, the National Theatre, and Smetana Hall are the primary stages. Tickets from €20–120. Prague in May is perfect — spring bloom, no August crowds, and the classical music world\'s attention focused on the city.',
+    tag: 'Classical Music',
+    gradient: 'linear-gradient(135deg, #B71C1C 0%, #880E4F 100%)',
+  },
+  {
+    name: 'Sziget Festival',
+    location: 'Budapest, Hungary (Óbuda Island)',
+    dates: 'August (7 days)',
+    description: 'The Island of Freedom — Europe\'s largest music and arts festival on a 108-hectare island in the Danube in Budapest. 500,000+ people from 100 countries descend for a week of music, art, theater, circus, yoga, and every form of cultural programming imaginable. Past headliners include David Bowie, The Strokes, Radiohead, Ed Sheeran, and Billie Eilish. The main stage is enormous; 50+ smaller stages cover everything from folk to electronic to jazz. Day tickets €130–160; 7-day passes €430+. Camping on the island is the only way to get the full Sziget experience.',
+    tag: 'Europe\'s Largest Fest',
+    gradient: 'linear-gradient(135deg, #1A237E 0%, #C62828 100%)',
+  },
+  {
+    name: 'Exit Festival',
+    location: 'Novi Sad, Serbia (Petrovaradin Fortress)',
+    dates: 'July (4 days)',
+    description: 'Exit started in 2000 as a student protest movement demanding democracy — it became a festival and never stopped. The setting is extraordinary: a 17th-century fortress above the Danube, stages carved into its medieval walls and courtyards, with the city of Novi Sad glittering below. Exit is one of Europe\'s most respected electronic and alternative music festivals, consistently hosting Aphex Twin, Nick Cave, Chemical Brothers, and the best of Europe\'s electronic underground. 200,000 attendees. 4-day passes €100–150 — extraordinary value compared to equivalent Western European festivals.',
+    tag: 'Festival of the Year',
+    gradient: 'linear-gradient(135deg, #006064 0%, #1565C0 100%)',
+  },
+  {
+    name: 'Krakow Film Festival',
+    location: 'Krakow, Poland',
+    dates: 'May – June (6 days)',
+    description: 'One of the oldest documentary and animated film festivals in Europe — running since 1961. Strong international selections with a particular depth in documentary filmmaking. The festival takes place in Krakow\'s beautiful historic city (a UNESCO World Heritage Site) across multiple cinema venues in the Old Town. Individual screenings from €5–10; accreditation passes for industry professionals and film enthusiasts. Krakow in late May is one of Central Europe\'s great travel experiences — Wawel Castle, Kazimierz (historic Jewish Quarter), and Poland\'s best food scene.',
+    tag: 'Film',
+    gradient: 'linear-gradient(135deg, #4A148C 0%, #E91E63 100%)',
+  },
+  {
+    name: 'Warsaw Film Festival',
+    location: 'Warsaw, Poland',
+    dates: 'October (10 days)',
+    description: 'Poland\'s largest film festival showcases 150+ films from around the world with a strong focus on discovering new directors and international co-productions. Warsaw\'s regenerated cinema scene provides excellent venues — the Kinoteka in the Palace of Culture, the Kino Praha, and multiple boutique art cinemas in the Śródmieście district. Individual screenings €5–8; festival passes available. October in Warsaw is crisp and atmospheric — the city\'s remarkable WWII history and revival are complemented perfectly by ten days of film culture.',
+    tag: 'Film',
+    gradient: 'linear-gradient(135deg, #BF360C 0%, #E64A19 100%)',
+  },
+  {
+    name: 'White Nights Festival',
+    location: 'St. Petersburg, Russia',
+    dates: 'Late May – mid July',
+    description: 'The cultural phenomenon of Russia\'s "White Nights" — when St. Petersburg\'s northern latitude means the sun barely sets between late May and mid-July, and the city erupts in continuous cultural celebration. The Mariinsky Theatre\'s White Nights Festival brings world-class ballet, opera, and orchestral performances. The Scarlet Sails celebration (late June) — a massive fireworks display over the Neva as a tall ship sails with scarlet sails — is the cultural spectacle of the Russian calendar. Note: access for Western travelers has been significantly restricted since 2022. Check current visa and entry requirements carefully before planning.',
+    tag: 'Cultural Spectacle',
+    gradient: 'linear-gradient(135deg, #1A237E 0%, #0097A7 100%)',
+  },
+  {
+    name: 'Romanian Medieval Festival',
+    location: 'Sighisoara, Romania',
+    dates: 'July (weekend)',
+    description: 'Sighisoara is one of the best-preserved medieval citadels in Europe — and the birthplace of Vlad the Impaler. The Medieval Festival fills its cobblestone streets with jousting, medieval craftsmen, period music, falconry displays, and theatrical performances for a weekend every July. The hilltop citadel at dusk with torchlight and costumed performers is genuinely atmospheric rather than theme-park. Sighisoara is in Transylvania, easily combined with Brasov, Sibiu, and the Saxon villages on a Romanian road trip.',
+    tag: 'Medieval Heritage',
+    gradient: 'linear-gradient(135deg, #4E342E 0%, #795548 100%)',
+  },
+  {
+    name: 'Budapest International Documentary Festival (BIDF)',
+    location: 'Budapest, Hungary',
+    dates: 'February',
+    description: 'Budapest\'s documentary film festival brings international and Hungarian documentary films to intimate screening venues across the city in February. Strong programming, accessible tickets, and the opportunity to discuss films with filmmakers at post-screening Q&As. Budapest in February is cold but the thermal baths, ruin bars, and remarkable food scene make it a compelling winter destination. BIDF is a discovery: a small festival in a great city that rewards the traveler who seeks it out.',
+    tag: 'Documentary Film',
+    gradient: 'linear-gradient(135deg, #263238 0%, #455A64 100%)',
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+
+<style>
+  .fest-hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 var(--space-6) 60px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1A0A2E 0%, #1A237E 50%, #006064 100%);
+  }
+  .fest-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.35; }
+  .fest-hero-gradient { position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,10,46,0.95) 0%, rgba(26,10,46,0.3) 60%, transparent 100%); }
+  .fest-hero-content { position: relative; z-index: 2; max-width: 760px; }
+  .fest-hero-eyebrow { font-size: 0.72rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.12em; color: #80DEEA; margin-bottom: var(--space-3); }
+  .fest-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.15; margin: 0 0 var(--space-4); }
+  .fest-hero-subtitle { font-size: clamp(1rem, 2vw, 1.2rem); color: rgba(255,255,255,0.82); line-height: 1.6; margin: 0 0 var(--space-6); max-width: 600px; }
+  .fest-hero-meta { display: flex; gap: var(--space-6); flex-wrap: wrap; }
+  .fest-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .fest-hero-meta-label { font-size: 0.68rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .fest-hero-meta-value { font-size: 1.4rem; font-weight: var(--weight-bold); color: #fff; }
+
+  .fest-personal { padding-block: var(--space-8); }
+  .fest-personal-quote { max-width: 720px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid #1976D2; background: var(--color-sky, #e8eaf6); border-radius: 0 12px 12px 0; }
+  .fest-personal-quote p { font-size: var(--text-body, 1.05rem); color: var(--color-heading, #1a2332); line-height: 1.7; font-style: italic; margin-bottom: var(--space-3); }
+  .fest-personal-quote cite { font-size: 0.85rem; color: #1565C0; font-weight: var(--weight-semibold); font-style: normal; }
+
+  .fest-section { padding: var(--space-6) 0 var(--space-10); }
+  .fest-section-heading { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); margin: 0 0 var(--space-2); text-align: center; }
+  .fest-section-sub { font-size: 1rem; color: var(--color-slate, #5a6a7a); text-align: center; margin: 0 0 var(--space-8); }
+
+  .fest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--space-6); }
+  .fest-card { border-radius: 20px; overflow: hidden; background: var(--color-white, #fff); box-shadow: 0 4px 20px rgba(0,0,0,0.07); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; }
+  .fest-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+  .fest-card-header { padding: var(--space-5) var(--space-5) var(--space-4); min-height: 130px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .fest-card-tag { display: inline-block; font-size: 0.65rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.9); background: rgba(255,255,255,0.18); backdrop-filter: blur(4px); padding: 3px 10px; border-radius: 20px; margin-bottom: var(--space-2); width: fit-content; }
+  .fest-card-name { font-size: 1.15rem; font-weight: var(--weight-bold); color: #fff; line-height: 1.3; margin: 0 0 4px; }
+  .fest-card-location { font-size: 0.78rem; color: rgba(255,255,255,0.75); font-weight: var(--weight-medium); }
+  .fest-card-body { padding: var(--space-4) var(--space-5) var(--space-5); flex: 1; display: flex; flex-direction: column; gap: var(--space-3); }
+  .fest-card-dates { display: flex; align-items: center; gap: var(--space-2); font-size: 0.8rem; font-weight: var(--weight-semibold); color: #1565C0; }
+  .fest-card-dates::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #1565C0; flex-shrink: 0; }
+  .fest-card-desc { font-size: 0.88rem; color: var(--color-body, #3d4d5e); line-height: 1.65; flex: 1; }
+
+  .fest-tips { padding: var(--space-8) 0; background: linear-gradient(135deg, #1A0A2E 0%, #1565C0 100%); }
+  .fest-tips-inner { max-width: 820px; margin: 0 auto; padding: 0 var(--space-6); }
+  .fest-tips-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); color: #fff; margin: 0 0 var(--space-6); text-align: center; }
+  .fest-tips-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-4); }
+  .fest-tip-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: var(--space-4) var(--space-5); }
+  .fest-tip-icon { font-size: 1.5rem; margin-bottom: var(--space-2); }
+  .fest-tip-title { font-size: 0.9rem; font-weight: var(--weight-bold); color: #fff; margin-bottom: var(--space-2); }
+  .fest-tip-text { font-size: 0.82rem; color: rgba(255,255,255,0.72); line-height: 1.6; }
+
+  .fest-cta-section { padding: var(--space-8) 0; }
+  .fest-cta-card { background: linear-gradient(135deg, #1A0A2E 0%, #006064 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .fest-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .fest-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .fest-cta-button { display: inline-block; background: #80DEEA; color: #1A0A2E; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .fest-cta-button:hover { background: #4DD0E1; transform: translateY(-2px); }
+
+  .fest-crosslinks { padding: 0 0 var(--space-10); }
+  .fest-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); text-align: center; margin: 0 0 var(--space-4); }
+  .fest-crosslinks-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); max-width: 640px; margin: 0 auto; }
+  .fest-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white, #fff); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .fest-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .fest-crosslink-icon { font-size: 1.8rem; }
+  .fest-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); }
+  .fest-crosslink-desc { font-size: 0.78rem; color: var(--color-slate, #5a6a7a); line-height: 1.4; }
+
+  @media (max-width: 640px) {
+    .fest-crosslinks-grid { grid-template-columns: 1fr; }
+    .fest-grid { grid-template-columns: 1fr; }
+    .fest-hero { padding: 0 var(--space-4) 40px; min-height: 55vh; }
+  }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+</style>
+
+  <header class="fest-hero">
+    <video class="fest-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/festivals-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="fest-hero-gradient"></div>
+    <div class="fest-hero-content">
+      <p class="fest-hero-eyebrow">Eastern Europe Events & Festivals</p>
+      <h1 class="fest-hero-title">Eastern Europe Festival Calendar 2026</h1>
+      <p class="fest-hero-subtitle">Prague Spring classical music, Sziget Festival on a Budapest island, Exit's medieval Serbian fortress, Krakow Film Festival in a UNESCO city — Eastern Europe delivers world-class events at a fraction of Western Europe's prices.</p>
+      <div class="fest-hero-meta">
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Events</span>
+          <span class="fest-hero-meta-value">8</span>
+        </div>
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Peak Season</span>
+          <span class="fest-hero-meta-value">May – Aug</span>
+        </div>
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Best Value</span>
+          <span class="fest-hero-meta-value">Exit / Sziget</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <section class="fest-personal reveal">
+    <div class="container-content">
+      <blockquote class="fest-personal-quote">
+        <p>Eastern Europe has the best value proposition in the festival world right now. You can attend Sziget in Budapest — genuinely one of Europe's top 3 music festivals by any measure — for about half what you'd pay for Glastonbury or Coachella, in a city with better architecture, better food, and thermal baths to recover in. Exit Festival at Petrovaradin Fortress in Novi Sad might be the single best festival setting in the world: a 17th-century military fortress above the Danube, stages built into its medieval walls, and a 4-day pass that costs less than a single-day Glastonbury ticket. These cities have been doing culture for 1,000 years. The festivals just give you a reason to show up at the right moment.</p>
+        <cite>— Scott Murray, Discover Eastern Europe</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="fest-section reveal">
+    <div class="container-content">
+      <h2 class="fest-section-heading">Eastern Europe's Top Festivals & Events</h2>
+      <p class="fest-section-sub">May through August is the peak window — spring and summer bring the best weather alongside the region's biggest cultural events.</p>
+      <div class="fest-grid">
+        {festivals.map((fest) => (
+          <div class="fest-card reveal">
+            <div class="fest-card-header" style={`background: ${fest.gradient};`}>
+              {fest.tag && <span class="fest-card-tag">{fest.tag}</span>}
+              <h3 class="fest-card-name">{fest.name}</h3>
+              <div class="fest-card-location">{fest.location}</div>
+            </div>
+            <div class="fest-card-body">
+              <div class="fest-card-dates">{fest.dates}</div>
+              <p class="fest-card-desc">{fest.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="fest-tips reveal">
+    <div class="fest-tips-inner">
+      <h2 class="fest-tips-heading">Scott's Eastern Europe Festival Tips</h2>
+      <div class="fest-tips-grid">
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127956;</div>
+          <div class="fest-tip-title">Sziget: camp on the island</div>
+          <p class="fest-tip-text">Sziget's island site means camping is the logical choice — you walk from tent to main stage in 10 minutes. Budapest hotels are more expensive and the daily commute adds up. The island camping experience, with the Danube on both sides and the city lights visible, is genuinely beautiful. Book camping with your pass months ahead.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127963;</div>
+          <div class="fest-tip-title">Exit: explore the fortress by day</div>
+          <p class="fest-tip-text">Petrovaradin Fortress is a tourist attraction in its own right with underground tunnels, a clock tower, and galleries. Go the afternoon before the festival opens to explore before the crowds arrive. The cliff-top views over Novi Sad and the Danube are spectacular. Exit's late-night stages run past dawn — sleep in, explore the fortress in the afternoon.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127929;</div>
+          <div class="fest-tip-title">Prague Spring: Municipal House is unmissable</div>
+          <p class="fest-tip-text">The festival opens every May 12 at Smetana Hall in the Municipal House — one of the most beautiful Art Nouveau concert halls in Europe. Even if you attend no other concerts, book a ticket to the opening night. The building alone is worth the price. Guided tours of the Municipal House run daily for those who can't get festival tickets.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127967;</div>
+          <div class="fest-tip-title">Eastern Europe: budget 40% less than Western Europe</div>
+          <p class="fest-tip-text">Accommodation, food, and transport in Poland, Hungary, Czech Republic, and Serbia cost roughly 40–60% less than comparable Western European cities. A great Budapest restaurant dinner runs €15–25. A Krakow hotel room in the Old Town runs €50–80. This changes the entire calculus of festival tourism — you can afford to do it properly.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127916;</div>
+          <div class="fest-tip-title">Krakow Film Festival: stay in Kazimierz</div>
+          <p class="fest-tip-text">Krakow's Kazimierz neighborhood (historic Jewish Quarter) is now the city's best area for restaurants, bars, and cafes. Festival screenings happen in the Old Town; staying in Kazimierz puts you 15 minutes walk from everything and in the most atmospheric part of the city. Jewish heritage sites, excellent coffee shops, and the city's best food scene within a few blocks.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127774;</div>
+          <div class="fest-tip-title">July–August: book accommodation early</div>
+          <p class="fest-tip-text">Budapest, Krakow, and Prague in peak summer fill up fast — partly from Sziget crowds (Budapest) and tourists in general. Book accommodation 3–4 months ahead for summer festival dates. Festivals in these cities overlap with high season tourism. Novi Sad for Exit is less competitive — book 2 months ahead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fest-cta-section reveal">
+    <div class="container-content">
+      <div class="fest-cta-card">
+        <h2 class="fest-cta-heading">Plan Your Eastern Europe Festival Trip</h2>
+        <p class="fest-cta-text">Build a multi-country Eastern Europe itinerary combining Sziget in Budapest, Exit in Novi Sad, Prague Spring, or Krakow Film Festival — with city exploration, castles, and the region's remarkable food and drink scene.</p>
+        <a href="/plan/" class="fest-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={[
+    { question: "What is Sziget Festival and how do I get tickets?", answer: "Sziget is a 7-day music and arts festival held on Óbuda Island in the Danube River in Budapest, Hungary, every August. It's one of Europe's largest festivals with 500,000+ attendees and consistently world-class headliners across 50+ stages. 7-day passes run €430–500 and go on sale in winter — buy by February for August. Camping on the island is strongly recommended over staying in city hotels. The island is accessible by ferry and foot bridge from Buda." },
+    { question: "What is Exit Festival in Serbia?", answer: "Exit is a 4-day music festival held at Petrovaradin Fortress above Novi Sad, Serbia, every July. It started in 2000 as a student democracy movement and became a festival — the name refers to 'Exit from the 10-year nightmare' of the Milosevic era. The fortress setting is arguably the most dramatic in European festival culture: medieval walls and courtyards transformed into stages. 4-day passes run €100–150 — exceptional value. The Festival has won multiple European Festival Awards." },
+    { question: "When is Prague Spring and what kind of music does it feature?", answer: "Prague Spring International Music Festival runs for three weeks in May, always opening on May 12 (anniversary of Smetana's death) with a performance of his 'Má vlast' cycle at Smetana Hall in the Municipal House. The festival features orchestral, chamber, solo piano, and vocal performances from international artists across Prague's finest concert venues. Tickets range from €20 for student/lunchtime concerts to €120 for main evening performances. Book popular concerts months in advance." },
+    { question: "Is Eastern Europe safe for festival travel?", answer: "Yes — Poland, Czech Republic, Hungary, and Serbia are all safe EU or EU-neighboring countries for travelers. Prague, Krakow, Budapest, and Novi Sad are all visited by millions of tourists annually. Standard urban precautions apply: watch for pickpockets in dense crowds, use official taxis or Bolt/Uber, and keep valuables secured. The main festival sites (Sziget island, Petrovaradin Fortress) have security and dedicated safety infrastructure." },
+    { question: "What is the Krakow Film Festival?", answer: "The Krakow Film Festival is one of the oldest competitive documentary and animated film festivals in Europe, running since 1961 in late May/early June. It screens 150+ films across 6 days with a competition program, retrospectives, and industry events. The festival takes place in Krakow's Old Town — a UNESCO World Heritage Site — across multiple cinema venues. Individual screenings run €5–10. Krakow is one of Central Europe's most beautiful and affordable cities to use as a festival base." },
+    { question: "How do I combine multiple Eastern Europe festivals in one trip?", answer: "Prague Spring (May) and Krakow Film Festival (late May/June) work well together — Prague to Krakow is 6 hours by train. Exit (July) and Sziget (August) are both summer events that can be combined with a Balkan road trip: Belgrade → Novi Sad (Exit) → Budapest (Sziget) is a classic route. The entire region has excellent inter-city train and bus connections, making multi-city festival trips logistically easy and very affordable compared to Western Europe." },
+  ]} />
+
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get the Eastern Europe Festival Planning Guide"
+      description="City-by-city breakdown of Eastern Europe's best festivals with ticket strategies, accommodation tips, and multi-country itinerary planning."
+      bullets={[
+        'Sziget camping guide — island logistics, what to bring, best stages',
+        'Exit Festival survival guide — fortress navigation and camping tips',
+        'Multi-country routing: Prague + Krakow + Budapest + Novi Sad',
+        'Budget breakdown — what everything costs in Eastern Europe vs. Western Europe',
+      ]}
+      guideTag="pillar-festivals-eastern-europe"
+    />
+  </div>
+
+  <section class="fest-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="fest-crosslinks-heading">Keep Exploring Eastern Europe</h3>
+      <div class="fest-crosslinks-grid">
+        <a href="/destinations/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127968;</span>
+          <span class="fest-crosslink-label">All Destinations</span>
+          <span class="fest-crosslink-desc">Prague, Budapest, Krakow, Bucharest — every city reviewed</span>
+        </a>
+        <a href="/hiking/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127956;</span>
+          <span class="fest-crosslink-label">Hiking & Outdoors</span>
+          <span class="fest-crosslink-desc">Tatras, Carpathians, and the mountains of the Balkans</span>
+        </a>
+        <a href="/cuisine/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127843;</span>
+          <span class="fest-crosslink-label">Eastern European Food</span>
+          <span class="fest-crosslink-desc">Pierogi, goulash, cevapi — the flavors of the region</span>
+        </a>
+        <a href="/history/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127963;</span>
+          <span class="fest-crosslink-label">History & Heritage</span>
+          <span class="fest-crosslink-desc">Empires, revolutions, and the remarkable history of the region</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
