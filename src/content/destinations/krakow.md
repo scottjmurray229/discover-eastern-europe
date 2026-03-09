@@ -2,6 +2,7 @@
 title: "Krakow"
 description: "Plan your Krakow trip covering Wawel Castle, Kazimierz, salt mines, and Poland's most charming city."
 heroImage: ""
+heroAlt: "Wawel Royal Castle and Rynek Główny cobblestone market square, Kraków, Poland"
 tagline: "Wawel Castle, Jewish Kazimierz, medieval Market Square, and the most atmospheric old city in Poland — and it survived WWII"
 region: "central-europe"
 bestMonths: ["May", "Jun", "Sep", "Oct"]

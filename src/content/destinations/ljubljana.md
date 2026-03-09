@@ -2,6 +2,7 @@
 title: "Ljubljana"
 description: "Discover Ljubljana's dragon-guarded bridges, hilltop castle, and green soul in Slovenia's charming capital."
 heroImage: ""
+heroAlt: "Ljubljana Castle and Triple Bridge above the Ljubljanica River, Slovenia"
 tagline: "A triple bridge, a castle with a dragon legend, the world's most walkable capital, and only 280,000 people — Slovenia's perfect city"
 region: "central-europe"
 bestMonths: ["May", "Jun", "Sep", "Oct"]

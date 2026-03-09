@@ -2,6 +2,7 @@
 title: "Tallinn"
 description: "Explore Tallinn's medieval Old Town, creative Telliskivi district, and thriving digital nomad scene in Estonia."
 heroImage: ""
+heroAlt: "Medieval Toompea Castle and red-roofed Old Town of Tallinn, Estonia"
 tagline: "The most perfectly preserved medieval old town in Europe, under UNESCO protection — and a startup ecosystem that put Estonia on the tech map"
 region: "baltics"
 bestMonths: ["May", "Jun", "Sep", "Oct"]

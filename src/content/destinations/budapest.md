@@ -2,6 +2,7 @@
 title: "Budapest"
 description: "Explore Budapest's thermal baths, ruin bars, and Danube panoramas — your guide to Hungary's affordable capital."
 heroImage: ""
+heroAlt: "Hungarian Parliament Building and Chain Bridge illuminated over the Danube at night"
 tagline: "Ruin bars, thermal baths in neo-Baroque splendour, the Chain Bridge at night, and a Danube-divided city that perfected melancholy beauty"
 region: "central-europe"
 bestMonths: ["May", "Jun", "Sep", "Oct"]

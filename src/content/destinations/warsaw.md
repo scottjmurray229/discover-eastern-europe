@@ -2,6 +2,7 @@
 title: "Warsaw"
 description: "Discover Warsaw — Poland's resilient capital, rebuilt from rubble after WWII, now a vibrant European city of world-class museums, WWII history, and a surprisingly excellent food scene."
 heroImage: ""
+heroAlt: "Reconstructed Old Town Market Square and Royal Castle of Warsaw, Poland"
 tagline: "Rebuilt from rubble after 85% destruction in WWII — Warsaw's comeback is the most remarkable urban story in Europe"
 region: "central-europe"
 bestMonths: ["May", "Jun", "Sep", "Oct"]

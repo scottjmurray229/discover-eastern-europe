@@ -2,6 +2,7 @@
 title: "Vilnius"
 description: "Wander Vilnius's Baroque Old Town, discover the quirky Uzupis Republic, and enjoy affordable Lithuanian charm."
 heroImage: ""
+heroAlt: "Gediminas Tower and Baroque cathedral square of Vilnius Old Town, Lithuania"
 tagline: "Baroque old town, the self-declared Republic of Užupis, Frank Zappa's statue, and the most surprising capital in the Baltics"
 region: "baltics"
 bestMonths: ["May", "Jun", "Sep", "Oct"]

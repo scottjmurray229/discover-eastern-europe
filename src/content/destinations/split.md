@@ -2,6 +2,7 @@
 title: "Split"
 description: "Explore Split's Diocletian's Palace, Adriatic coastline, and island-hopping from Croatia's vibrant port city."
 heroImage: ""
+heroAlt: "Diocletian's Palace golden gate and Promenade above the Adriatic, Split, Croatia"
 tagline: "Diocletian's Palace is not a ruin — 3,000 people live and work inside it. The most extraordinary inhabited Roman palace in the world"
 region: "balkans"
 bestMonths: ["May", "Jun", "Sep", "Oct"]
