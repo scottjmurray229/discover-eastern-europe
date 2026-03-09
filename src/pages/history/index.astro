@@ -6,11 +6,11 @@ import FAQ from '../../components/FAQ.astro';
 
 const breadcrumbs = [
   { name: 'Home', url: '/' },
-  { name: 'Eastern European History', url: '/history/' },
+  { name: 'WWII & Cold War History', url: '/history/' },
 ];
 
-const pageTitle = 'Eastern European History — Empires, Revolutions & the Iron Curtain';
-const pageDescription = 'From Roman frontiers and Ottoman sieges to the fall of the Berlin Wall — trace the history that shaped Eastern Europe through the places where it happened.';
+const pageTitle = "WWII & the Iron Curtain — Eastern Europe's History Trail";
+const pageDescription = "From the Warsaw Uprising to the fall of the Berlin Wall — a guide to Eastern Europe's WWII and Cold War history sites across Poland, Czech Republic, Hungary, and beyond.";
 
 interface TimelineEvent {
   date: string;
@@ -21,151 +21,234 @@ interface TimelineEvent {
   description: string;
   whatToSee?: string;
   side: 'left' | 'right';
-  era: 'medieval' | 'empire' | 'worldwar' | 'coldwar' | 'modern';
+  era: 'invasion' | 'resistance' | 'liberation' | 'iron-curtain' | 'legacy';
 }
 
 const timeline: TimelineEvent[] = [
   {
-    date: '9th–14th Century',
-    year: 900,
-    title: 'Medieval Kingdoms Emerge',
-    location: 'Prague, Krakow, Budapest',
-    slug: ['prague', 'krakow', 'budapest'],
-    description: 'The medieval period saw the rise of powerful kingdoms across Central Europe. The Bohemian Kingdom centered in Prague, the Polish Crown in Krakow, and the Kingdom of Hungary in Buda all competed for dominance. Gothic cathedrals, royal castles, and walled old towns from this era still define these capitals today.',
-    whatToSee: 'Prague Castle (founded 870 AD), Wawel Castle in Krakow, Buda Castle in Budapest. The old towns of all three cities preserve their medieval street plans.',
-    side: 'left',
-    era: 'medieval',
-  },
-  {
-    date: '1219–1346',
-    year: 1219,
-    title: 'The Baltic Crusades & Hanseatic League',
-    location: 'Tallinn, Riga',
-    slug: ['tallinn', 'riga'],
-    description: 'Northern Crusaders brought Christianity to the Baltic region by force, founding fortified cities that became wealthy Hanseatic trading posts. Tallinn and Riga grew rich on trade between East and West, building the magnificent merchant houses and guild halls that survive today.',
-    whatToSee: 'Tallinn\'s remarkably preserved medieval Old Town, a UNESCO World Heritage Site. Riga\'s House of the Blackheads and the Great Guild Hall.',
-    side: 'right',
-    era: 'medieval',
-  },
-  {
-    date: '14th–15th Century',
-    year: 1386,
-    title: 'The Polish-Lithuanian Commonwealth',
-    location: 'Krakow, Vilnius',
-    slug: ['krakow', 'vilnius'],
-    description: 'The Union of Krewo (1385) joined Poland and Lithuania into Europe\'s largest state, stretching from the Baltic to the Black Sea. Vilnius became a major cultural center, and Krakow\'s Jagiellonian University (founded 1364) educated Copernicus. This golden age produced some of the finest Gothic and Renaissance architecture in Eastern Europe.',
-    whatToSee: 'Vilnius University and its baroque courtyards, Krakow\'s Jagiellonian University Museum, the Gate of Dawn in Vilnius.',
-    side: 'left',
-    era: 'medieval',
-  },
-  {
-    date: '1453–1683',
-    year: 1453,
-    title: 'Ottoman Expansion into the Balkans',
-    location: 'Belgrade, Sofia, Bucharest',
-    slug: ['belgrade', 'sofia', 'bucharest'],
-    description: 'The Ottoman Empire conquered most of the Balkans, ruling for centuries and leaving a profound cultural imprint. Sofia became an Ottoman administrative center, Belgrade was a contested frontier fortress, and the Romanian principalities became vassal states. Ottoman mosques, hammams, and bazaars still dot the landscape.',
-    whatToSee: 'The Banya Bashi Mosque in Sofia (1576), Belgrade Fortress where Ottoman and Serbian armies clashed, and Bucharest\'s Old Town caravanserais.',
-    side: 'right',
-    era: 'empire',
-  },
-  {
-    date: '1526–1918',
-    year: 1526,
-    title: 'The Habsburg Empire',
-    location: 'Prague, Budapest, Bratislava, Ljubljana',
-    slug: ['prague', 'budapest', 'bratislava', 'ljubljana'],
-    description: 'After defeating Hungary at Mohacs (1526), the Habsburgs built a vast Central European empire. Prague, Bratislava, and Ljubljana became Habsburg administrative centers. Budapest was transformed into a grand imperial capital with boulevards, thermal baths, and the stunning Parliament building. This era gave Eastern Europe its baroque palaces, coffeehouses, and opera houses.',
-    whatToSee: 'The Hungarian Parliament in Budapest, Prague\'s baroque churches, Bratislava Castle, and Ljubljana\'s Preseren Square architecture.',
-    side: 'left',
-    era: 'empire',
-  },
-  {
-    date: '1867–1914',
-    year: 1867,
-    title: 'The Art Nouveau Golden Age',
-    location: 'Riga, Prague, Budapest',
-    slug: ['riga', 'prague', 'budapest'],
-    description: 'The decades before WWI were a cultural flowering. Riga became the Art Nouveau capital of Europe, with over 800 buildings in the style. Budapest\'s grand cafes and thermal bath palaces were built. Prague\'s Alfons Mucha defined an entire artistic movement. This was the belle epoque of Central and Eastern Europe.',
-    whatToSee: 'Riga\'s Alberta Street (Europe\'s finest Art Nouveau collection), Budapest\'s Gellert and Szechenyi thermal baths, Prague\'s Municipal House.',
-    side: 'right',
-    era: 'empire',
-  },
-  {
-    date: '1914–1918',
-    year: 1914,
-    title: 'World War I & the Fall of Empires',
-    location: 'Belgrade, Prague, Budapest',
-    slug: ['belgrade', 'prague', 'budapest'],
-    description: 'The assassination of Archduke Franz Ferdinand in Sarajevo (1914) triggered WWI. The war destroyed the Habsburg, Ottoman, and Russian empires and redrew the map of Eastern Europe. New nations emerged: Czechoslovakia, Yugoslavia, Poland regained independence, and the Baltic states declared sovereignty for the first time.',
-    whatToSee: 'Belgrade\'s Kalemegdan Fortress military museum, Prague\'s National Memorial on Vitkov Hill.',
-    side: 'left',
-    era: 'worldwar',
-  },
-  {
-    date: '1939–1945',
+    date: 'September 1, 1939',
     year: 1939,
-    title: 'World War II & the Holocaust',
-    location: 'Krakow, Budapest, Tallinn, Vilnius',
-    slug: ['krakow', 'budapest', 'tallinn', 'vilnius'],
-    description: 'WWII devastated Eastern Europe. Poland lost six million citizens. Budapest\'s Jewish quarter was made a ghetto, and the city endured a brutal siege. The Baltic states were occupied first by the Soviets, then the Nazis, then the Soviets again. The Holocaust destroyed centuries-old Jewish communities across the region.',
-    whatToSee: 'Auschwitz-Birkenau Memorial near Krakow (essential visit), Budapest\'s Shoes on the Danube memorial, Vilnius\'s Paneriai Holocaust memorial, Tallinn\'s Museum of Occupations.',
-    side: 'right',
-    era: 'worldwar',
+    title: 'Germany Invades Poland — WWII Begins',
+    location: 'Warsaw, Poland',
+    slug: 'warsaw',
+    description: 'At 4:45am, Germany launched a full invasion of Poland from the west. The pretext — a staged attack on a German radio station — was pure fabrication. 1.5 million German troops crossed the Polish border on a front 1,800 kilometers long. The Luftwaffe bombed Warsaw immediately. Britain and France declared war on Germany two days later. World War II had begun.',
+    whatToSee: 'The Warsaw Rising Museum (Museum Powstania Warszawskiego) is one of Europe\'s finest war museums, covering both the 1939 invasion and the 1944 uprising. The Old Town, which was rebuilt brick by brick after total destruction, is a living monument to Polish resilience.',
+    side: 'left',
+    era: 'invasion',
   },
   {
-    date: '1945–1989',
+    date: 'September 17, 1939',
+    year: 1939,
+    title: 'The Soviet Invasion — Poland Carved Between Two Powers',
+    location: 'Eastern Poland',
+    description: 'Following a secret protocol in the Molotov-Ribbentrop Pact, the Soviet Union invaded Poland from the east. Poland was divided between Nazi Germany and the USSR. The Polish government fled into exile. Soviet forces deported hundreds of thousands of Poles to Siberia and Central Asia. In 1940, Soviet secret police massacred approximately 22,000 Polish military officers, police, and intellectuals in the Katyn Forest — a crime denied by the USSR until 1990.',
+    side: 'right',
+    era: 'invasion',
+  },
+  {
+    date: '1940',
+    year: 1940,
+    title: 'The Warsaw Ghetto Established',
+    location: 'Warsaw, Poland',
+    slug: 'warsaw',
+    description: 'The Nazis forced Warsaw\'s Jewish population — over 400,000 people, the largest Jewish community in Europe — into a walled ghetto of 3.4 square kilometers. Conditions were deliberately lethal: rations set below starvation level, no heating, epidemic disease. By the time deportations to Treblinka extermination camp began in 1942, over 100,000 ghetto residents had already died of starvation and disease.',
+    whatToSee: 'The POLIN Museum of the History of Polish Jews occupies the site of the former ghetto. It is one of the world\'s finest Jewish history museums — an extraordinary archive of 1,000 years of Jewish life in Poland, and an unflinching account of its destruction. The Ghetto Wall Fragment on Sienna Street is one of the few original ghetto wall sections still standing.',
+    side: 'left',
+    era: 'invasion',
+  },
+  {
+    date: 'June 14, 1940',
+    year: 1940,
+    title: 'Auschwitz Opens',
+    location: 'Oswiecim (Auschwitz), Poland',
+    slug: 'krakow',
+    description: 'The Auschwitz concentration camp opened in a former Polish army barracks, initially for Polish political prisoners. It expanded rapidly: Auschwitz II-Birkenau, built in 1941–1942, became the largest extermination camp in the Nazi system. Between 1940 and 1945, approximately 1.1 million people were murdered here — 90% of them Jewish. The camp complex is 45 minutes from Krakow.',
+    whatToSee: 'The Auschwitz-Birkenau Memorial and Museum requires advance ticket booking (free entry to the museum; tickets mandatory for the guided tour during peak season). Allow a full day. Auschwitz I has the famous "Arbeit Macht Frei" gate and Block 11 punishment block. Birkenau (Auschwitz II) is larger and more desolate — the scale becomes comprehensible only when you walk it.',
+    side: 'right',
+    era: 'resistance',
+  },
+  {
+    date: 'January 20, 1942',
+    year: 1942,
+    title: 'The Wannsee Conference — Eastern Europe Sealed for Genocide',
+    location: 'Berlin / Eastern Europe',
+    description: 'The Wannsee Conference coordinated the systematic murder of Europe\'s Jews. Most of the extermination camps — Treblinka, Sobibor, Belzec, Chelmno, Majdanek, Auschwitz-Birkenau — were located in occupied Poland, deliberately placed in the east where the largest Jewish populations lived. Of the six extermination camps in the Nazi system, all six were on Polish territory.',
+    side: 'left',
+    era: 'resistance',
+  },
+  {
+    date: 'April 19 – May 16, 1943',
+    year: 1943,
+    title: 'Warsaw Ghetto Uprising',
+    location: 'Warsaw, Poland',
+    slug: 'warsaw',
+    description: 'When the Nazis began the final liquidation of the Warsaw Ghetto in April 1943, the remaining 60,000 Jewish residents fought back. Poorly armed fighters held off SS forces for nearly a month — far longer than Poland\'s entire armed forces had resisted in 1939. The uprising was crushed; the ghetto was burned to the ground. The fighters knew they could not win. They fought for dignity and the historical record.',
+    whatToSee: 'The Warsaw Ghetto Heroes Monument stands at the center of what was the ghetto, marking the command bunker of the uprising. The POLIN Museum next door contains detailed documentation of the uprising. A path of remembrance with 16 granite stones connects key ghetto sites.',
+    side: 'right',
+    era: 'resistance',
+  },
+  {
+    date: 'August 1 – October 2, 1944',
+    year: 1944,
+    title: 'The Warsaw Uprising — 63 Days',
+    location: 'Warsaw, Poland',
+    slug: 'warsaw',
+    description: 'As Soviet forces approached Warsaw from the east, the Polish Home Army launched an uprising against German occupation — hoping to liberate the city before the Soviets arrived and establish a non-Communist Polish government. The Soviets halted their advance and watched. After 63 days of brutal street fighting, the uprising was crushed. The Nazis then systematically destroyed 85% of Warsaw, building by building. 200,000 Polish civilians died.',
+    whatToSee: 'The Warsaw Rising Museum (Muzeum Powstania Warszawskiego) is essential — emotionally powerful and historically comprehensive. The ruins of the Old Town were rebuilt to their pre-war appearance using historical records and photographs, creating a city that is both authentic and reconstructed.',
+    side: 'left',
+    era: 'resistance',
+  },
+  {
+    date: 'January 27, 1945',
     year: 1945,
+    title: 'Liberation of Auschwitz',
+    location: 'Oswiecim (Auschwitz), Poland',
+    slug: 'krakow',
+    description: 'Soviet forces liberated Auschwitz-Birkenau, finding approximately 7,000 survivors — the others had been marched west in the Death Marches as Germany retreated. Soviet military photographers documented what they found. The images and testimony of survivors, combined with the physical evidence of the camp, would become the most thoroughly documented genocide in history. January 27 is now International Holocaust Remembrance Day.',
+    side: 'right',
+    era: 'liberation',
+  },
+  {
+    date: 'May 5, 1945',
+    year: 1945,
+    title: 'Prague Uprising — The Last Days',
+    location: 'Prague, Czech Republic',
+    slug: 'prague',
+    description: 'As Germany collapsed, Czech resistance fighters launched an uprising in Prague on May 5, 1945. The Soviet Army arrived on May 9 — the last major European capital to be liberated. The Czech government-in-exile had spent the war in London; its return began an uneasy period of political competition between democratic and Communist factions that would be resolved in 1948 by a Communist coup.',
+    whatToSee: 'Prague\'s Old Town largely survived the war intact — one of Central Europe\'s most complete medieval and baroque city centers. The National Memorial on Vitkov Hill commemorates the Czech resistance. The Terezin concentration camp, 60km from Prague, was where Czech Jews were held before deportation east.',
+    side: 'left',
+    era: 'liberation',
+  },
+  {
+    date: '1945–1948',
+    year: 1946,
     title: 'The Iron Curtain Descends',
-    location: 'Prague, Budapest, Bucharest, Sofia',
-    slug: ['prague', 'budapest', 'bucharest', 'sofia'],
-    description: 'After WWII, Soviet-backed communist regimes took power across Eastern Europe. The Iron Curtain divided the continent for 44 years. Daily life was shaped by state control, secret police surveillance, and economic central planning. Yet resistance simmered — Hungary\'s 1956 uprising and Czechoslovakia\'s 1968 Prague Spring were brutally suppressed but never forgotten.',
-    whatToSee: 'Prague\'s Museum of Communism, Budapest\'s House of Terror (former secret police HQ), Bucharest\'s Palace of the Parliament (Ceausescu\'s megalomaniac project), Sofia\'s Museum of Socialist Art.',
-    side: 'left',
-    era: 'coldwar',
+    location: 'Eastern Europe',
+    description: 'As WWII ended, the Soviet Union established control across Eastern Europe — Poland, Czechoslovakia, Hungary, Romania, Bulgaria, and East Germany became Soviet satellite states with Communist governments installed by Moscow. Winston Churchill described the division in his famous 1946 speech: "An iron curtain has descended across the Continent." Eastern Europe would remain under Soviet domination for 44 years.',
+    side: 'right',
+    era: 'iron-curtain',
   },
   {
-    date: '1989',
+    date: 'October 23 – November 10, 1956',
+    year: 1956,
+    title: 'Hungarian Revolution — Crushed by Soviet Tanks',
+    location: 'Budapest, Hungary',
+    slug: 'budapest',
+    description: 'Hungarians rose up against Soviet occupation — tearing down Stalin\'s statue in Budapest and briefly establishing a multi-party government. Soviet tanks rolled into Budapest on November 4. The revolution was crushed in two weeks; 2,500 Hungarians died, 200,000 fled as refugees. The West, distracted by the simultaneous Suez Crisis, did not intervene. The failure of the Hungarian Revolution showed the limits of Western support for Eastern European freedom.',
+    whatToSee: 'The Terror Háza (House of Terror) museum on Andrassy Avenue was the headquarters of both the Arrow Cross (Hungarian Fascists) and the AVH (Communist secret police). The building\'s exterior still bears the arrow cross and Soviet star symbols. The exhibition covers both fascist and communist terror — required visiting in Budapest.',
+    side: 'left',
+    era: 'iron-curtain',
+  },
+  {
+    date: 'August 20–21, 1968',
+    year: 1968,
+    title: 'The Prague Spring — Warsaw Pact Invasion',
+    location: 'Prague, Czech Republic',
+    slug: 'prague',
+    description: 'Czechoslovak Communist Party leader Alexander Dubcek introduced sweeping reforms — "Socialism with a Human Face" — including freedom of the press and political pluralism. The Soviet Union viewed this as an existential threat. In August 1968, 500,000 Warsaw Pact troops invaded Czechoslovakia overnight. Dubcek was arrested and flown to Moscow. The Prague Spring was over. The invasion traumatized a generation of Czechs and Slovaks.',
+    whatToSee: 'Wenceslas Square in Prague is where crowds gathered to protest the invasion in 1968 — and where Jan Palach burned himself to death in protest in 1969. The Museum of Communism in Prague documents daily life under the regime.',
+    side: 'right',
+    era: 'iron-curtain',
+  },
+  {
+    date: 'August 31, 1980',
+    year: 1980,
+    title: 'Solidarity — The Beginning of the End',
+    location: 'Gdansk, Poland',
+    slug: 'gdansk',
+    description: 'Workers at the Lenin Shipyard in Gdansk launched a strike that sparked a nationwide movement. Led by electrician Lech Walesa, the Solidarity trade union became the first independent labor union in the Soviet bloc — and rapidly became a mass social movement of ten million members. Solidarity represented the moment ordinary Eastern Europeans began collectively refusing Soviet domination. The Polish government\'s attempt to suppress it in 1981 failed; the movement survived underground.',
+    whatToSee: 'The European Solidarity Centre (ECS) in Gdansk is built on the site of the original Lenin Shipyard. It is one of Europe\'s finest contemporary history museums — comprehensive, emotionally powerful, and beautifully designed. The original gate and monument to the 1970 shipyard workers\' massacre stand outside.',
+    side: 'left',
+    era: 'iron-curtain',
+  },
+  {
+    date: 'June 4, 1989',
     year: 1989,
-    title: 'The Velvet Revolution & Fall of the Wall',
-    location: 'Prague, Budapest, Bucharest',
-    slug: ['prague', 'budapest', 'bucharest'],
-    description: 'In a stunning cascade, communist regimes fell across Eastern Europe in 1989. Hungary opened its border with Austria in May, triggering a flood of East German refugees. Czechoslovakia\'s Velvet Revolution was led by playwright Vaclav Havel. Romania\'s revolution was the only violent one — Ceausescu was overthrown and executed. The Baltic states formed a human chain of two million people stretching from Tallinn to Vilnius.',
-    whatToSee: 'Prague\'s Wenceslas Square (center of the Velvet Revolution), the Singing Revolution exhibition in Tallinn, Budapest\'s statue of Imre Nagy (1956 revolution leader).',
+    title: 'Poland\'s Free Elections — Communism\'s First Defeat',
+    location: 'Warsaw, Poland',
+    slug: 'warsaw',
+    description: 'After years of negotiation between the Communist government and Solidarity, Poland held semi-free elections on June 4, 1989. Solidarity won 99 of 100 Senate seats and every contested Sejm seat. It was the first free election in the Soviet bloc — and the first peaceful transfer of power away from Communism. Poland\'s breakthrough triggered a cascade: Hungary opened its borders, East Germans fled through Austria, and the Berlin Wall fell.',
+    whatToSee: 'The Solidarity offices in Warsaw and the roundtable table where negotiations took place are preserved. The poster of Gary Cooper as a Solidarity voter — designed by Tomasz Sarnecki — became one of the iconic images of 1989.',
     side: 'right',
-    era: 'modern',
+    era: 'legacy',
   },
   {
-    date: '1991',
-    year: 1991,
-    title: 'Yugoslav Wars & Croatian Independence',
-    location: 'Dubrovnik, Split',
-    slug: ['dubrovnik', 'split'],
-    description: 'The breakup of Yugoslavia led to devastating wars throughout the 1990s. Dubrovnik, the "Pearl of the Adriatic," was besieged and shelled in 1991-92. Croatia, Slovenia, and other republics fought for and won independence. The careful restoration of Dubrovnik\'s Old Town became a symbol of recovery and resilience.',
-    whatToSee: 'Dubrovnik\'s War Photo Limited gallery, the Memorial Room of Dubrovnik Defenders, damaged buildings with visible repair work in the Old Town walls.',
+    date: 'November 17–December 29, 1989',
+    year: 1989,
+    title: 'The Velvet Revolution — Prague',
+    location: 'Prague, Czech Republic',
+    slug: 'prague',
+    description: 'After police brutally beat student protesters on November 17, mass demonstrations swept Czechoslovakia. Within weeks, the Communist government resigned without violence. Playwright and dissident Vaclav Havel was elected president. The transition was so peaceful it became known as the Velvet Revolution. Prague in November 1989 was one of the great moments of the 20th century.',
+    whatToSee: 'Wenceslas Square is where the crowds gathered in 1989 — where Havel addressed half a million people. The statue of St. Wenceslas has been a focal point of Czech protest for over a century. Letna Park above the city had a massive metronome built where Stalin\'s statue once stood.',
     side: 'left',
-    era: 'modern',
+    era: 'legacy',
   },
   {
-    date: '2004–2013',
-    year: 2004,
-    title: 'EU Accession & a New Chapter',
-    location: 'All Destinations',
-    slug: ['prague', 'budapest', 'krakow', 'tallinn', 'riga', 'vilnius', 'ljubljana', 'bratislava', 'sofia', 'bucharest', 'dubrovnik'],
-    description: 'EU membership transformed Eastern Europe. The 2004 "Big Bang" enlargement brought in Poland, Czech Republic, Hungary, Slovakia, Slovenia, Estonia, Latvia, and Lithuania. Romania and Bulgaria joined in 2007; Croatia in 2013. Schengen membership, EU funding, and open borders brought unprecedented prosperity, renovation of historic centers, and a tourism boom.',
-    whatToSee: 'The visible transformation is everywhere — beautifully restored old towns, modern infrastructure, and thriving cultural scenes in every capital.',
+    date: 'Present Day',
+    year: 2025,
+    title: 'Eastern Europe — The Weight of the 20th Century',
+    location: 'Krakow, Poland',
+    slug: 'krakow',
+    description: 'Eastern Europe carries the weight of the 20th century more visibly than almost anywhere on Earth. Krakow is 45 minutes from Auschwitz. Warsaw\'s Old Town is a meticulously reconstructed memory of a city that was deliberately destroyed. Budapest\'s Terror Háza sits in a beautiful street that was the headquarters of two successive totalitarian regimes. The history here is not distant. It is the foundation beneath every cobblestone.',
+    whatToSee: 'A circuit of Krakow, Warsaw, Prague, and Budapest — connected by train in 7–10 days — is one of Europe\'s great history journeys. Krakow is the base for Auschwitz. Warsaw has the rising museums and Jewish history. Prague has the Cold War legacy and medieval preservation. Budapest has the Terror Háza and Hungarian revolution sites.',
     side: 'right',
-    era: 'modern',
+    era: 'legacy',
   },
 ];
 
-const eraLabels: Record<string, { label: string; color: string }> = {
-  medieval: { label: 'Medieval', color: '#78350F' },
-  empire: { label: 'Imperial Era', color: '#6A1B9A' },
-  worldwar: { label: 'World Wars', color: '#C62828' },
-  coldwar: { label: 'Cold War', color: '#1565C0' },
-  modern: { label: 'Modern Era', color: '#0D7377' },
+const eraLabels: Record<string, string> = {
+  'invasion': 'Invasion & Occupation — 1939–1941',
+  'resistance': 'Resistance & Genocide — 1941–1944',
+  'liberation': 'Liberation — 1944–1945',
+  'iron-curtain': 'The Iron Curtain — 1945–1989',
+  'legacy': 'Freedom & Memory',
 };
+
+const eraGradients: Record<string, string> = {
+  'invasion': 'linear-gradient(135deg, #B71C1C, #D32F2F)',
+  'resistance': 'linear-gradient(135deg, #4A5568, #2D3748)',
+  'liberation': 'linear-gradient(135deg, #1B5E20, #388E3C)',
+  'iron-curtain': 'linear-gradient(135deg, #1A237E, #283593)',
+  'legacy': 'linear-gradient(135deg, #0D7377, #4DB6AC)',
+};
+
+const eraColors: Record<string, string> = {
+  'invasion': '#D32F2F',
+  'resistance': '#718096',
+  'liberation': '#388E3C',
+  'iron-curtain': '#3949AB',
+  'legacy': '#0D7377',
+};
+
+const geoLookup: Record<string, { lat: number; lng: number }> = {
+  krakow: { lat: 50.0647, lng: 19.9450 },
+  warsaw: { lat: 52.2297, lng: 21.0122 },
+  prague: { lat: 50.0755, lng: 14.4378 },
+  budapest: { lat: 47.4979, lng: 19.0402 },
+  gdansk: { lat: 54.3520, lng: 18.6466 },
+};
+
+const wwiiMapMarkers = timeline
+  .filter(e => e.slug)
+  .map(e => {
+    const slugs = Array.isArray(e.slug) ? e.slug : [e.slug!];
+    const primarySlug = slugs[0];
+    const geo = geoLookup[primarySlug];
+    if (!geo) return null;
+    return {
+      lat: geo.lat,
+      lng: geo.lng,
+      title: e.title,
+      date: e.date,
+      location: e.location,
+      era: e.era,
+      color: eraColors[e.era],
+      url: `/destinations/${primarySlug}/`,
+    };
+  })
+  .filter(Boolean);
+
+const ww2CardVideos = Array.from({ length: 7 }, (_, i) => `/videos/pillar/ww2-card-${i + 1}.mp4`);
 ---
 <BaseLayout
   title={pageTitle}
@@ -175,31 +258,31 @@ const eraLabels: Record<string, { label: string; color: string }> = {
   breadcrumbs={breadcrumbs}
 >
   <!-- Hero -->
-  <header class="hist-hero">
-    <video class="hist-hero-video" autoplay muted loop playsinline preload="metadata">
+  <header class="ww2-hero">
+    <video class="ww2-hero-video" autoplay muted loop playsinline preload="metadata">
       <source src="/videos/pillar/history-hero.mp4" type="video/mp4" />
     </video>
-    <div class="hist-hero-gradient"></div>
-    <div class="hist-hero-noise"></div>
-    <div class="hist-hero-content">
-      <h1 class="hist-hero-title">Eastern European History</h1>
-      <p class="hist-hero-subtitle">From medieval kingdoms and imperial palaces to the Iron Curtain and the revolutions that tore it down — trace the events that shaped a continent through the places where they happened.</p>
-      <div class="hist-hero-meta">
-        <div class="hist-hero-meta-item">
-          <span class="hist-hero-meta-label">Eras</span>
-          <span class="hist-hero-meta-value">5</span>
+    <div class="ww2-hero-gradient"></div>
+    <div class="ww2-hero-noise"></div>
+    <div class="ww2-hero-content">
+      <h1 class="ww2-hero-title">WWII & the Iron Curtain — Eastern Europe's History Trail</h1>
+      <p class="ww2-hero-subtitle">From the Warsaw Uprising to the fall of the Berlin Wall — a guide to Eastern Europe's WWII and Cold War history sites across Poland, Czech Republic, Hungary, and beyond.</p>
+      <div class="ww2-hero-meta">
+        <div class="ww2-hero-meta-item">
+          <span class="ww2-hero-meta-label">Events</span>
+          <span class="ww2-hero-meta-value">15</span>
         </div>
-        <div class="hist-hero-meta-item">
-          <span class="hist-hero-meta-label">Events</span>
-          <span class="hist-hero-meta-value">12</span>
+        <div class="ww2-hero-meta-item">
+          <span class="ww2-hero-meta-label">Destinations</span>
+          <span class="ww2-hero-meta-value">5</span>
         </div>
-        <div class="hist-hero-meta-item">
-          <span class="hist-hero-meta-label">Destinations</span>
-          <span class="hist-hero-meta-value">13</span>
+        <div class="ww2-hero-meta-item">
+          <span class="ww2-hero-meta-label">Timeline</span>
+          <span class="ww2-hero-meta-value">1939–Present</span>
         </div>
       </div>
     </div>
-    <div class="hist-scroll-hint">Scroll<br />&#8595;</div>
+    <div class="ww2-scroll-hint">Scroll<br />&#8595;</div>
   </header>
 
   <!-- Breadcrumb -->
@@ -208,115 +291,206 @@ const eraLabels: Record<string, { label: string; color: string }> = {
   </div>
 
   <!-- Personal intro -->
-  <section class="hist-personal reveal">
+  <section class="ww2-personal reveal">
     <div class="container-content">
-      <blockquote class="hist-personal-quote">
+      <blockquote class="ww2-personal-quote">
+        <p>Auschwitz-Birkenau is 45 minutes from Krakow by bus. You walk through the gates under the sign "Arbeit Macht Frei." You walk through the barracks. You stand at the scale of Birkenau — the largest Nazi extermination camp, 425 acres, designed to process and kill on an industrial scale. The numbers are too large to comprehend: 1.1 million people, mostly Jews, murdered here. What makes it comprehensible is the personal: the display case of 80,000 pairs of shoes. The braids of human hair. A child's drawing on a barrack wall. Eastern Europe carries the weight of the 20th century more visibly than anywhere else on Earth.</p>
         <cite>— Scott</cite>
       </blockquote>
     </div>
   </section>
 
-  <!-- Era Legend -->
-  <section class="hist-legend reveal">
+  <!-- View Toggle -->
+  <div class="container-content" style="padding-top: var(--space-2); padding-bottom: var(--space-4);">
+    <div class="ww2-view-toggle">
+      <button class="ww2-toggle-btn active" id="ww2BtnTimeline">Timeline</button>
+      <button class="ww2-toggle-btn" id="ww2BtnMap">Map</button>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <div id="ww2TimelineView">
+  <section class="ww2-timeline-section">
     <div class="container-content">
-      <div class="hist-legend-bar">
-        {Object.entries(eraLabels).map(([key, { label, color }]) => (
-          <span class="hist-legend-chip" style={`--era-color: ${color};`}>{label}</span>
-        ))}
+      <h2 class="ww2-timeline-heading reveal">From Invasion to Iron Curtain to Freedom</h2>
+      <p class="ww2-timeline-sub reveal">Eastern Europe endured invasion, genocide, resistance, liberation, and forty years of Communist dictatorship — all within living memory. Poland, the Czech Republic, Hungary, and their neighbors carry this history in their cities, their museums, and their people.</p>
+
+      <div class="ww2-timeline">
+        <div class="ww2-timeline-line" aria-hidden="true"></div>
+
+        {(() => {
+          let lastEra = '';
+          return timeline.map((event, idx) => {
+            const showEra = event.era !== lastEra;
+            lastEra = event.era;
+            const slugs = Array.isArray(event.slug) ? event.slug : event.slug ? [event.slug] : [];
+            const primarySlug = slugs[0];
+            const cardVideo = ww2CardVideos[idx % ww2CardVideos.length];
+            return (
+              <>
+                {showEra && (
+                  <div class="ww2-era-marker reveal">
+                    <div class="ww2-era-pill" style={`background: ${eraGradients[event.era]};`}>
+                      {eraLabels[event.era]}
+                    </div>
+                  </div>
+                )}
+                <div class={`ww2-event ww2-event--${event.side} reveal`}>
+                  <div class="ww2-event-dot" style={`background: ${eraGradients[event.era]};`}></div>
+                  {primarySlug && slugs.length === 1 ? (
+                    <a href={`/destinations/${primarySlug}/`} class="ww2-event-card">
+                      <div class="ww2-event-media" style={`background: ${eraGradients[event.era]};`}>
+                        <video class="ww2-event-video" muted loop playsinline preload="none" data-src={cardVideo}></video>
+                        <span class="ww2-event-date-badge">{event.date}</span>
+                      </div>
+                      <div class="ww2-event-body">
+                        <h3 class="ww2-event-title">{event.title}</h3>
+                        <p class="ww2-event-location">{event.location}</p>
+                        <p class="ww2-event-desc">{event.description}</p>
+                        {event.whatToSee && (
+                          <div class="ww2-event-see">
+                            <span class="ww2-event-see-label">What to see today:</span>
+                            <p class="ww2-event-see-text">{event.whatToSee}</p>
+                          </div>
+                        )}
+                        <span class="ww2-event-cta">Explore {event.location.split(',')[0]} &rarr;</span>
+                      </div>
+                      <div class="ww2-event-overlay">
+                        <p class="ww2-event-overlay-text">{event.description}</p>
+                        {event.whatToSee && (
+                          <div class="ww2-event-overlay-see">
+                            <span class="ww2-event-overlay-see-label">What to see today:</span>
+                            <p>{event.whatToSee}</p>
+                          </div>
+                        )}
+                        <span class="ww2-event-overlay-cta">Explore {event.location.split(',')[0]} &rarr;</span>
+                      </div>
+                    </a>
+                  ) : primarySlug ? (
+                    <div class="ww2-event-card ww2-event-card--multi">
+                      <div class="ww2-event-media" style={`background: ${eraGradients[event.era]};`}>
+                        <video class="ww2-event-video" muted loop playsinline preload="none" data-src={cardVideo}></video>
+                        <span class="ww2-event-date-badge">{event.date}</span>
+                      </div>
+                      <div class="ww2-event-body">
+                        <h3 class="ww2-event-title">{event.title}</h3>
+                        <p class="ww2-event-location">{event.location}</p>
+                        <p class="ww2-event-desc">{event.description}</p>
+                        {event.whatToSee && (
+                          <div class="ww2-event-see">
+                            <span class="ww2-event-see-label">What to see today:</span>
+                            <p class="ww2-event-see-text">{event.whatToSee}</p>
+                          </div>
+                        )}
+                        <div class="ww2-event-cta-group">
+                          {slugs.map((s) => (
+                            <a href={`/destinations/${s}/`} class="ww2-event-cta ww2-event-cta-link">Explore {s.charAt(0).toUpperCase() + s.slice(1)} &rarr;</a>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div class="ww2-event-card ww2-event-card--nolink">
+                      <div class="ww2-event-media" style={`background: ${eraGradients[event.era]};`}>
+                        <video class="ww2-event-video" muted loop playsinline preload="none" data-src={cardVideo}></video>
+                        <span class="ww2-event-date-badge">{event.date}</span>
+                      </div>
+                      <div class="ww2-event-body">
+                        <h3 class="ww2-event-title">{event.title}</h3>
+                        <p class="ww2-event-location">{event.location}</p>
+                        <p class="ww2-event-desc">{event.description}</p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </>
+            );
+          });
+        })()}
       </div>
     </div>
   </section>
 
-  <!-- Timeline -->
-  <section class="hist-timeline reveal">
-    <div class="container-content">
-      <div class="hist-timeline-line"></div>
-      {timeline.map((event) => {
-        const era = eraLabels[event.era];
-        const slugs = Array.isArray(event.slug) ? event.slug : event.slug ? [event.slug] : [];
-        return (
-          <div class={`hist-event hist-event--${event.side}`} data-era={event.era}>
-            <div class="hist-event-dot" style={`background: ${era.color};`}></div>
-            <div class="hist-event-card">
-              <div class="hist-event-era" style={`color: ${era.color};`}>{era.label}</div>
-              <div class="hist-event-date">{event.date}</div>
-              <h3 class="hist-event-title">{event.title}</h3>
-              <p class="hist-event-location">{event.location}</p>
-              <p class="hist-event-desc">{event.description}</p>
-              {event.whatToSee && (
-                <div class="hist-event-visit">
-                  <span class="hist-event-visit-label">What to see today:</span>
-                  <p class="hist-event-visit-text">{event.whatToSee}</p>
-                </div>
-              )}
-              {slugs.length > 0 && (
-                <div class="hist-event-links">
-                  {slugs.slice(0, 3).map((s) => (
-                    <a href={`/destinations/${s}/`} class="hist-event-link">Explore {s.charAt(0).toUpperCase() + s.slice(1)} &rarr;</a>
-                  ))}
-                </div>
-              )}
-            </div>
+  </div><!-- /ww2TimelineView -->
+
+  <!-- Map View (hidden by default) -->
+  <div id="ww2MapView" style="display:none;">
+    <section style="padding: var(--space-4) 0 var(--space-8);">
+      <div class="container-content">
+        <div class="ww2-map-container" id="ww2MapContainer">
+          <div class="ww2-map-tooltip" id="ww2MapTooltip">
+            <div class="ww2-map-tooltip-title" id="ww2TooltipTitle"></div>
+            <div class="ww2-map-tooltip-date" id="ww2TooltipDate"></div>
+            <div class="ww2-map-tooltip-location" id="ww2TooltipLocation"></div>
           </div>
-        );
-      })}
-    </div>
-  </section>
+          <div id="ww2LeafletMap"></div>
+          <div class="ww2-map-legend">
+            <div class="ww2-map-legend-item"><div class="ww2-map-legend-dot" style="background:#D32F2F;"></div>Invasion</div>
+            <div class="ww2-map-legend-item"><div class="ww2-map-legend-dot" style="background:#718096;"></div>Resistance</div>
+            <div class="ww2-map-legend-item"><div class="ww2-map-legend-dot" style="background:#388E3C;"></div>Liberation</div>
+            <div class="ww2-map-legend-item"><div class="ww2-map-legend-dot" style="background:#3949AB;"></div>Iron Curtain</div>
+            <div class="ww2-map-legend-item"><div class="ww2-map-legend-dot" style="background:#0D7377;"></div>Freedom</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- Bottom CTA -->
-  <section class="hist-cta-section reveal">
+  <section class="ww2-cta-section reveal">
     <div class="container-content">
-      <div class="hist-cta-card">
-        <h2 class="hist-cta-heading">Plan Your History Trip</h2>
-        <p class="hist-cta-text">Tell our AI planner which historical periods interest you and it will build a multi-country itinerary connecting the key sites — from medieval castles to Cold War memorials.</p>
-        <a href="/plan/" class="hist-cta-button">Start Planning &rarr;</a>
+      <div class="ww2-cta-card">
+        <h2 class="ww2-cta-heading">Plan an Eastern Europe History Trip</h2>
+        <p class="ww2-cta-text">Tell our AI planner you want to follow Eastern Europe's history trail and it will build an itinerary connecting Krakow (with Auschwitz), Warsaw, Prague, Budapest, and Gdansk.</p>
+        <a href="/plan/" class="ww2-cta-button">Start Planning &rarr;</a>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
   <FAQ items={[
-    { question: "What are the most important historical sites in Eastern Europe?", answer: "Auschwitz-Birkenau near Krakow is the most visited and most important memorial site. Prague Castle is the largest ancient castle complex in the world. Budapest's House of Terror documents both Nazi and Soviet atrocities. Dubrovnik's Old Town walls tell stories from medieval trade to the 1990s siege. Tallinn's medieval Old Town is among Europe's best-preserved." },
-    { question: "How did the Iron Curtain affect Eastern Europe?", answer: "From 1945 to 1989, Soviet-backed communist governments controlled most of Eastern Europe. Citizens faced travel restrictions, state surveillance, censorship, and economic central planning. The effects are still visible: Soviet-era apartment blocks, Cold War museums, and a generational divide between those who lived through communism and those born after. Understanding this period is essential context for travel in the region." },
-    { question: "What happened in 1989?", answer: "In a remarkable chain of events, communist regimes fell across Eastern Europe within months. Hungary opened its border with Austria (May), Poland held semi-free elections (June), the Berlin Wall fell (November), Czechoslovakia had its Velvet Revolution (November), and Romania overthrew Ceausescu (December). The Baltic states had already begun their 'Singing Revolution' in 1988. By 1991, all had achieved independence or democratic governance." },
-    { question: "Is it appropriate to visit Holocaust sites as a tourist?", answer: "Yes — visiting sites like Auschwitz-Birkenau is an important act of remembrance and education. Be respectful: dress modestly, don't take selfies at memorials, keep your voice low, and take time to read the exhibits. Book a guided tour for context. The Auschwitz Museum recommends a minimum 3.5-hour visit. Other important Holocaust sites include Budapest's Shoes on the Danube and Vilnius's Paneriai memorial." },
-    { question: "How did the Ottoman Empire influence the Balkans?", answer: "The Ottoman Empire ruled much of the Balkans for 400-500 years, leaving deep cultural marks. Ottoman influence is visible in cuisine (burek, cevapi, Turkish coffee), architecture (mosques, hammams, bazaars), and daily customs. Sofia, Belgrade, and Bucharest all have Ottoman-era structures. The blend of Ottoman, Habsburg, and Slavic traditions creates the cultural richness that makes the Balkans so fascinating to explore." },
+    { question: "How do I visit Auschwitz-Birkenau?", answer: "Auschwitz is 60km west of Krakow. The most common route is by bus from Krakow's central bus station (MDA/Lajkonik buses, approximately 1.5 hours, very cheap). Organized day tours from Krakow are also widely available. Entry to the Auschwitz-Birkenau Memorial and Museum is free, but guided tours must be booked in advance, especially from April through October when demand is extremely high. Book at auschwitz.org at least several weeks ahead. Allow a full day — both Auschwitz I and Birkenau (Auschwitz II) are essential." },
+    { question: "What is Schindler's Factory in Krakow?", answer: "Oskar Schindler's enamelware factory — where he employed Jewish workers to save them from deportation — is now the Schindler's Factory Museum (Fabryka Schindlera). The museum covers the German occupation of Krakow from 1939 to 1945 in extensive detail, using the factory as a framework for the broader story. It is one of Poland's finest WWII museums. The factory is in the Podgorze district of Krakow, across the river from the old town — the same neighborhood as the former Krakow ghetto." },
+    { question: "What is Terezin (Theresienstadt) near Prague?", answer: "Terezin (German: Theresienstadt) is a fortress town 60km north of Prague that the Nazis converted into a concentration camp and transit ghetto. It was used to detain Czech Jews before deportation to Auschwitz. The Nazis also used it as a 'model camp' for Red Cross inspectors — staging a film to show Jewish prisoners living normally. The Terezin Memorial is open to visitors; the Small Fortress (used as a Gestapo prison) and the Ghetto Museum are both sobering and informative. Day trips from Prague take about 1.5 hours each way." },
+    { question: "What is the Terror Háza in Budapest?", answer: "The Terror Háza (House of Terror) at 60 Andrassy Avenue was the headquarters of both the Arrow Cross (Hungarian Fascists) and the ÁVH (Communist secret police). The building's basement was used for interrogation and torture under both regimes. The museum, which opened in 2002, covers the period from 1944 to 1989 — the full arc of fascist and Communist terror in Hungary. The building's dramatic exterior, featuring the words 'TERROR' cut through a metal awning, is one of Budapest's most striking architectural statements. Open Tuesday–Sunday." },
+    { question: "How did the Prague Spring affect Czechoslovakia?", answer: "The 1968 Warsaw Pact invasion crushed Alexander Dubcek's reform movement and began a period called 'normalization' — a systematic reversal of reforms, purging of reformers from the Communist Party, and cultural repression that lasted until 1989. An estimated 500,000 Czechs and Slovaks emigrated. Dissidents who remained faced surveillance, job loss, and imprisonment. The trauma of 1968 deepened the alienation between the population and the regime — and ultimately contributed to the speed and totality of the regime's collapse in the 1989 Velvet Revolution." },
+    { question: "Is Poland safe to visit today?", answer: "Yes, Poland is one of Europe's safest and most visitor-friendly countries. Warsaw and Krakow are both excellent cities with strong tourism infrastructure, good English-language signage and staff, excellent transport connections, and high-quality restaurants and hotels. Poland is a member of the EU and NATO. The main practical issue for visitors is that English is less widespread outside major cities. The zloty (PLN) is the currency; Poland has not adopted the euro. Krakow in particular is one of Central Europe's most rewarding cities and an excellent base for Auschwitz and other regional sites." },
   ]} />
 
   <!-- Email Capture -->
   <div class="container-content reveal" style="padding-bottom: var(--space-6);">
     <EmailCapture
-      leadMagnet="Get Our Free Eastern European History Guide"
-      description="A timeline PDF covering the key events, empires, and sites that shaped Eastern Europe — with visitor tips for every historical destination."
+      leadMagnet="Get Our Free Eastern Europe History Guide"
+      description="A PDF guide to Eastern Europe's WWII and Cold War history trail — Auschwitz, Warsaw, Prague, Budapest, and Gdansk — with visiting logistics and Scott's first-person notes."
       bullets={[
-        'Complete timeline from medieval kingdoms to EU accession',
-        'Must-visit museums and memorials in each capital',
-        'Cold War sites and communist-era history worth seeing',
-        'Recommended history books and documentaries for pre-trip reading',
+        'Auschwitz visiting guide: tickets, transport, what to expect',
+        'Warsaw: Rising Museum, POLIN, Ghetto sites — full day plan',
+        'Prague: Cold War legacy, Terezin day trip, Velvet Revolution sites',
+        'Budapest: Terror Háza, 1956 revolution sites, Danube memorials',
       ]}
-      guideTag="pillar-history"
+      guideTag="pillar-eastern-europe-history"
     />
   </div>
 
   <!-- Cross-links -->
-  <section class="hist-crosslinks reveal">
+  <section class="ww2-crosslinks reveal">
     <div class="container-content">
-      <h3 class="hist-crosslinks-heading">Explore More</h3>
-      <div class="hist-crosslinks-grid">
-        <a href="/cuisine/" class="hist-crosslink-card">
-          <span class="hist-crosslink-icon">&#127860;</span>
-          <span class="hist-crosslink-label">Food & Cuisine</span>
-          <span class="hist-crosslink-desc">24 dishes across 3 regions with where to find the best version</span>
+      <h3 class="ww2-crosslinks-heading">Explore More</h3>
+      <div class="ww2-crosslinks-grid">
+        <a href="/destinations/krakow/" class="ww2-crosslink-card">
+          <span class="ww2-crosslink-icon">&#127963;</span>
+          <span class="ww2-crosslink-label">Krakow</span>
+          <span class="ww2-crosslink-desc">Base for Auschwitz, Schindler's Factory, Jewish Quarter</span>
         </a>
-        <a href="/hiking/" class="hist-crosslink-card">
-          <span class="hist-crosslink-icon">&#9968;</span>
-          <span class="hist-crosslink-label">Hiking & Nature</span>
-          <span class="hist-crosslink-desc">Tatra Mountains, Plitvice Lakes, Julian Alps, and more</span>
+        <a href="/destinations/warsaw/" class="ww2-crosslink-card">
+          <span class="ww2-crosslink-icon">&#127981;</span>
+          <span class="ww2-crosslink-label">Warsaw</span>
+          <span class="ww2-crosslink-desc">Rising Museum, POLIN Jewish Museum, rebuilt Old Town</span>
         </a>
-        <a href="/practical/" class="hist-crosslink-card">
-          <span class="hist-crosslink-icon">&#128218;</span>
-          <span class="hist-crosslink-label">Practical Guide</span>
-          <span class="hist-crosslink-desc">Visas, currency, trains, budget tips, and safety info</span>
+        <a href="/destinations/prague/" class="ww2-crosslink-card">
+          <span class="ww2-crosslink-icon">&#127760;</span>
+          <span class="ww2-crosslink-label">Prague</span>
+          <span class="ww2-crosslink-desc">Velvet Revolution sites, Terezin, Cold War history</span>
         </a>
       </div>
     </div>
@@ -343,83 +517,238 @@ const eraLabels: Record<string, { label: string; color: string }> = {
   }
 </script>
 
+<!-- View Toggle Logic -->
+<script>
+  const ww2BtnTimeline = document.getElementById('ww2BtnTimeline');
+  const ww2BtnMap = document.getElementById('ww2BtnMap');
+  const ww2TimelineView = document.getElementById('ww2TimelineView');
+  const ww2MapView = document.getElementById('ww2MapView');
+
+  function ww2ShowTimeline() {
+    ww2TimelineView!.style.display = '';
+    ww2MapView!.style.display = 'none';
+    ww2BtnTimeline!.classList.add('active');
+    ww2BtnMap!.classList.remove('active');
+  }
+
+  function ww2ShowMap() {
+    ww2TimelineView!.style.display = 'none';
+    ww2MapView!.style.display = '';
+    ww2BtnTimeline!.classList.remove('active');
+    ww2BtnMap!.classList.add('active');
+    if (window.ww2Map) {
+      window.ww2Map.invalidateSize();
+    }
+  }
+
+  ww2BtnTimeline?.addEventListener('click', ww2ShowTimeline);
+  ww2BtnMap?.addEventListener('click', ww2ShowMap);
+</script>
+
+<!-- Lazy-load & autoplay WW2 card videos on scroll -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const ww2VideoObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target as HTMLVideoElement;
+          if (entry.isIntersecting) {
+            if (!video.src && video.dataset.src) {
+              video.src = video.dataset.src;
+            }
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { rootMargin: '100px' }
+    );
+    document.querySelectorAll('.ww2-event-video').forEach((v) => ww2VideoObserver.observe(v));
+  }
+</script>
+
+<!-- Leaflet Map -->
+<script is:inline define:vars={{ markers: wwiiMapMarkers }}>
+  if (!document.getElementById('leaflet-css')) {
+    var lnk = document.createElement('link');
+    lnk.id = 'leaflet-css';
+    lnk.rel = 'stylesheet';
+    lnk.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css';
+    document.head.appendChild(lnk);
+  }
+
+  function initWwiiMap() {
+    var mapEl = document.getElementById('ww2LeafletMap');
+    if (!mapEl || typeof L === 'undefined') return;
+
+    var map = L.map(mapEl, {
+      center: [51.0, 19.0],
+      zoom: 5,
+      scrollWheelZoom: false,
+      minZoom: 4,
+      maxZoom: 12,
+      maxBounds: [[44, 12], [58, 28]],
+      zoomControl: false,
+      attributionControl: false,
+    });
+
+    window.ww2Map = map;
+
+    L.control.attribution({ prefix: false }).addTo(map);
+    L.control.zoom({ position: 'topright' }).addTo(map);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '\u00a9 <a href="https://www.openstreetmap.org/copyright">OSM</a> \u00a9 <a href="https://carto.com/">CARTO</a>',
+      maxZoom: 19,
+    }).addTo(map);
+
+    function makeCircle(color, size, stroke) {
+      return L.divIcon({
+        className: '',
+        html: '<div style="width:' + size + 'px;height:' + size + 'px;border-radius:50%;background:' + color + ';border:2px solid ' + stroke + ';box-shadow:0 0 6px rgba(0,0,0,0.3);cursor:pointer;"></div>',
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2],
+      });
+    }
+
+    var tooltip = document.getElementById('ww2MapTooltip');
+    var tooltipTitle = document.getElementById('ww2TooltipTitle');
+    var tooltipDate = document.getElementById('ww2TooltipDate');
+    var tooltipLocation = document.getElementById('ww2TooltipLocation');
+    var container = document.getElementById('ww2MapContainer');
+
+    markers.forEach(function(m) {
+      var icon = makeCircle(m.color, 16, '#ffffff');
+      var marker = L.marker([m.lat, m.lng], { icon: icon, title: m.title }).addTo(map);
+
+      marker.on('mouseover', function(e) {
+        if (tooltipTitle) tooltipTitle.textContent = m.title;
+        if (tooltipDate) tooltipDate.textContent = m.date;
+        if (tooltipLocation) tooltipLocation.textContent = m.location;
+        if (tooltip) tooltip.classList.add('ww2-tooltip-visible');
+        if (container && tooltip) {
+          var pt = e.containerPoint;
+          tooltip.style.left = (pt.x + 12) + 'px';
+          tooltip.style.top = (pt.y - 10) + 'px';
+        }
+      });
+
+      marker.on('mouseout', function() {
+        if (tooltip) tooltip.classList.remove('ww2-tooltip-visible');
+      });
+
+      marker.on('click', function() {
+        window.location.href = m.url;
+      });
+    });
+  }
+
+  if (typeof L !== 'undefined') {
+    initWwiiMap();
+  } else {
+    var lscript = document.createElement('script');
+    lscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';
+    lscript.onload = initWwiiMap;
+    document.head.appendChild(lscript);
+  }
+</script>
+
 <style>
-  /* HERO */
-  .hist-hero { position: relative; min-height: 60vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; }
-  .hist-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
-  .hist-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%); }
-  .hist-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; }
-  .hist-hero-content { position: relative; z-index: 3; max-width: 720px; }
-  .hist-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
-  .hist-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
-  .hist-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
-  .hist-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
-  .hist-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
-  .hist-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
-  .hist-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.35); text-align: center; animation: histBounce 2s ease-in-out infinite; }
-  @keyframes histBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
-
-  /* PERSONAL */
-  .hist-personal { padding-block: var(--space-8); }
-  .hist-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid var(--color-warm-coral); background: var(--color-sky); border-radius: 0 12px 12px 0; }
-  .hist-personal-quote cite { font-size: var(--text-caption); color: var(--color-warm-coral); font-weight: var(--weight-semibold); font-style: normal; }
-
-  /* ERA LEGEND */
-  .hist-legend { padding: 0 0 var(--space-6); }
-  .hist-legend-bar { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; }
-  .hist-legend-chip { display: inline-flex; align-items: center; gap: 6px; font-size: 0.72rem; font-weight: var(--weight-semibold); padding: 6px 14px; border-radius: 20px; color: var(--era-color); background: color-mix(in srgb, var(--era-color) 10%, transparent); }
-  .hist-legend-chip::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--era-color); }
-
-  /* TIMELINE */
-  .hist-timeline { position: relative; padding: var(--space-8) 0 var(--space-12); }
-  .hist-timeline .container-content { position: relative; }
-  .hist-timeline-line { position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #78350F, #6A1B9A, #C62828, #1565C0, #0D7377); transform: translateX(-50%); border-radius: 2px; }
-  .hist-event { position: relative; display: flex; width: 100%; margin-bottom: var(--space-8); }
-  .hist-event--left { justify-content: flex-start; padding-right: calc(50% + 24px); }
-  .hist-event--right { justify-content: flex-end; padding-left: calc(50% + 24px); }
-  .hist-event-dot { position: absolute; left: 50%; top: 24px; width: 16px; height: 16px; border-radius: 50%; border: 3px solid var(--color-white); box-shadow: 0 2px 8px rgba(0,0,0,0.15); transform: translateX(-50%); z-index: 1; }
-  .hist-event-card { background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: var(--space-5); max-width: 480px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-  .hist-event-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
-  .hist-event-era { font-size: 0.65rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
-  .hist-event-date { font-size: 0.78rem; font-weight: var(--weight-semibold); color: var(--color-slate); margin-bottom: var(--space-1); }
-  .hist-event-title { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 var(--space-1); line-height: 1.3; }
-  .hist-event-location { font-size: 0.78rem; color: var(--color-ocean-teal); font-weight: var(--weight-medium); margin: 0 0 var(--space-3); }
-  .hist-event-desc { font-size: 0.85rem; color: var(--color-slate); line-height: 1.65; margin: 0 0 var(--space-3); }
-  .hist-event-visit { background: var(--color-sky); border-radius: 10px; padding: var(--space-3); margin-bottom: var(--space-3); }
-  .hist-event-visit-label { font-size: 0.7rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-ocean-teal); }
-  .hist-event-visit-text { font-size: 0.8rem; color: var(--color-slate); line-height: 1.5; margin: 4px 0 0; }
-  .hist-event-links { display: flex; gap: var(--space-2); flex-wrap: wrap; }
-  .hist-event-link { font-size: 0.72rem; font-weight: var(--weight-semibold); color: var(--color-ocean-teal); text-decoration: none; padding: 4px 12px; border: 1px solid var(--color-ocean-teal); border-radius: 20px; transition: all 0.2s ease; }
-  .hist-event-link:hover { background: var(--color-ocean-teal); color: #fff; }
-
-  /* CTA */
-  .hist-cta-section { padding: var(--space-6) 0 var(--space-8); }
-  .hist-cta-card { background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
-  .hist-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
-  .hist-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
-  .hist-cta-button { display: inline-block; background: var(--color-warm-coral); color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
-  .hist-cta-button:hover { background: #d4553b; transform: translateY(-2px); }
-
-  /* CROSS-LINKS */
-  .hist-crosslinks { padding: 0 0 var(--space-10); }
-  .hist-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
-  .hist-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
-  .hist-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-  .hist-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
-  .hist-crosslink-icon { font-size: 1.8rem; }
-  .hist-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
-  .hist-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
-
-  /* RESPONSIVE */
+  .ww2-hero { position: relative; min-height: 60vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; }
+  .ww2-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .ww2-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%); }
+  .ww2-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; }
+  .ww2-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .ww2-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .ww2-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .ww2-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .ww2-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .ww2-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.5); }
+  .ww2-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .ww2-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255, 255, 255, 0.35); text-align: center; animation: ww2Bounce 2s ease-in-out infinite; }
+  @keyframes ww2Bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+  .ww2-timeline-section { padding: var(--space-10) 0 var(--space-8); }
+  .ww2-timeline-heading { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 var(--space-2); text-align: center; }
+  .ww2-timeline-sub { font-size: 1rem; color: var(--color-slate); text-align: center; max-width: 640px; margin: 0 auto var(--space-10); line-height: 1.6; }
+  .ww2-timeline { position: relative; max-width: 900px; margin: 0 auto; }
+  .ww2-timeline-line { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #B71C1C 0%, #718096 30%, #388E3C 50%, #1A237E 70%, #0D7377 100%); transform: translateX(-50%); opacity: 0.3; }
+  .ww2-era-marker { position: relative; text-align: center; margin: var(--space-8) 0 var(--space-6); z-index: 2; }
+  .ww2-era-marker:first-child { margin-top: 0; }
+  .ww2-era-pill { display: inline-block; font-size: 0.72rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; color: #fff; padding: 8px 20px; border-radius: 40px; }
+  .ww2-event { position: relative; display: flex; margin-bottom: var(--space-6); padding: 0 var(--space-4); }
+  .ww2-event--left { justify-content: flex-start; padding-right: calc(50% + 24px); }
+  .ww2-event--right { justify-content: flex-end; padding-left: calc(50% + 24px); }
+  .ww2-event-dot { position: absolute; left: 50%; top: 24px; width: 14px; height: 14px; border-radius: 50%; transform: translateX(-50%); border: 3px solid var(--color-sand); z-index: 2; box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06); }
+  .ww2-event-card { position: relative; display: block; background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 14px; overflow: hidden; text-decoration: none; color: inherit; width: 100%; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .ww2-event-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12); }
+  .ww2-event-card--nolink { cursor: default; border-style: dashed; border-color: rgba(0, 0, 0, 0.12); }
+  .ww2-event-card--nolink:hover { transform: none; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+  .ww2-event-media { position: relative; aspect-ratio: 21 / 9; display: flex; align-items: flex-end; justify-content: flex-start; padding: var(--space-3); overflow: hidden; }
+  .ww2-event-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .ww2-event-date-badge { position: relative; z-index: 1; font-size: 0.65rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255, 255, 255, 0.9); background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); padding: 4px 12px; border-radius: 6px; }
+  .ww2-event-body { padding: var(--space-3) var(--space-4) var(--space-5); }
+  .ww2-event-title { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 4px; line-height: 1.25; }
+  .ww2-event-location { font-size: 0.72rem; color: var(--color-ocean-teal); font-weight: var(--weight-medium); margin: 0 0 var(--space-2); }
+  .ww2-event-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.55; margin: 0 0 var(--space-3); }
+  .ww2-event-see { background: var(--color-sky); border-radius: 8px; padding: var(--space-2) var(--space-3); margin-bottom: var(--space-3); }
+  .ww2-event-see-label { font-size: 0.65rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-ocean-teal); display: block; margin-bottom: 4px; }
+  .ww2-event-see-text { font-size: 0.75rem; color: var(--color-slate); line-height: 1.5; margin: 0; }
+  .ww2-event-cta { font-size: 0.72rem; font-weight: var(--weight-semibold); color: var(--color-ocean-teal); }
+  .ww2-event-cta-group { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+  .ww2-event-cta-link { color: var(--color-ocean-teal); text-decoration: none; transition: color 0.2s ease; }
+  .ww2-event-cta-link:hover { color: var(--color-ocean-teal-dark, #095456); text-decoration: underline; }
+  .ww2-event-card--multi { cursor: default; }
+  .ww2-event-card--multi:hover { transform: translateY(-2px); }
+  .ww2-event-overlay { position: absolute; inset: 0; background: rgba(26, 35, 50, 0.94); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: flex; flex-direction: column; justify-content: flex-start; padding: var(--space-4); opacity: 0; transition: opacity 0.3s ease; pointer-events: none; overflow-y: auto; }
+  .ww2-event-card:hover .ww2-event-overlay { opacity: 1; pointer-events: auto; }
+  .ww2-event-overlay-text { font-size: 0.75rem; color: rgba(255, 255, 255, 0.92); line-height: 1.55; margin: 0 0 var(--space-2); }
+  .ww2-event-overlay-see { margin-bottom: var(--space-3); }
+  .ww2-event-overlay-see-label { font-size: 0.6rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255, 255, 255, 0.5); display: block; margin-bottom: 4px; }
+  .ww2-event-overlay-see p { font-size: 0.72rem; color: rgba(255, 255, 255, 0.75); line-height: 1.45; margin: 0; }
+  .ww2-event-overlay-cta { font-size: 0.75rem; font-weight: var(--weight-semibold); color: var(--color-warm-coral); }
   @media (max-width: 768px) {
-    .hist-timeline-line { left: 20px; }
-    .hist-event--left, .hist-event--right { padding-left: 48px; padding-right: 0; justify-content: flex-start; }
-    .hist-event-dot { left: 20px; }
-    .hist-event-card { max-width: 100%; }
-    .hist-crosslinks-grid { grid-template-columns: 1fr; }
+    .ww2-timeline-line { left: 20px; }
+    .ww2-event--left, .ww2-event--right { padding-left: 48px; padding-right: 0; justify-content: flex-start; }
+    .ww2-event-dot { left: 20px; }
+    .ww2-hero { min-height: 55vh; padding: 0 var(--space-4) 40px; }
+    .ww2-scroll-hint { display: none; }
   }
-  @media (max-width: 640px) {
-    .hist-hero { min-height: 55vh; padding: 0 var(--space-4) 40px; }
-    .hist-scroll-hint { display: none; }
-  }
+  .ww2-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .ww2-cta-card { background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .ww2-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .ww2-cta-text { font-size: 1rem; color: rgba(255, 255, 255, 0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .ww2-cta-button { display: inline-block; background: var(--color-warm-coral); color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .ww2-cta-button:hover { background: #d4553b; transform: translateY(-2px); }
+  .ww2-crosslinks { padding: 0 0 var(--space-10); }
+  .ww2-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .ww2-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  @media (max-width: 640px) { .ww2-crosslinks-grid { grid-template-columns: 1fr; } }
+  .ww2-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .ww2-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+  .ww2-crosslink-icon { font-size: 1.8rem; }
+  .ww2-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .ww2-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+  .ww2-view-toggle { display: flex; justify-content: center; gap: 4px; background: var(--color-sand-dark); border-radius: 40px; padding: 4px; max-width: 240px; margin: 0 auto; }
+  .ww2-toggle-btn { flex: 1; padding: 8px 20px; border: none; border-radius: 36px; font-size: 0.82rem; font-weight: var(--weight-semibold); cursor: pointer; background: transparent; color: var(--color-slate); transition: background 0.2s ease, color 0.2s ease; }
+  .ww2-toggle-btn.active { background: var(--color-ocean-teal); color: #fff; }
+  .ww2-toggle-btn:hover:not(.active) { color: var(--color-deep-night); }
+  .ww2-map-container { border-radius: 24px; position: relative; overflow: hidden; background: radial-gradient(ellipse at 40% 30%, #0c3547 0%, #091e2f 40%, #060f1a 100%); padding: 28px 20px 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.05); max-width: 600px; margin: 0 auto; }
+  .ww2-map-container::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 600px 300px at 30% 70%, rgba(13, 115, 119, 0.08) 0%, transparent 70%), radial-gradient(ellipse 400px 200px at 70% 20%, rgba(13, 115, 119, 0.06) 0%, transparent 70%); animation: ww2OceanShimmer 8s ease-in-out infinite alternate; pointer-events: none; }
+  .ww2-map-container::after { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle 1px at 20% 30%, rgba(255, 255, 255, 0.03) 0%, transparent 100%), radial-gradient(circle 1px at 60% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 100%), radial-gradient(circle 1px at 40% 80%, rgba(255, 255, 255, 0.02) 0%, transparent 100%); pointer-events: none; }
+  @keyframes ww2OceanShimmer { 0% { opacity: 0.5; } 100% { opacity: 1; } }
+  #ww2LeafletMap { width: 100%; height: 600px; border-radius: 16px; position: relative; z-index: 1; }
+  .ww2-map-tooltip { position: absolute; background: rgba(26, 35, 50, 0.95); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 10px 14px; pointer-events: none; opacity: 0; transform: translateY(4px); transition: opacity 0.2s ease, transform 0.2s ease; z-index: 50; min-width: 160px; max-width: 280px; }
+  .ww2-map-tooltip.ww2-tooltip-visible { opacity: 1; transform: translateY(0); }
+  .ww2-map-tooltip-title { font-size: 0.85rem; font-weight: var(--weight-bold); color: white; margin-bottom: 2px; line-height: 1.3; }
+  .ww2-map-tooltip-date { font-size: 0.65rem; color: rgba(255, 255, 255, 0.45); font-weight: var(--weight-medium); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; }
+  .ww2-map-tooltip-location { font-size: 0.72rem; color: var(--color-warm-coral); font-weight: var(--weight-medium); }
+  .ww2-map-legend { display: flex; justify-content: center; gap: var(--space-5); padding: var(--space-3) var(--space-4); flex-wrap: wrap; position: relative; z-index: 1; }
+  .ww2-map-legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.7rem; color: rgba(255, 255, 255, 0.45); }
+  .ww2-map-legend-dot { width: 8px; height: 8px; border-radius: 50%; box-shadow: 0 0 6px rgba(13, 115, 119, 0.5); }
+  @media (max-width: 768px) { #ww2LeafletMap { height: 450px; } }
+  .ww2-personal { padding-block: var(--space-8); }
+  .ww2-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid var(--color-ocean-teal); background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .ww2-personal-quote p { font-size: var(--text-body); color: var(--color-heading); line-height: var(--leading-body); font-style: italic; margin-bottom: var(--space-3); }
+  .ww2-personal-quote cite { font-size: var(--text-caption); color: var(--color-ocean-teal); font-weight: var(--weight-semibold); font-style: normal; }
 </style>
