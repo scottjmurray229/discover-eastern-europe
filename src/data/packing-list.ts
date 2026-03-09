@@ -24,7 +24,7 @@ export const EASTERN_EUROPE_CONFIG: PackingConfig = {
   currency: 'varies (EUR/PLN/CZK/HUF)',
   plugType: 'Type C/F',
   plugVoltage: '230V',
-  affiliateTag: 'discovermore-20',
+  affiliateTag: 'discoverphili-20',
   destinationEssentials: EASTERN_EUROPE_ESSENTIALS,
   gearRecommendations: EASTERN_EUROPE_GEAR_RECOMMENDATIONS,
 };
