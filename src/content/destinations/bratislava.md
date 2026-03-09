@@ -2,6 +2,14 @@
 title: "Bratislava"
 description: "Discover Bratislava's compact Old Town, Danube views, and easy day-trip access to Vienna in Slovakia's capital."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Bratislava Castle glowing above the Danube and old town rooftops, Slovakia"
 tagline: "Medieval castle, old town charm, and the perfect day trip between Vienna and Budapest — or the best budget city in Central Europe"
 region: "central-europe"
@@ -116,11 +124,11 @@ Bratislava's proximity to Vienna is unique in Europe — no other pair of nation
 
 ## Practical Information
 
-### Food and Drink
+### What Should I Eat and Drink in Bratislava?
 
 Slovak cuisine is hearty, meat-focused, and ideal for cold weather. Bryndzove halusky (potato dumplings with sheep's cheese and bacon) is the national dish — simple, rich, and deeply satisfying. Kapustnica (sauerkraut soup) and vyprazany syr (fried cheese with tartar sauce and fries) round out the essentials. Slovak wine from the Small Carpathian Wine Route just north of the city is excellent and almost entirely unknown outside the country. A glass of Frankovka or Rizling at a wine bar costs about €3-4.
 
-### Getting Around
+### What's the Best Way to Get Around Bratislava?
 
 Bratislava is a walking city. Trams and buses cover the wider city, and a 24-hour transit pass costs about €4. For Devin Castle, take bus 29. Use Bolt for taxis.
 

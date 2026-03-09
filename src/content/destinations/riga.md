@@ -2,6 +2,14 @@
 title: "Riga"
 description: "Discover Riga's Art Nouveau architecture, Central Market in Zeppelin hangars, and the lively bars of Latvia's capital."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Art Nouveau facades and medieval clock tower of Riga's Old Town, Latvia"
 tagline: "The world's finest Art Nouveau architecture, the Baltic's most photogenic old town, and a city working out who it wants to be next"
 region: "baltics"
@@ -116,7 +124,7 @@ This residential district east of Old Town is where the Art Nouveau architecture
 
 South of the Central Market, Riga's most multicultural neighborhood is rough around the edges but rich in character. The wooden architecture, Orthodox churches, and bargain shops give it a different texture from the polished Old Town. The Spikeri Quarter, a row of renovated 19th-century warehouses along the Daugava River, bridges the gap between gritty and gentrified, with galleries, design shops, and restaurants moving in alongside long-standing businesses.
 
-## Getting Around
+## What's the Best Way to Get Around Riga?
 
 Riga's tram, bus, and trolleybus network is efficient and covers the entire city. Buy an electronic e-ticket card from kiosks and load credit onto it — rides cost about €1.15. The Old Town and Art Nouveau district are walkable from each other in about 20 minutes. Bolt operates here for rides to the airport or outer neighborhoods. Riga is also an excellent cycling city, with a flat terrain and expanding bike lane network.
 

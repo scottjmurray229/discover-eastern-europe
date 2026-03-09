@@ -2,6 +2,14 @@
 title: "Belgrade"
 description: "Experience Belgrade's legendary nightlife, Kalemegdan Fortress views, and bohemian Skadarlija in Serbia's capital."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Belgrade Fortress Kalemegdan overlooking the Sava and Danube confluence, Serbia"
 tagline: "The party capital of the Balkans — Belgrade's floating river clubs run until dawn, and the fortress above the confluence of the Sava and Danube is magnificent"
 region: "balkans"
@@ -118,7 +126,7 @@ Serbian food is built for people with appetites. Portions are enormous, flavors 
 
 The restaurant scene extends well beyond traditional fare. The Dorcol neighborhood has become a hub for contemporary dining, with wine bars and modern Balkan fusion restaurants appearing steadily. Prices remain astonishingly low — a dinner for two with wine at a good restaurant rarely exceeds €30.
 
-## Getting Around
+## What's the Best Way to Get Around Belgrade?
 
 Belgrade's public transport consists of buses, trams, and trolleybuses. A BusPlus card loaded with credit is the easiest way to pay — available from kiosks for a few euros. However, the city center is walkable and most key sights are within a 30-minute stroll of each other. For longer distances or late-night travel, Car:Go and Bolt are the ride-hailing apps to use. Taxis are also cheap but always insist on the meter.
 

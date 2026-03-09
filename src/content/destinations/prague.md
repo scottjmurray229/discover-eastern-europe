@@ -2,6 +2,14 @@
 title: "Prague"
 description: "Discover Prague's Gothic spires, world-class beer culture, and cobblestone charm in the Czech capital."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Charles Bridge and Prague Castle reflected in the Vltava River at golden hour"
 tagline: "A thousand years of architecture in one city — Gothic spires, Baroque palaces, Kafka's city, and the world's finest pilsner"
 region: "central-europe"
@@ -120,7 +128,7 @@ The "Lesser Town" sits between Charles Bridge and the castle, full of Baroque ch
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around Prague?
 
 Prague's public transport system is excellent. The metro, trams, and buses all run on the same ticket system, and a 24-hour pass costs about €5. Trams are my favourite way to move around — they cover the entire city, run frequently, and give you a rolling tour of the architecture. Taxis are generally reliable if you use apps like Bolt or Liftago, but honestly, between the tram network and walking, you rarely need one.
 

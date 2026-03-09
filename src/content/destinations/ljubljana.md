@@ -2,6 +2,14 @@
 title: "Ljubljana"
 description: "Discover Ljubljana's dragon-guarded bridges, hilltop castle, and green soul in Slovenia's charming capital."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Ljubljana Castle and Triple Bridge above the Ljubljanica River, Slovenia"
 tagline: "A triple bridge, a castle with a dragon legend, the world's most walkable capital, and only 280,000 people — Slovenia's perfect city"
 region: "central-europe"
@@ -116,11 +124,11 @@ Rent a traditional pletna boat to the island, ring the wishing bell in the churc
 
 ## Practical Information
 
-### Food and Drink
+### What Should I Eat and Drink in Ljubljana?
 
 Slovenian cuisine borrows from Italian, Austrian, and Balkan traditions. Struklji (rolled dumplings), jota (bean and sauerkraut soup), and kranjska klobasa (Carniolan sausage) are staples. The wine is excellent — orange wine (skin-contact white wine) is a Slovenian speciality gaining international recognition. A meal at a good restaurant costs about €15-25, and a glass of local wine is €3-5.
 
-### Getting Around
+### What's the Best Way to Get Around Ljubljana?
 
 Ljubljana is small enough to cover on foot. The car-free centre means no traffic noise, just people and bikes. The bike-share system (BicikeLJ) is cheap and convenient for longer distances. For day trips to Bled or Postojna Cave, buses run frequently from the central bus station.
 

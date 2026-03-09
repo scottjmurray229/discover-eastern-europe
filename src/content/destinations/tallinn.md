@@ -2,6 +2,14 @@
 title: "Tallinn"
 description: "Explore Tallinn's medieval Old Town, creative Telliskivi district, and thriving digital nomad scene in Estonia."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Medieval Toompea Castle and red-roofed Old Town of Tallinn, Estonia"
 tagline: "The most perfectly preserved medieval old town in Europe, under UNESCO protection — and a startup ecosystem that put Estonia on the tech map"
 region: "baltics"
@@ -116,7 +124,7 @@ This maritime museum is housed in enormous 1916-era seaplane hangars with a desi
 
 Estonia was the first country in the world to offer e-Residency, a digital identity for global entrepreneurs. That forward-thinking ethos has made Tallinn a magnet for remote workers and tech professionals. Co-working spaces like Lift99, Spring Hub, and Workland are scattered across the city, and nearly every cafe offers reliable Wi-Fi without the passive-aggressive time limits you encounter elsewhere. The cost of living is lower than Helsinki or Stockholm but the quality of life is comparable, which explains why many digital nomads who come for a month end up staying for a year.
 
-## Food and Drink
+## What Should I Eat and Drink in Tallinn?
 
 Estonian cuisine has undergone a renaissance in recent years. New Nordic influences blend with local traditions — think smoked fish, dark rye bread, foraged mushrooms, and seasonal berries. Rataskaevu 16 in the Old Town serves excellent updated Estonian cuisine, while Leib Resto ja Aed offers a farm-to-table experience in a beautiful courtyard setting. For a splurge, Noa Chef's Hall provides a Michelin-worthy dining experience with views across the bay.
 

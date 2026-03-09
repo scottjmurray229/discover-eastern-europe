@@ -2,6 +2,14 @@
 title: "Dubrovnik"
 description: "Walk Dubrovnik's ancient city walls, explore Adriatic islands, and discover Croatia's most iconic coastal gem."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Dubrovnik's orange-roofed old town and city walls above the Adriatic, Croatia"
 tagline: "City walls that took 400 years to build, Old Town churches, the Adriatic's clearest water, and Game of Thrones filming locations around every corner"
 region: "balkans"
@@ -120,11 +128,11 @@ The Elaphiti Islands — Kolocep, Lopud, and Sipan — are reachable by public f
 
 Dubrovnik receives thousands of cruise ship passengers daily during peak season. The pattern is predictable: passengers flood Old Town from roughly 10am to 4pm, then leave. Plan your exploration for early morning or late afternoon. Stay overnight and you get the city to yourself in the evening.
 
-### Food and Drink
+### What Should I Eat and Drink in Dubrovnik?
 
 Dalmatian cuisine is Mediterranean at its core — olive oil, fresh seafood, grilled vegetables, and wine. Prices inside Old Town are high by Croatian standards but reasonable by Western European ones. A seafood platter at a good restaurant runs €25-40. For better value, eat at the small restaurants in the alleys above the Stradun or venture outside the Ploce Gate to the neighbourhood of Gruz, where locals eat. Fresh oysters from nearby Ston are exceptional and available at several restaurants in town.
 
-### Getting Around
+### What's the Best Way to Get Around Dubrovnik?
 
 Old Town is entirely pedestrian and compact — you can walk end to end in 15 minutes. Buses connect Old Town to the surrounding neighbourhoods, Lapad beach area, and the bus station. The Dubrovnik Card (available for 1, 3, or 7 days) bundles city wall entry, museum access, and bus transport into one ticket, which can save money if you plan to see multiple sights.
 

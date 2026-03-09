@@ -2,6 +2,14 @@
 title: "Sofia"
 description: "Explore Sofia's Roman ruins, Alexander Nevsky Cathedral, and Vitosha Mountain in Europe's most affordable capital."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Alexander Nevsky Cathedral golden domes rising in the heart of Sofia, Bulgaria"
 tagline: "Alexander the Great's city, Ottoman mosques, Soviet blocks, and a craft beer scene that opened last year — Sofia refuses to be categorized"
 region: "balkans"
@@ -102,7 +110,7 @@ This small medieval church on the outskirts of Sofia punches far above its weigh
 
 The Serdica archaeological complex is accessible from the metro underpass near the Presidency building, and it is free. You walk among the excavated streets, walls, and buildings of the ancient Roman city that once thrived here. The Largo area nearby reveals even more layers, including the rotunda of St. George, a 4th-century church that is the oldest building in Sofia, tucked in a courtyard between the Presidency and a Sheraton hotel. The juxtaposition is quintessentially Sofia.
 
-## Where to Eat
+## What Should I Eat in Sofia?
 
 Bulgarian cuisine is a wonderful collision of Balkan, Mediterranean, and Turkish influences. Start every meal with a shopska salad — tomatoes, cucumbers, onions, and peppers buried under a snowdrift of grated sirene cheese. For mains, try kavarma (a slow-cooked meat and vegetable stew), kebapche (grilled minced meat), or the incredible bean soup called bob chorba.
 

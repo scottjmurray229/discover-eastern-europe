@@ -2,6 +2,14 @@
 title: "Budapest"
 description: "Explore Budapest's thermal baths, ruin bars, and Danube panoramas — your guide to Hungary's affordable capital."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Hungarian Parliament Building and Chain Bridge illuminated over the Danube at night"
 tagline: "Ruin bars, thermal baths in neo-Baroque splendour, the Chain Bridge at night, and a Danube-divided city that perfected melancholy beauty"
 region: "central-europe"
@@ -126,15 +134,15 @@ This iron-and-glass market hall near Liberty Bridge is where locals and tourists
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around Budapest?
 
 Budapest has an efficient metro, tram, and bus system. The M1 metro line, running under Andrassy Avenue, is the oldest electrified underground railway in continental Europe — and it is still in daily use. A 24-hour transit pass costs about €5.50 and covers everything. Tram 2, which runs along the Pest side of the Danube, offers one of the best free sightseeing rides in Europe — Parliament, Chain Bridge, and the castle district all visible from the window.
 
-### Food and Drink
+### What Should I Eat and Drink in Budapest?
 
 Hungarian cuisine revolves around paprika, pork, and slow-cooked comfort. Goulash here is a soup, not the thick stew you might expect. Langos from a market stall is the perfect cheap lunch. Hungarian wine — particularly Egri Bikaver and Tokaji — deserves more recognition. A bottle of excellent wine costs €5-10 in a shop.
 
-### Safety
+### Is Budapest Safe for Tourists?
 
 Budapest is generally very safe. Watch for pickpockets on busy trams and in tourist areas. Use Bolt rather than hailing cabs on the street.
 

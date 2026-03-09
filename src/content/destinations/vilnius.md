@@ -2,6 +2,14 @@
 title: "Vilnius"
 description: "Wander Vilnius's Baroque Old Town, discover the quirky Uzupis Republic, and enjoy affordable Lithuanian charm."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Gediminas Tower and Baroque cathedral square of Vilnius Old Town, Lithuania"
 tagline: "Baroque old town, the self-declared Republic of Užupis, Frank Zappa's statue, and the most surprising capital in the Baltics"
 region: "baltics"
@@ -106,7 +114,7 @@ Uzupis began as a neglected neighborhood on the other side of the Vilnia River f
 
 Today, Uzupis is Vilnius's creative heart. Galleries, studios, and quirky cafes fill the narrow streets, and the artistic spirit is genuine rather than commercial. Even on ordinary days, the atmosphere is distinct — freer, stranger, and more playful than anywhere else in the city.
 
-## Food and Drink
+## What Should I Eat and Drink in Vilnius?
 
 Lithuanian cuisine has roots in peasant cooking but has evolved into something genuinely interesting. Cepelinai — massive potato dumplings stuffed with meat or curd cheese, served with sour cream and bacon — are the national dish and an absolute must-try. Saltibarsciai, a cold beet soup served in summer, is unexpectedly refreshing. Dark rye bread with smoked fish or cured meats makes an excellent snack or light meal.
 

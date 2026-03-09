@@ -2,6 +2,14 @@
 title: "Krakow"
 description: "Plan your Krakow trip covering Wawel Castle, Kazimierz, salt mines, and Poland's most charming city."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Wawel Royal Castle and Rynek Główny cobblestone market square, Kraków, Poland"
 tagline: "Wawel Castle, Jewish Kazimierz, medieval Market Square, and the most atmospheric old city in Poland — and it survived WWII"
 region: "central-europe"
@@ -114,11 +122,11 @@ If Auschwitz is the heavy day, Wieliczka is the wonder. This UNESCO-listed salt 
 
 The mine is 15 kilometres southeast of Krakow, reachable by local bus or train in about 30 minutes. Book tickets online to skip the queue.
 
-## Food and Drink
+## What Should I Eat and Drink in Krakow?
 
 Polish food is hearty, generous, and perfect for cold weather. Pierogi — dumplings stuffed with potato and cheese, meat, or sauerkraut — are the national staple. A plate of a dozen at a milk bar (bar mleczny) runs about €3-4. These cafeteria-style restaurants from the communist era serve simple, cheap, home-style food and remain some of the best value meals in Europe. Beyond pierogi, look for zurek (sour rye soup in a bread bowl), bigos (hunter's stew), and oscypek (grilled smoked sheep's cheese with cranberry sauce).
 
-## Getting Around
+## What's the Best Way to Get Around Krakow?
 
 Krakow's historic centre is compact and best explored on foot. The Old Town, Wawel Castle, and Kazimierz are all within easy walking distance. Trams and buses cover the wider city, and a single ticket costs about €1. The train and bus stations sit adjacent near the Old Town, making day trip departures easy.
 

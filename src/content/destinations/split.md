@@ -2,6 +2,14 @@
 title: "Split"
 description: "Explore Split's Diocletian's Palace, Adriatic coastline, and island-hopping from Croatia's vibrant port city."
 heroImage: ""
+aeoFacts:
+  currency: "EUR / local currencies"
+  plugType: "C/E/F, 230V"
+  language: "Varies by country (English common in cities)"
+  bestTime: "May to September"
+  visaInfo: "Schengen 90-day + varies by country"
+  timeZone: "UTC+1 to UTC+3 (varies by country)"
+  emergencyNumber: "112"
 heroAlt: "Diocletian's Palace golden gate and Promenade above the Adriatic, Split, Croatia"
 tagline: "Diocletian's Palace is not a ruin — 3,000 people live and work inside it. The most extraordinary inhabited Roman palace in the world"
 region: "balkans"
@@ -130,7 +138,7 @@ The farthest major island from Split, Vis was a Yugoslav military base until 198
 
 Dalmatian cuisine revolves around the sea and the grill. Grilled fresh fish with olive oil and lemon is the staple. Black risotto (crni rizot) made with cuttlefish ink is rich and deeply flavoured. Pasticada, a slow-braised beef stew, is the region's signature meat dish. Bakeries sell burek for a couple of euros — perfect grab-and-go fuel.
 
-### Getting Around
+### What's the Best Way to Get Around Split?
 
 The Old Town and palace area are entirely walkable. Buses connect the centre to the suburbs and nearby Trogir (a UNESCO gem, 30 minutes by bus). Ferries and catamarans to the islands depart from the harbour directly in front of the Riva. Book catamarans in advance during summer — popular routes sell out.
 
