@@ -2,7 +2,7 @@
 title: "Riga"
 description: "Discover Riga's Art Nouveau architecture, Central Market in Zeppelin hangars, and the lively bars of Latvia's capital."
 heroImage: ""
-tagline: "Art Nouveau Grandeur Meets Baltic Grit"
+tagline: "The world's finest Art Nouveau architecture, the Baltic's most photogenic old town, and a city working out who it wants to be next"
 region: "baltics"
 bestMonths: ["May", "Jun", "Sep", "Oct"]
 budgetPerDay:

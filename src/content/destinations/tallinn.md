@@ -2,7 +2,7 @@
 title: "Tallinn"
 description: "Explore Tallinn's medieval Old Town, creative Telliskivi district, and thriving digital nomad scene in Estonia."
 heroImage: ""
-tagline: "Medieval Walls, Digital Soul"
+tagline: "The most perfectly preserved medieval old town in Europe, under UNESCO protection — and a startup ecosystem that put Estonia on the tech map"
 region: "baltics"
 bestMonths: ["May", "Jun", "Sep", "Oct"]
 budgetPerDay:

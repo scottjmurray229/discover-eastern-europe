@@ -2,7 +2,7 @@
 title: "Bucharest"
 description: "Discover Bucharest's Palace of Parliament, vibrant Old Town nightlife, and communist-era history in Romania."
 heroImage: ""
-tagline: "The Paris of the East, Reborn"
+tagline: "Ceaușescu's megalomania and Art Deco elegance in the same city — a capital rapidly reinventing itself with food, art, and infectious energy"
 region: "balkans"
 bestMonths: ["May", "Jun", "Sep", "Oct"]
 budgetPerDay:

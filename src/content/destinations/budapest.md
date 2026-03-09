@@ -2,7 +2,7 @@
 title: "Budapest"
 description: "Explore Budapest's thermal baths, ruin bars, and Danube panoramas — your guide to Hungary's affordable capital."
 heroImage: ""
-tagline: "Thermal Baths and Danube Dreams"
+tagline: "Ruin bars, thermal baths in neo-Baroque splendour, the Chain Bridge at night, and a Danube-divided city that perfected melancholy beauty"
 region: "central-europe"
 bestMonths: ["May", "Jun", "Sep", "Oct"]
 budgetPerDay:

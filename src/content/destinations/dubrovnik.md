@@ -2,7 +2,7 @@
 title: "Dubrovnik"
 description: "Walk Dubrovnik's ancient city walls, explore Adriatic islands, and discover Croatia's most iconic coastal gem."
 heroImage: ""
-tagline: "The Pearl of the Adriatic"
+tagline: "City walls that took 400 years to build, Old Town churches, the Adriatic's clearest water, and Game of Thrones filming locations around every corner"
 region: "balkans"
 bestMonths: ["May", "Jun", "Sep", "Oct"]
 budgetPerDay:

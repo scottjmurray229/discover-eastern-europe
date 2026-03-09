@@ -2,7 +2,7 @@
 title: "Belgrade"
 description: "Experience Belgrade's legendary nightlife, Kalemegdan Fortress views, and bohemian Skadarlija in Serbia's capital."
 heroImage: ""
-tagline: "The City That Never Sleeps (Really)"
+tagline: "The party capital of the Balkans — Belgrade's floating river clubs run until dawn, and the fortress above the confluence of the Sava and Danube is magnificent"
 region: "balkans"
 bestMonths: ["May", "Jun", "Sep", "Oct"]
 budgetPerDay:

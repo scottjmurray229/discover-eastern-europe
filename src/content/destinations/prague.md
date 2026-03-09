@@ -2,7 +2,7 @@
 title: "Prague"
 description: "Discover Prague's Gothic spires, world-class beer culture, and cobblestone charm in the Czech capital."
 heroImage: ""
-tagline: "Gothic Grandeur Meets Golden Beer"
+tagline: "A thousand years of architecture in one city — Gothic spires, Baroque palaces, Kafka's city, and the world's finest pilsner"
 region: "central-europe"
 bestMonths: ["May", "Jun", "Sep", "Oct"]
 budgetPerDay:

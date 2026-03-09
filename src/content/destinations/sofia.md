@@ -2,7 +2,7 @@
 title: "Sofia"
 description: "Explore Sofia's Roman ruins, Alexander Nevsky Cathedral, and Vitosha Mountain in Europe's most affordable capital."
 heroImage: ""
-tagline: "Ancient Layers, Modern Energy"
+tagline: "Alexander the Great's city, Ottoman mosques, Soviet blocks, and a craft beer scene that opened last year — Sofia refuses to be categorized"
 region: "balkans"
 bestMonths: ["May", "Jun", "Sep", "Oct"]
 budgetPerDay:

@@ -2,7 +2,7 @@
 title: "Bratislava"
 description: "Discover Bratislava's compact Old Town, Danube views, and easy day-trip access to Vienna in Slovakia's capital."
 heroImage: ""
-tagline: "The Danube's Best-Kept Secret"
+tagline: "Medieval castle, old town charm, and the perfect day trip between Vienna and Budapest — or the best budget city in Central Europe"
 region: "central-europe"
 bestMonths: ["May", "Jun", "Sep", "Oct"]
 budgetPerDay:

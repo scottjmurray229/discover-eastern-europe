@@ -37,6 +37,7 @@ const geoMarkers: { slug: string; label: string; lat: number; lng: number }[] = 
   { slug: 'tallinn', label: 'Tallinn', lat: 59.4370, lng: 24.7536 },
   { slug: 'riga', label: 'Riga', lat: 56.9496, lng: 24.1052 },
   { slug: 'vilnius', label: 'Vilnius', lat: 54.6872, lng: 25.2797 },
+  { slug: 'warsaw', label: 'Warsaw', lat: 52.2297, lng: 21.0122 },
 ];
 
 // Build enriched marker data for map
@@ -51,7 +52,7 @@ const gmapMarkers = geoMarkers.map(m => {
   };
 });
 // Featured destinations displayed on the homepage
-const featuredSlugs = ['prague', 'budapest', 'dubrovnik', 'tallinn', 'krakow', 'split', 'ljubljana', 'bratislava', 'bucharest', 'sofia', 'belgrade', 'riga', 'vilnius'];
+const featuredSlugs = ['prague', 'budapest', 'dubrovnik', 'tallinn', 'krakow', 'split', 'ljubljana', 'bratislava', 'bucharest', 'sofia', 'belgrade', 'riga', 'vilnius', 'warsaw'];
 
 // Content pillar links
 const pillarLinks = [
