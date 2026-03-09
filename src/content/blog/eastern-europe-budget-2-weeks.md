@@ -2,6 +2,7 @@
 title: "Eastern Europe Budget Guide: 2 Weeks for Under $1,000"
 description: "The complete budget travel guide for two weeks in Eastern Europe — cities, costs, transport strategy, and exactly how to keep the whole trip under $1,000."
 pubDate: 2026-03-01
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"

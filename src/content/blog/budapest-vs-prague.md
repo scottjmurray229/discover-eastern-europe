@@ -2,6 +2,7 @@
 title: "Budapest vs Prague: Which Is Better for First-Time Visitors?"
 description: "The honest comparison — Budapest's thermal baths and ruin bars vs Prague's Gothic architecture and beer halls. Which city deserves your limited time?"
 pubDate: 2026-03-02
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"
