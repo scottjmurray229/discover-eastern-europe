@@ -56,98 +56,150 @@ affiliatePicks:
 contentStatus: "published"
 draft: false
 scottTips:
-  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views."
-  - "Prague is beautiful but intensely touristy in the center — walk ten minutes from Old Town Square toward Vinohrady or Zizkov for authenticity and lower prices."
-  - "Eastern Europe is budget-friendly compared to Western Europe — €40–70/day covers accommodation, food, and activities comfortably in most cities."
-  - "Low-cost carriers (Wizz Air, Ryanair) make hopping between Warsaw, Budapest, Prague, and Bucharest very affordable — check luggage fees before booking."
-  - "Tipping 10% is appreciated at sit-down restaurants but not universal — observe local custom and round up rather than leaving a percentage."
-  - "Each country has its own currency — Czech koruna, Hungarian forint, Polish zloty, Romanian leu. Euro is not accepted in most Eastern European countries."
-  - "Overnight trains connecting major cities (Vienna–Budapest, Prague–Warsaw) are making a comeback — book months ahead for the best sleeper berths."
+  - "Bulgaria uses the lev (BGN) — approximately 2 BGN per euro. ATMs are everywhere; use Bulgarian bank machines (UniCredit Bulbank, DSK) for best rates. Cash is essential for markets and smaller restaurants."
+  - "Sofia is Europe's most affordable capital — a beer at a craft bar costs 3-5 BGN (€1.50-2.50), a full meal at a traditional restaurant runs 10-20 BGN (€5-10). Budget travelers live extremely well here."
+  - "The free Sofia walking tour (meeting point in front of the Palace of Justice at 11am and 6pm daily) is one of the best in Eastern Europe — tip-based, knowledgeable guides cover 2,000 years of history in 2.5 hours."
+  - "Vitosha Mountain is accessible by metro (Line 2 to Vitosha, then bus 66 to the trailhead) and offers hiking in summer and skiing in winter. A day pass for ski lifts costs BGN 50-60 (€25-30)."
+  - "The Boyana Church UNESCO site requires pre-booked timed entry (maximum 10 visitors per 10-minute slot). Book online at boyanchurch.org. Located 9km from the centre, reachable by Uber (€5-6)."
+  - "Bulgarian cuisine is excellent and almost unknown outside the region — shopska salata (tomatoes, cucumbers, peppers, and grated white cheese), kavarma (slow-cooked meat and vegetable stew), and banitsa (feta-filled pastry) are staples."
+  - "Sofia's craft beer scene has exploded in the past five years. The area around Graf Ignatiev Street and Rakovsky Street has excellent bars and microbreweries. Bulgarian craft beer costs BGN 5-8 (€2.50-4.00) per pint."
 faqItems:
   - question: "Is Sofia safe?"
-    answer: "Sofia is a safe destination for tourists. Eastern European cities generally have low violent crime rates. Exercise normal caution around busy tourist areas, watch for pickpockets in crowded markets and on public transport, and stay aware of your surroundings at night."
+    answer: "Sofia is a safe destination for tourists. Bulgaria has low violent crime rates. Standard precautions apply — watch for pickpockets in the central underground pedestrian passage and at the Women's Market (Zhenski Pazar). The metro and city centre are well-lit and tourist-friendly."
   - question: "Is Sofia worth visiting?"
-    answer: "Sofia is absolutely worth visiting. Eastern Europe offers extraordinary history, architecture, and culture at prices that make Western Europe look extravagant — and most cities see far fewer crowds than Paris, Rome, or Amsterdam."
+    answer: "Sofia is genuinely worth visiting, especially for travellers interested in ancient history, Orthodox architecture, and extraordinary value for money. It is the most affordable capital in the EU and has a café and restaurant scene that has improved dramatically in the past decade."
   - question: "Best time to visit Sofia?"
-    answer: "May–June and September–October are ideal — pleasant temperatures, manageable crowds, and full cultural programming. July–August is peak season. Winter (December–February) is cold but magical for Christmas markets and very affordable."
+    answer: "May–June and September–October are ideal — comfortable temperatures (20-28°C), all attractions open, and Vitosha Mountain accessible for hiking. July–August is hot (30-35°C). December-March is Vitosha ski season — Sofia can serve as an affordable ski base."
   - question: "How much does Sofia cost per day?"
-    answer: "Eastern Europe is excellent value. Budget travelers can manage on €30–50/day, mid-range visitors should plan €70–120/day, and even luxury travel rarely exceeds €200/day. Costs are roughly half of Western European equivalents."
+    answer: "Sofia is the most affordable capital in the EU. Budget travelers can live extremely well on €25–35/day (hostel + meals + drinks). Mid-range visitors spend €50–75/day. Even at higher budgets, the city offers far more per euro than any Western European capital."
   - question: "How many days in Sofia?"
-    answer: "Two to three days covers the main highlights. Four days allows for a relaxed pace plus a day trip to the surrounding region. Eastern European cities reward slow travel — the longer you stay, the more you discover beyond the tourist core."
+    answer: "Two to three days covers the main attractions: Alexander Nevsky, the Roman ruins, Boyana Church, and Vitosha Mountain. A fourth day allows for the Rila Monastery day trip (120km south, 2.5h by bus — Bulgaria's most important monastery and a UNESCO site)."
   - question: "Sofia on a budget — is it possible?"
-    answer: "Eastern Europe is one of the world's great budget destinations. Beer costs €1.50–2.50, full meals run €5–10, and accommodation is a fraction of Western European prices. Wizz Air and Ryanair connect major cities from as little as €15."
+    answer: "Sofia may be the best budget destination in Europe. Beer costs BGN 3-5 (€1.50-2.50). A full meal at a traditional mehana (tavern) costs BGN 10-20 (€5-10). Hostel dorms are BGN 20-30 (€10-15). The free walking tour, the metro, and most churches cost nothing. You can have an excellent experience on €25/day."
   - question: "What is Sofia famous for?"
-    answer: "Sofia is famous for its remarkably preserved historic architecture, its complex and fascinating history spanning multiple empires, its vibrant food and nightlife scenes, and the warmth of its people — who are accustomed to fewer tourists than their Western European counterparts."
+    answer: "Sofia is famous for the Alexander Nevsky Cathedral (one of the largest Orthodox cathedrals in the world), its layer cake of history with Roman ruins beneath Orthodox churches beneath Ottoman mosques beneath Soviet-era monuments, Vitosha Mountain rising immediately behind the city, and the extraordinary affordability that makes it the most budget-friendly capital in the EU."
   - question: "How do I get to Sofia?"
-    answer: "Low-cost carriers (Wizz Air, Ryanair, EasyJet) connect Eastern European cities affordably from across Europe. Rail connections link major cities — Vienna to Budapest takes 2.5 hours, Prague to Berlin 4.5 hours. Within the region, overnight trains are a scenic and practical option."
+    answer: "Sofia Airport (SOF) has Ryanair, Wizz Air, and full-service connections from across Europe. Metro Line 1 connects the airport to downtown in 20 minutes for BGN 1.60 (€0.80). By train: Belgrade to Sofia takes 9 hours, Bucharest 7 hours, Istanbul 10 hours. Bus connections from Greek cities are also frequent."
 
 aeoLede: "Sofia is Bulgaria's compact, affordable capital at the foot of Mount Vitosha — a city where Roman ruins, Byzantine churches, Ottoman mosques, and Soviet-era monuments sit within walking distance of each other, and where some of Europe's best-value restaurants and craft beer bars have opened in recent years."
 ---
 
+# Sofia: 2,000 Years in One City Block
+
+Sofia surprised me completely on my first visit. I had heard the standard warnings — Soviet-era grim, nothing to see — and arrived prepared to spend two dutiful days before moving on. Instead I found a city of extraordinary historical density (Roman ruins visible through glass floors in metro stations, Byzantine churches adjacent to Ottoman mosques, a gold-domed Russian Orthodox cathedral the size of a city block), one of the most affordable restaurant and bar scenes in Europe, and a mountain rising immediately behind the city that you can hike or ski on while still seeing the cathedral in the valley below.
+
+The contrast between Sofia's historical depth and its affordability is genuinely startling. This city has been continuously inhabited for 7,000 years, was the administrative centre of the Roman Serdica province, was a major city of the Ottoman Empire for five centuries, and became the Bulgarian capital in 1879. The National Archaeological Museum occupies a converted mosque. The Rotunda of St. George — the oldest building in Sofia, a Roman bathhouse converted to a Byzantine church converted to an Ottoman mosque now operating as a Bulgarian Orthodox church — is surrounded by the remains of Serdica's forum. And yet a beer at the bar next door costs €1.50.
+
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #7c1d35 0%, #9f1239 35%, #be185d 65%, #7c1d35 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">Metro Line 1 from Sofia Airport drops you at Serdika station in 20 minutes. Exit to street level and you are standing next to a glass panel in the pavement through which you can see Roman walls from the ancient city of Serdica. Sofia announces its historical depth before you have even bought a coffee. The ticket for the metro cost €0.80.</p>
+  </div>
+</div>
+
 ## Why Sofia Surprised Me
 
-<ImmersiveBreakInline videoSrc="/videos/destinations/sofia-hero.mp4" />
+The key to understanding Sofia is accepting that it does not package itself for tourists. There are no tourism districts, no curated walking routes, no souvenir shops every twenty metres. The historical sites sit among ordinary city life: the Alexander Nevsky Cathedral faces a square where pensioners play chess and pigeons negotiate over bread crusts. The Roman Serdica ruins are visible between a modern shopping centre and a Soviet-era government building. That unexpectedness — the sense that the city has not yet decided how to present itself to the world — is part of the appeal.
 
-I will be honest: Sofia was not originally high on my list. But this Bulgarian capital turned out to be one of the most rewarding cities I have visited in Eastern Europe. It is a place where you can stand on a glass platform above Roman ruins in a modern metro station, hike a 2,290-meter mountain before lunch, and eat one of the best meals of your trip for under €8. Sofia operates on a different rhythm than Western European capitals — slower, less polished, but deeply authentic.
-
-What struck me most was the layering. Two thousand years of history sit stacked on top of each other here. The ancient Serdica complex beneath the streets dates back to the Roman Emperor Constantine, who reportedly said, "Serdica is my Rome." Medieval churches sit beside Ottoman mosques, and Soviet-era monuments share boulevards with sleek new restaurants and galleries. Sofia does not hide its past. It builds on top of it, literally.
-
-## The Essential Sights
+## What Should You Do in Sofia?
 
 ### Alexander Nevsky Cathedral
 
-This is the image that defines Sofia's skyline. The Alexander Nevsky Cathedral, completed in 1912, is a neo-Byzantine masterpiece with golden domes that glow against the mountain backdrop. The interior is dim, candle-lit, and heavy with incense — exactly the atmosphere that Orthodox cathedrals do best. The crypt downstairs houses an impressive collection of Bulgarian icons spanning several centuries. I visited twice: once in the morning when the light through the windows creates ethereal patterns, and again at dusk when the domes catch the last of the sun.
+The Alexander Nevsky Cathedral on the central square of the same name is Bulgaria's most iconic building and one of the largest Eastern Orthodox cathedrals in the world — 73 metres tall, seating 5,000 worshippers, with gilded domes visible from Vitosha Mountain on a clear day. It was built between 1882 and 1912 to commemorate the Russian soldiers who died liberating Bulgaria from Ottoman rule in the Russo-Turkish War of 1877-1878.
 
-### Vitosha Mountain
+Entry to the cathedral is free. The crypt (accessible from outside) houses one of the finest collections of Orthodox icons in the Balkans, spanning the 12th to 19th centuries — entry BGN 6 (€3). On weekday mornings, Orthodox services take place in the cathedral with choral singing that resonates through the gold-ornamented nave in a way that is genuinely extraordinary regardless of your religious affiliation.
 
-The fact that you can take a city bus from downtown Sofia and be standing at the trailhead of a legitimate mountain within 30 minutes is extraordinary. Vitosha Nature Park offers trails for every fitness level, from gentle forest walks to the challenging summit of Cherni Vrah at 2,290 meters. I took the Dragalevtsi gondola up and hiked the Stone River trail — a surreal stretch of massive granite boulders that looks like a frozen river of rock. In winter, Vitosha doubles as a ski resort, making Sofia one of the few European capitals where you can hit the slopes on your lunch break.
+The square in front of the cathedral hosts a weekend antique and icon market — a mix of genuine antiques, Soviet-era memorabilia, and tourist goods. The flea market atmosphere, with Vitosha Mountain as a backdrop, is very Sofia.
+
+### The Roman Ruins of Serdica
+
+Ancient Serdica (the Roman name for Sofia, used from the 1st to 7th century AD) was a major city of the Eastern Roman Empire. Constantine the Great called it "my Rome" and briefly considered making it the imperial capital rather than Constantinople. The remains are everywhere under modern Sofia and visible in several key locations:
+
+The **Serdica Archaeological Complex** — a section of the ancient forum, including city walls, basilica foundations, and street pavements — is visible from the street outside the Presidency building and through glass-floored sections of Serdika Metro Station. The **Rotunda of St. George** (4th century AD) behind the Sheraton Hotel is the oldest building in Sofia, used continuously as a place of worship for 1,700 years. Free to enter, the interior contains layered Byzantine frescoes.
 
 ### Boyana Church
 
-This small medieval church on the outskirts of Sofia punches far above its weight. The frescoes inside, painted in 1259, are considered masterpieces of European medieval art. The expressions on the faces are so lifelike and naturalistic that they predate the Italian Renaissance by nearly 200 years. Visits are limited to 15-minute slots to protect the paintings, so book ahead. It is a UNESCO World Heritage Site for good reason.
+The Boyana Church (Boyanska Tsarkva, 9km from the centre in the Boyana neighbourhood) is a UNESCO World Heritage Site of extraordinary importance. The 13th-century frescoes that cover the interior walls of this small Bulgarian Orthodox church are considered the finest examples of medieval Bulgarian painting — and they predate the Italian Renaissance masters by nearly 100 years, demonstrating a naturalism and psychological depth that was unprecedented in their time.
 
-### The Roman Ruins Beneath Your Feet
+Entry requires a pre-booked timed ticket (maximum 10 visitors per slot, 10 minutes inside, boyanchurch.org, BGN 10). The time limit is frustrating but the condition of the frescoes — immaculately preserved — requires it. Take Uber from the centre (BGN 10-12, about €5-6) or bus from Hladilnika.
 
-The Serdica archaeological complex is accessible from the metro underpass near the Presidency building, and it is free. You walk among the excavated streets, walls, and buildings of the ancient Roman city that once thrived here. The Largo area nearby reveals even more layers, including the rotunda of St. George, a 4th-century church that is the oldest building in Sofia, tucked in a courtyard between the Presidency and a Sheraton hotel. The juxtaposition is quintessentially Sofia.
+### Vitosha Mountain
 
-## What Should I Eat in Sofia?
+Vitosha National Park begins where the city ends, just 10km south of the centre. In summer, the park offers hiking to the Cherni Vrah peak (2,290m) — a full-day hike with panoramic views over Sofia and, on clear days, to the Rhodope and Rila mountains further south. In winter, the Aleko ski area offers beginner to intermediate slopes with a day pass costing BGN 50-60 (€25-30) — the cheapest skiing in the EU by a significant margin.
 
-Bulgarian cuisine is a wonderful collision of Balkan, Mediterranean, and Turkish influences. Start every meal with a shopska salad — tomatoes, cucumbers, onions, and peppers buried under a snowdrift of grated sirene cheese. For mains, try kavarma (a slow-cooked meat and vegetable stew), kebapche (grilled minced meat), or the incredible bean soup called bob chorba.
+Take Metro Line 2 to the Vitosha stop, then bus 66 to the Dragalevtsi cable car station. The cable car runs in summer for mountain access (BGN 12 return). The 45-minute chairlift route from Simeonovo is the standard ski access.
 
-The Central Market Hall (Tsentralni Hali) is a good spot for an affordable lunch in a beautiful neo-Renaissance building. For a more refined experience, the restaurants along Vitosha Boulevard and in the neighborhoods around Oborishte Street offer inventive takes on Bulgarian classics. Made in Home was a personal favorite — creative comfort food in a quirky, eclectic space.
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #9f1239 0%, #7c1d35 35%, #be185d 65%, #9f1239 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Layers of History</h2>
+    <p class="ib-text">I walked from the Roman Rotunda through the Ottoman Banya Bashi Mosque (still active, non-Muslim visitors welcome outside prayer times) past the Art Nouveau Central Bath building to the Alexander Nevsky Cathedral — a 20-minute walk through two millennia of architecture. Every city has history. Sofia wears it all simultaneously, like a person who has not had time to change between events.</p>
+  </div>
+</div>
 
-### Drinking Culture
+### Day Trip: Rila Monastery
 
-Bulgarians take their rakia seriously. This fruit brandy, usually made from grapes or plums, is the national drink and is served at the start of meals. Accept when offered and sip slowly — it is stronger than it tastes. The craft beer scene in Sofia has also taken off in recent years, with bars like Kanaal and Dada Cultural Bar serving local brews in atmospheric settings.
-
-## Navigating the City
-
-Sofia's metro system is modern, clean, and easy to use. Two lines cover the main tourist areas and connect to the airport and bus stations. Single rides cost about €0.80. Above ground, the tram network is extensive if a bit rattly, and ride-sharing apps like Bolt and Yellow Taxi work reliably.
-
-Most of what you want to see in the city center is within walking distance. I found the area between the National Palace of Culture (NDK) and the Alexander Nevsky Cathedral to be the most rewarding stretch for wandering, with parks, cafes, and street performers along the way.
-
-## Day Trips Worth Taking
-
-### Rila Monastery
-
-Bulgaria's most famous landmark is about 120 km south of Sofia, nestled in a valley at 1,147 meters elevation. The monastery's striped arches, vibrant frescoes, and mountain setting are spectacular. Direct buses from Sofia's Ovcha Kupel station make the trip in around 2 hours. Go early and plan to spend 3-4 hours exploring the complex and the surrounding trails.
-
-### Plovdiv
-
-Bulgaria's second city is only 1.5 hours by train and was a European Capital of Culture in 2019. The old town, perched on a hill with colorful Revival-era houses, Roman ruins, and cobblestone streets, is charming enough to warrant an overnight stay if your schedule allows.
+The Rila Monastery (120km south of Sofia, reached by bus from the Central Bus Station in 2.5 hours, €7-10 each way) is Bulgaria's most important cultural and spiritual monument — a vast UNESCO-listed Orthodox monastery founded in the 10th century, set in a mountain valley of extraordinary beauty, with frescoed facades, a National Revival church of extraordinary ornamental richness, and a history spanning the Bulgarian national revival period. The monastery guesthouse offers accommodation for those wanting to stay overnight. Day trips are manageable but a two-day visit is more rewarding.
 
 <div class="scott-tips">
-
-### Scott's Tips for Sofia
-
-1. **Get the Sofia City Card.** For about €25, you get free public transport, museum entry, and a free walking tour. It pays for itself within a day if you are hitting the main sights.
-
-2. **Book Boyana Church in advance.** Slots fill up fast, especially in summer. Reserve online at least a few days ahead. The 15-minute time limit feels short, but the small space means you can see everything if you focus.
-
-3. **Hike Vitosha on a weekday.** Weekends bring half of Sofia to the mountain, and the gondola lines get long. A Tuesday or Wednesday morning hike will give you trails practically to yourself.
-
-4. **Do the free walking tour.** Sofia's free walking tour (tip-based) is one of the best I have experienced in Europe. The guides are passionate locals who cover history, culture, and practical tips. It starts daily at 10 AM and 6 PM near the Palace of Justice.
-
-5. **Try the mineral water fountains.** Sofia sits on natural hot springs, and free mineral water fountains are scattered around the city. The one outside the Central Mineral Baths building is the most popular. Locals fill up jugs here daily — the water is warm, slightly mineralized, and completely free.
-
+  <div class="scott-tips-header">&#9992;&#65039; Scott's Sofia Tips</div>
+  <ul>
+    <li><strong>Getting There:</strong> Metro Line 1 from Sofia Airport to Serdika station takes 20 minutes and costs BGN 1.60 (€0.80) — the cheapest airport metro in Europe. Taxis are legitimate but use the official Sofia Taxi app or agree a price before getting in. The centre is very walkable once you arrive.</li>
+    <li><strong>Best Time:</strong> May and June for hiking Vitosha and the city at its most comfortable. September and October for clear mountain views and a quieter city. December to March for Vitosha skiing — the cheapest Alpine skiing in the EU. July and August are hot (30-35°C) but Sofia manages it better than coastal Balkan cities.</li>
+    <li><strong>Money:</strong> Bulgarian lev (BGN) — approximately 2 BGN per euro. Beer at a craft bar costs BGN 4-6 (€2-3). A full meal at a mehana costs BGN 12-22 (€6-11). Budget travelers need BGN 40-60 (€20-30) per day including accommodation. The most affordable EU capital, by a significant margin.</li>
+    <li><strong>Don't Miss:</strong> The free Sofia Free Tour — meets in front of the Palace of Justice at 11am and 6pm daily. The guides are local students and professionals who cover 2,000 years of history in 2.5 hours with knowledge and humour. Tip what you think it is worth — the quality is consistently excellent.</li>
+    <li><strong>Avoid:</strong> Skipping the Boyana Church thinking it is just a small church. It is one of the most important examples of medieval painting in Europe. The 10-minute visit limit is frustrating but the frescoes are extraordinary. Book the timed ticket online before you arrive.</li>
+    <li><strong>Local Phrase:</strong> "Blagodarya!" (blah-go-DAH-ryah) — Thank you in Bulgarian. Bulgaria uses the Cyrillic alphabet, which can be disorienting at first. Learning to read the basic Cyrillic letters (common with Russian) takes about 30 minutes and makes navigation significantly easier.</li>
+  </ul>
 </div>
+
+## Where Should You Eat in Sofia?
+
+Bulgarian food is a revelation for most visitors — richly flavoured, vegetable-heavy in summer, meat-forward in winter, and incorporating excellent dairy (white brine cheese, yogurt) and locally grown produce. The restaurant scene has developed considerably in the past decade, with a new wave of chefs re-examining Bulgarian culinary traditions.
+
+<div class="immersive-break-inline" id="food">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #7c1d35 0%, #1c0a00 35%, #9f1239 65%, #7c1d35 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Bulgarian Table</h2>
+    <p class="ib-text">Shopska salata arrived — tomatoes, cucumbers, green peppers, and a mountain of grated white Bulgarian sirene cheese, dressed with sunflower oil and vinegar. With a half-litre of Zagorka lager (BGN 3.50, about €1.75), the complete lunch including bread cost BGN 12 (€6). Bulgaria has the most generous food budget of any EU country.</p>
+  </div>
+</div>
+
+- **Hadjidraganov's Houses** (Kvartal Vazrazhdane) — Two adjoining mehanas (traditional taverns) in a 19th-century complex. Grilled meats, banitsa, kavarma, and an extraordinary selection of Bulgarian wines and rakia. Mains BGN 10-18 (€5-9). Live Bulgarian folk music on weekends.
+
+- **Made in Home** (Angel Kanchev 30a) — Modern Bulgarian restaurant with an innovative approach to traditional ingredients. Seasonal menus using Vitosha mushrooms, Bulgarian cheese, and local produce. Mains BGN 15-25 (€7.50-12.50).
+
+- **Manastirska Magernitsa** (Han Asparuh 67) — Monastery-style cooking in an atmospheric traditional setting — slow-cooked beans, roasted peppers, monastery bread. Excellent Bulgarian wine list. Mains BGN 12-20 (€6-10). Highly atmospheric.
+
+- **Sense Hotel Restaurant** (Vitosha Boulevard) — Rooftop restaurant with Alexander Nevsky views and modern Bulgarian cooking. Mains BGN 22-35 (€11-17.50). Best value at lunch when the prix-fixe is excellent.
+
+## Where Should You Stay in Sofia?
+
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #9f1239 0%, #7c1d35 35%, #be185d 65%, #9f1239 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Your Sofia Base</h2>
+    <p class="ib-text">Stay in the centre (within walking distance of Alexander Nevsky and the Rotunda) for maximum convenience. Sofia is compact enough that any central accommodation puts you within 20 minutes' walk of everything. Mid-range hotels in Sofia offer quality equivalent to Western European four-star properties at a third of the price.</p>
+  </div>
+</div>
+
+Sofia has exceptional accommodation value across all budgets. Mid-range boutique hotels run BGN 100-160/night (€50-80) and offer quality that would cost three times as much in Western Europe.
+
+- **Budget: Art Hostel** (Angel Kanchev 21a) — The best-reviewed hostel in Sofia, with clean dorms, a bar, and a central location. Dorm beds from BGN 25-35 (€12-17).
+
+- **Mid-Range: Sofia Hotel Balkan** (Sveta Nedelya Square 5) — A grand Communist-era hotel in the absolute centre, renovated and now operated by Sheraton. Excellent location facing the Rotunda of St. George. Doubles from BGN 180-250 (€90-125).
+
+- **Luxury: Grand Hotel Millennium Sofia** (Vitosha Boulevard 89b) — Sofia's finest hotel, with a rooftop infinity pool, spa, and some of the best views of Vitosha Mountain. Doubles from BGN 280-420 (€140-210).
+
+## When Is the Best Time to Visit Sofia?
+
+**May and June** are the finest months — comfortable temperatures, Vitosha Mountain green and hikeable, the roses of the Valley of Roses (90km south in Kazanlak) in bloom.
+
+**September and October** are excellent for clear mountain views and comfortable temperatures. The Sofia Film Festival takes place in autumn.
+
+**December to March** offers the unique combination of a European capital city with accessible skiing at European rock-bottom prices — the Vitosha ski area (BGN 50-60 day pass) and nearby Borovets (more extensive ski area, 80km south) make Sofia one of the world's cheapest ski destinations.
+
+## Final Thoughts
+
+Sofia is the capital that rewards not having an agenda. Come with curiosity about the Byzantine, Ottoman, and communist layers of history; come prepared to be surprised by the food and wine scene; come ready to use the metro to reach Vitosha for a hike or the train to reach the Rila Monastery. Do not come expecting the polished tourist infrastructure of Prague or Budapest — Sofia is still becoming itself, and that process of becoming is one of the most interesting things about it.

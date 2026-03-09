@@ -56,108 +56,154 @@ affiliatePicks:
 contentStatus: "published"
 draft: false
 scottTips:
-  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views."
-  - "Prague is beautiful but intensely touristy in the center — walk ten minutes from Old Town Square toward Vinohrady or Zizkov for authenticity and lower prices."
-  - "Eastern Europe is budget-friendly compared to Western Europe — €40–70/day covers accommodation, food, and activities comfortably in most cities."
-  - "Low-cost carriers (Wizz Air, Ryanair) make hopping between Warsaw, Budapest, Prague, and Bucharest very affordable — check luggage fees before booking."
-  - "Tipping 10% is appreciated at sit-down restaurants but not universal — observe local custom and round up rather than leaving a percentage."
-  - "Each country has its own currency — Czech koruna, Hungarian forint, Polish zloty, Romanian leu. Euro is not accepted in most Eastern European countries."
-  - "Overnight trains connecting major cities (Vienna–Budapest, Prague–Warsaw) are making a comeback — book months ahead for the best sleeper berths."
+  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views on Friday and Saturday nights."
+  - "Hungary uses the forint (HUF) — roughly 390 HUF per euro. Use ATMs at OTP Bank or Raiffeisen for the best rates. Avoid the Euronet ATMs and currency exchanges on the tourist strips."
+  - "The ruin bars (romkocsmák) in the VII district (Jewish Quarter) are best visited on a Tuesday, Wednesday, or Thursday — on weekends they fill with hen parties and stag groups and the atmosphere shifts."
+  - "Tram 2 along the Pest riverbank offers one of the finest urban views in Europe for the price of a transit ticket (450 HUF). Ride it at dusk when Parliament lights up."
+  - "Palinka (fruit brandy) is Hungary's national spirit — distilleries around the country produce extraordinary versions from plum, apricot, and pear. A shot at a traditional restaurant is mandatory."
+  - "Low-cost carriers (Wizz Air, Ryanair) connect Budapest to most European cities. Train to Vienna takes 2.5 hours and is a scenic, comfortable journey."
+  - "The Buda Castle funicular (Budavári Sikló) is fun but costs EUR 4 one way — the staircase beside it is free and takes 10 minutes. Use the staircase on the way up, funicular on the way back."
 faqItems:
   - question: "Is Budapest safe?"
-    answer: "Budapest is a safe destination for tourists. Eastern European cities generally have low violent crime rates. Exercise normal caution around busy tourist areas, watch for pickpockets in crowded markets and on public transport, and stay aware of your surroundings at night."
+    answer: "Budapest is a safe destination for tourists. Watch for pickpockets near the Jewish Quarter ruin bars, at Vörösmarty Square, and in the metro at busy times. Overpriced tourist restaurants near Chain Bridge and the Castle are a bigger practical concern than crime — always check the menu price before sitting down."
   - question: "Is Budapest worth visiting?"
-    answer: "Budapest is absolutely worth visiting. Eastern Europe offers extraordinary history, architecture, and culture at prices that make Western Europe look extravagant — and most cities see far fewer crowds than Paris, Rome, or Amsterdam."
+    answer: "Budapest is one of the great travel destinations in Europe — a genuinely beautiful, affordable city with thermal baths, extraordinary architecture, a dynamic food scene, and an atmosphere that rewards both the party traveller and the history-focused visitor."
   - question: "Best time to visit Budapest?"
-    answer: "May–June and September–October are ideal — pleasant temperatures, manageable crowds, and full cultural programming. July–August is peak season. Winter (December–February) is cold but magical for Christmas markets and very affordable."
+    answer: "May–June and September–October are ideal — warm weather (18-28°C), outdoor terraces fully operational, and manageable crowds. December is spectacular for Christmas markets and the thermal baths take on a magical quality in cold weather. July–August is peak season, hot (30-35°C), and crowded."
   - question: "How much does Budapest cost per day?"
-    answer: "Eastern Europe is excellent value. Budget travelers can manage on €30–50/day, mid-range visitors should plan €70–120/day, and even luxury travel rarely exceeds €200/day. Costs are roughly half of Western European equivalents."
+    answer: "Budapest remains one of Central Europe's best-value capitals. Budget travelers can manage on €30–45/day including hostel dorm, thermal bath entry, and pub meals. Mid-range visitors spend €70–100/day. Costs are roughly 40% lower than Vienna or Prague's tourist centre."
   - question: "How many days in Budapest?"
-    answer: "Two to three days covers the main highlights. Four days allows for a relaxed pace plus a day trip to the surrounding region. Eastern European cities reward slow travel — the longer you stay, the more you discover beyond the tourist core."
+    answer: "Three days covers the main highlights: baths, castle, ruin bars, riverfront, Parliament. Four to five days adds the Great Market Hall, Museum of Fine Arts, day trips to the Danube Bend, and deeper exploration of the VII district's cultural scene."
   - question: "Budapest on a budget — is it possible?"
-    answer: "Eastern Europe is one of the world's great budget destinations. Beer costs €1.50–2.50, full meals run €5–10, and accommodation is a fraction of Western European prices. Wizz Air and Ryanair connect major cities from as little as €15."
+    answer: "Very much so. Thermal bath entry at Szechenyi costs about EUR 22-25. A full lunch at a local etterem (restaurant) runs EUR 6-10. Beer at a ruin bar is EUR 2-3. The city is extraordinarily good value compared to Central European alternatives."
   - question: "What is Budapest famous for?"
-    answer: "Budapest is famous for its remarkably preserved historic architecture, its complex and fascinating history spanning multiple empires, its vibrant food and nightlife scenes, and the warmth of its people — who are accustomed to fewer tourists than their Western European counterparts."
+    answer: "Budapest is famous for its thermal bath culture (fed by 120 natural hot springs), its ruin bars in the old Jewish Quarter, the Parliament Building (Europe's third-largest), the Chain Bridge over the Danube, and its complex history spanning Ottoman occupation, Austro-Hungarian grandeur, and communist-era architecture."
   - question: "How do I get to Budapest?"
-    answer: "Low-cost carriers (Wizz Air, Ryanair, EasyJet) connect Eastern European cities affordably from across Europe. Rail connections link major cities — Vienna to Budapest takes 2.5 hours, Prague to Berlin 4.5 hours. Within the region, overnight trains are a scenic and practical option."
+    answer: "Budapest Ferenc Liszt Airport (BUD) has connections from across Europe. The 100E airport bus to the city centre costs 900 HUF (about EUR 2.30) and takes 35 minutes. By train: Vienna to Budapest takes 2.5 hours, Bratislava 2.5 hours, Prague 7 hours. Overnight trains to Krakow and Belgrade are available."
 
 aeoLede: "Budapest is one of Europe's great capitals — the 'Paris of the East' — where thermal baths fed by natural hot springs, ruin bars in crumbling 19th-century buildings, stunning Art Nouveau architecture, and a food scene ranging from hearty goulash to Michelin-starred tasting menus coexist in a city that is still significantly more affordable than Western Europe."
 ---
 
-Budapest is really two cities stitched together by bridges. Buda rises on the western bank — hilly, regal, and quiet. Pest sprawls across the east — flat, bustling, and full of the kind of creative chaos that makes a city feel truly alive. The Danube runs between them, and from almost any vantage point along its banks, the view is staggering. I have stood on the Chain Bridge at dusk watching Parliament light up gold against the darkening sky, and it is one of those travel moments that genuinely stops you in your tracks.
+# Budapest: The City of Two Banks and a Thousand Layers
+
+Budapest is really two cities stitched together by bridges. Buda rises on the western bank — hilly, regal, and quiet, its castle and church spires watching over the Danube. Pest sprawls across the east — flat, bustling, and full of the kind of creative chaos that makes a city feel truly alive. The Danube runs between them, and from almost any vantage point along its banks, the view is staggering. I have stood on the Chain Bridge at dusk watching Parliament light up gold against the darkening sky, and it is one of those travel moments that genuinely stops you in your tracks and makes you grateful to be exactly where you are.
+
+What makes Budapest special beyond its beauty is the way history layers upon history without ever resolving. The Ottoman baths from the 16th century still operate. The Great Synagogue — the largest in Europe — stands in a neighbourhood that was also Budapest's wartime ghetto. The ruin bars of the VII district occupy crumbling 19th-century buildings that survived the war but not the decades of communist decay. And over all of it, the yellow Art Nouveau tiles and the grand neo-Gothic Parliament stand as physical evidence of the late Habsburg period when Budapest briefly rivalled Vienna as one of the most architecturally ambitious cities in Europe.
+
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #7c2d12 0%, #9f1239 35%, #be123c 65%, #7c2d12 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">The 100E airport bus crosses into Pest, the morning light catching the Parliament's neo-Gothic spires above the river, and by the time you reach Deák Ferenc Square the city is already audible — trams, market vendors, a busker playing Bartók on a violin outside the metro entrance. Budapest does not give you time to adjust.</p>
+  </div>
+</div>
 
 ## Why Budapest Stands Out
 
-<ImmersiveBreakInline videoSrc="/videos/destinations/budapest-hero.mp4" />
+The thermal bath culture alone would justify the visit. Budapest sits over 120 natural hot springs, and the city's bathhouses — some Ottoman from the 1500s, some neo-Baroque from the early 1900s, some stripped-down neighbourhood institutions — are as much social institutions as they are attractions. Sitting in an outdoor thermal pool in December with steam rising around you and the temperature at 38°C is one of the finest experiences in Central European travel.
 
-Budapest punches well above its weight. The city has thermal baths fed by natural hot springs that have been in use since the Ottoman occupation, a nightlife scene built inside crumbling pre-war buildings, Art Nouveau architecture that rivals Vienna's, and food that ranges from hearty paprika-laden stews to Michelin-starred tasting menus. And it does all of this at prices that make Western European capitals look absurd. A sit-down lunch with a beer rarely costs more than €8. Entry to the famous Szechenyi Baths is about €25 for a full day. You can live well here on a modest budget.
+## What Should You Do in Budapest?
 
-## The Thermal Baths
+### The Thermal Baths — Non-Negotiable
 
-### Szechenyi
+Budapest has more than 20 public thermal baths. Three are essential:
 
-The largest medicinal bath in Europe, Szechenyi is the one you see on every Instagram feed — yellow Neo-Baroque buildings surrounding steaming outdoor pools where locals play chess on floating boards. It is genuinely impressive. I went on a weekday morning in October and had entire sections to myself. The thermal water is rich in minerals, the steam rises into the cool air, and you understand immediately why Hungarians have made bathing a cultural institution. Weekend afternoons get crowded, so plan accordingly.
+**Széchenyi** (Állatkerti körút 11, City Park) is the most famous and the most theatrical — a sprawling neo-Baroque palace in City Park whose outdoor pools stay open year-round, steam rising into cold skies while men play chess on floating boards. The indoor pools include thermal, swimming, and water-massage pools. Entry EUR 22-25 depending on day and cabin/locker choice. Busiest on weekends — go on a weekday morning.
 
-### Gellert
+**Gellért** (Kelenhegyi út 4, Buda) occupies a grand Art Nouveau building at the foot of Gellért Hill with a tiled indoor thermal pool of extraordinary beauty, an outdoor pool with a wave machine, and thermal cabins. Entry EUR 20-24. The architecture alone justifies the cost.
 
-If Szechenyi is grand, Gellert is elegant. The Art Nouveau interior with its mosaic tiles, columns, and ornate pools feels like bathing in a palace. It is slightly more expensive and draws a slightly older crowd. I preferred the atmosphere here for a quieter, more meditative soak.
+**Rudas** (Döbrentei tér 9, Buda) is the most authentic — a 16th-century Ottoman bath with an octagonal pool under a domed skylight pierced with star-shaped openings. On Friday and Saturday nights, the rooftop pool opens with DJ music and Danube views (EUR 24-28, pre-booking essential).
 
-### Rudas
+### Buda Castle District
 
-Rudas has Ottoman-era bones — the central octagonal pool under a domed roof dates to the 1500s. The modern addition is a rooftop pool with direct views of the Danube and the Pest skyline. I went for the rooftop at sunset, and it was one of the best €20 I spent on the entire trip.
+The Castle District (Várhegy) on Buda's hilltop is a UNESCO-listed ensemble of palaces, churches, and cobblestone streets that served as the royal seat of the Hungarian Kingdom for centuries. The Hungarian National Gallery inside the Castle occupies grand wings of the Buda Castle complex and holds the finest collection of Hungarian art from the medieval period to the 20th century (free admission on permanent collection days). Matthias Church, whose diamond-patterned tile roof is one of Budapest's most photogenic elements, hosts regular concerts amid extraordinary Gothic interior details.
 
-## Buda Side
+**Fisherman's Bastion** (Halászbástya) is the neo-Romanesque terrace above the Castle offering the most dramatic panoramic view of Parliament and the Danube — best at sunrise when it is empty, or at dusk. The view is free outside the small central tower (which charges EUR 2 entry). For dawn visits, come before 8am.
 
-### Buda Castle and Castle Hill
+### Parliament and the Danube Bank
 
-The castle district is a UNESCO World Heritage Site, and the views from Fisherman's Bastion alone justify the climb (or funicular ride). The bastion's white stone terraces frame a postcard-perfect panorama of Parliament and the Danube. Inside the castle complex, the Hungarian National Gallery houses an excellent collection of Hungarian art, and the Budapest History Museum gives you the archaeological layers beneath the castle. The district is compact and walkable — a half-day covers the main sights comfortably.
-
-### Gellert Hill and the Citadella
-
-The hike up Gellert Hill is steep but short, and the 360-degree view from the top is the most complete panorama of Budapest you will find. The Citadella fortress at the summit is under renovation, but the viewpoint alone makes it worthwhile. I went just before sunset, watched the city transition from daylight to illuminated gold, and stayed until the Parliament building was fully lit. Bring a jacket — it gets windy up there.
-
-## Pest Side
+The Hungarian Parliament Building is one of the most spectacular buildings in Europe — a neo-Gothic symphony of 96 towers, 40 kg of gold in its interior decorations, and 10 courtyards, rising from the Danube bank in a facade that is best seen from the Buda side or from Tram 2 running along the Pest embankment. Interior tours (EUR 20-25 depending on nationality) show the main staircase, the crown room (containing the Holy Crown of Hungary), and the central dome hall. Book online ahead — tours fill quickly.
 
 ### The Jewish Quarter and Ruin Bars
 
-The VII District, once the old Jewish Quarter, is now the epicentre of Budapest's nightlife and food scene. The ruin bars — built inside abandoned buildings and courtyards — are unlike anything else in Europe. Szimpla Kert is the original and most famous, a sprawling labyrinth of mismatched furniture and street art. On a Saturday night, it is packed and chaotic in the best way. Sundays, Szimpla hosts a farmers' market worth visiting on its own.
+The VII district (Erzsébetváros) was Budapest's Jewish Quarter and is now both a heritage site and the city's nightlife epicentre. The Great Synagogue on Dohány utca is the largest in Europe and one of the largest in the world — its interior, with Moorish-Byzantine decorations and ornate galleries, is stunning. Entry EUR 15-17, includes the adjacent museum and memorial garden. Highly recommended.
 
-Beyond Szimpla, the Jewish Quarter has dozens of bars and restaurants. Mazel Tov serves Middle Eastern food in a gorgeous greenhouse setting. Bors GasztroBar does inventive soups in a standing-room-only space.
+A five-minute walk from the synagogue, the ruin bar scene begins. **Szimpla Kert** (Kazinczy utca 14) is the original and most famous — a labyrinthine multi-room space in a crumbling Art Nouveau building, open daily from noon, with mismatched furniture, exposed brick walls, plant-covered courtyards, and a Sunday farmers market in the daytime. Beer costs EUR 2-3. On Tuesday and Wednesday evenings it fills with a mixture of locals and travellers; on weekends it becomes a tourist spectacle. Both versions are worth experiencing.
 
-### Parliament
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #9f1239 0%, #7c2d12 35%, #be123c 65%, #9f1239 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Two Cities, One Soul</h2>
+    <p class="ib-text">I walked from the Széchenyi baths through City Park at dusk, steam still rising from the pools behind me, then caught Tram 2 along the Danube as Parliament lit up gold over the river. By the time I reached Szimpla Kert, the palinka was two euros and a quartet was playing Romani music in the corner. This is Budapest in a single evening.</p>
+  </div>
+</div>
 
-The Hungarian Parliament building is one of the most beautiful legislative buildings in the world — a Gothic Revival masterpiece that sits right on the Danube. Tours of the interior run daily and are worth the €10 entry. The main staircase, the assembly hall, and the Hungarian Crown Jewels are genuinely impressive. Book your tour online in advance because slots fill up quickly, especially in summer.
+### Great Market Hall and Hungarian Food
 
-### The Great Market Hall
+The Központi Vásárcsarnok (Great Market Hall) on Fővám tér is Budapest's most beautiful food market — an 1897 iron-and-brick hall on three floors selling paprika (red, hot, smoked), Hungarian salami, pickled vegetables, fresh produce, embroidery, and folk crafts. The upper floor food stalls serve affordable Hungarian classics: langos (deep-fried flatbread with sour cream and cheese, EUR 3-4) is the essential snack. Buy vacuum-sealed Hungarian paprika and Tokaj wine to take home.
 
-This iron-and-glass market hall near Liberty Bridge is where locals and tourists overlap. The ground floor has butchers, produce vendors, and stalls selling paprika and salami. The upper floor has food stands where you can eat langos (deep-fried dough with sour cream and cheese) for a few euros. Go in the morning when it is quieter.
-
-## Practical Information
-
-### What's the Best Way to Get Around Budapest?
-
-Budapest has an efficient metro, tram, and bus system. The M1 metro line, running under Andrassy Avenue, is the oldest electrified underground railway in continental Europe — and it is still in daily use. A 24-hour transit pass costs about €5.50 and covers everything. Tram 2, which runs along the Pest side of the Danube, offers one of the best free sightseeing rides in Europe — Parliament, Chain Bridge, and the castle district all visible from the window.
-
-### What Should I Eat and Drink in Budapest?
-
-Hungarian cuisine revolves around paprika, pork, and slow-cooked comfort. Goulash here is a soup, not the thick stew you might expect. Langos from a market stall is the perfect cheap lunch. Hungarian wine — particularly Egri Bikaver and Tokaji — deserves more recognition. A bottle of excellent wine costs €5-10 in a shop.
-
-### Is Budapest Safe for Tourists?
-
-Budapest is generally very safe. Watch for pickpockets on busy trams and in tourist areas. Use Bolt rather than hailing cabs on the street.
+For Hungarian dining, the key dishes are **gulyás** (goulash — a soup/stew of beef, paprika, and vegetables, not the thick Western "goulash" stew), **halászlé** (spicy fish soup from the Danube), **pörkolt** (braised meat stew), and **somlói galuska** (walnut sponge cake with rum, chocolate sauce, and cream). The restaurant district along Liszt Ferenc tér has excellent options from EUR 8-15 per main.
 
 <div class="scott-tips">
-
-### Scott's Tips for Budapest
-
-1. **Visit the baths on a weekday morning.** Szechenyi on a Saturday afternoon is a crowded party. On a Tuesday morning, it is a serene, steaming oasis. The experience is completely different, and the weekday version is the one I recommend.
-
-2. **Take Tram 2 along the Danube at night.** This is the cheapest sightseeing tour in the city. Parliament lit up in gold, the Chain Bridge glowing, the castle on the hill — all from a €1.50 tram ticket.
-
-3. **Eat langos at the Great Market Hall, not from tourist stands.** The market version is freshly fried and costs half the price of the ones sold near the main squares. Get it with sour cream and cheese — skip the Nutella version.
-
-4. **Cross the Chain Bridge on foot at sunset.** Start on the Pest side, walk across to Buda, then take the funicular or walk up to the castle district. The timing puts you at Fisherman's Bastion as the city lights come on.
-
-5. **Explore beyond the ruin bars.** Szimpla Kert is worth seeing once, but the Jewish Quarter has so much more — Mazel Tov for dinner, Bors GasztroBar for soup, and small wine bars on Kazinczy Street that feel nothing like the party scene one block over.
-
+  <div class="scott-tips-header">&#9992;&#65039; Scott's Budapest Tips</div>
+  <ul>
+    <li><strong>Getting There:</strong> 100E airport bus from Budapest Airport (BUD) to Deák Ferenc Square costs 900 HUF (about €2.30) and takes 35 minutes — far cheaper than a taxi (€25-30). Buy a 24-hour or 72-hour transit pass immediately on arrival for unlimited metro, tram, and bus use.</li>
+    <li><strong>Best Time:</strong> May and September are the sweet spots — warm enough for outdoor terraces and bath pools, without July/August's 35°C heat and maximum tourist crowds. December is extraordinary: thermal baths steam in the cold, Christmas markets line Vörösmarty tér, and the VII district ruin bars are at their most atmospheric.</li>
+    <li><strong>Money:</strong> Hungarian forint (HUF) — approximately 390 HUF per euro. Use OTP Bank ATMs for the best rates. The 100E airport bus costs 900 HUF; a beer at Szimpla Kert costs 800-1000 HUF; bath entry is 8,500-11,000 HUF. Carry cash — smaller restaurants and market stalls are cash-only.</li>
+    <li><strong>Don't Miss:</strong> Tram 2 at dusk — it runs along the Pest bank of the Danube and offers a Parliament-lit panorama that rivals any paid view in the city. A transit ticket costs 450 HUF.</li>
+    <li><strong>Avoid:</strong> Restaurants directly facing Chain Bridge or Parliament — they are priced for tourists with no local alternative. Walk one block back and prices drop by 40-60%. Also avoid unlicensed taxis — use Bolt or the official taxi app (FőTaxi).</li>
+    <li><strong>Local Phrase:</strong> "Egészségedre!" (eh-GEYS-ey-ged-reh) — Cheers/To your health! The full version is rarely used outside formal settings; locals typically just say "Egész!" at a bar. Either gets a smile.</li>
+  </ul>
 </div>
+
+## Where Should You Eat in Budapest?
+
+Budapest's food scene has shifted dramatically in the past decade. The traditional étterem (restaurant) serving gulyás and Wiener schnitzel has been joined by a new generation of chefs reworking Hungarian ingredients with contemporary technique — and the traditional food remains excellent and cheap by comparison.
+
+<div class="immersive-break-inline" id="food">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #7c2d12 0%, #92400e 35%, #9f1239 65%, #7c2d12 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Hungarian Table</h2>
+    <p class="ib-text">A bowl of halászlé (fisherman's soup) arrived at a Danube-side restaurant — an incendiary red broth of freshwater fish and paprika, enough for two, with a pile of bread and a glass of Egri Bikavér (Bull's Blood) from Eger for about €12 total. I ate it watching barges move on the Danube and felt entirely, perfectly situated.</p>
+  </div>
+</div>
+
+- **Borkonyha** (Sas utca 3, V district) — Wine Kitchen, one of Budapest's best restaurants. Hungarian wines paired with inspired modern interpretations of local classics. Michelin Bib Gourmand. Mains EUR 15-22. Reserve well ahead.
+
+- **Gerbeaud** (Vörösmarty tér 7-8) — Budapest's most famous café since 1858. Extraordinarily beautiful interior, excellent cakes (Dobos torte, Esterházy, Gerbeaud slice). Coffee and cake runs EUR 10-14 but is the quintessential Budapest café experience.
+
+- **Faust Wine Cellar** (Hess András tér 1-3, Castle District) — Candlelit vaulted wine cellar in the Castle District. Excellent Hungarian wines by the glass from EUR 4. Small plate food menu. Perfect for an evening in Buda.
+
+- **Stand25** (Fővám tér 1-3, inside the Great Market Hall) — Upper floor of the Great Market Hall, serving traditional Hungarian daily specials to market workers and tourists alike. Gulyás, pörkölt, chicken paprikash. Full meal under EUR 8.
+
+- **Két Szerecsen** (Nagymező utca 14, VI district) — Neighbourhood café-restaurant on Budapest's "Broadway" strip with excellent breakfast, coffee, and a full menu of international and Hungarian dishes. EUR 10-16 mains. Good people-watching spot.
+
+## Where Should You Stay in Budapest?
+
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #9f1239 0%, #7c2d12 35%, #92400e 65%, #9f1239 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Your Budapest Base</h2>
+    <p class="ib-text">Stay in the V or VI district for central Pest access to Parliament, the Jewish Quarter, and the Great Market Hall. Stay near Andrássy Avenue if you want the upscale café and restaurant strip. Stay in Buda's Castle District for a quieter, more historic atmosphere — at the cost of everything being uphill from the Danube.</p>
+  </div>
+</div>
+
+Budapest offers outstanding mid-range value — boutique hotels in the EUR 60-100/night range that would cost EUR 150-200 in Prague or Vienna. Book ahead for summer and December-January.
+
+- **Budget: Maverick City Lodge** (Ferenciek tere 2, V district) — Central design hostel with dorms and private rooms in an excellent location. Dorm beds from EUR 15-22, doubles from EUR 55.
+
+- **Mid-Range: Brody House** (Bródy Sándor utca 10, VIII district) — Boutique hotel in a literary neighbourhood, beautifully designed with art-covered walls and a genuinely local feel. Doubles from EUR 90-130.
+
+- **Luxury: Párisi Udvar Hotel** (Ferenciek tere 9-11, V district) — The most spectacular hotel lobby in Budapest, housed in a 1909 orientalist passage with a stained-glass atrium. A Hyatt property. Doubles from EUR 220-350.
+
+## When Is the Best Time to Visit Budapest?
+
+**May and June** are the peak good-weather months — long days, outdoor bath pools at full swing, outdoor terraces along Liszt Ferenc tér and the Danube bank humming with life. The Budapest Spring Festival in late March/early April kicks off the cultural year.
+
+**September and October** are excellent — temperatures in the low-to-mid 20s, fewer tourists than summer, and the thermal baths begin to feel truly special as the air cools. The Budapest International Wine Festival takes place in September.
+
+**December** is one of the great times to be in Budapest. Christmas markets run from late November through December 26. The thermal baths reach their atmospheric peak — steam rising from the outdoor pools in below-zero temperatures, fairy lights reflected in the water. Book accommodation well ahead.
+
+## Final Thoughts
+
+Budapest is one of those cities that people visit expecting to like and come away genuinely loving. The thermal baths alone would justify the trip. But what lingers after you leave is something harder to quantify — the quality of the light on the Danube at dusk, the weight of the history in every neighbourhood, the way the city combines grand imperial ambition with bohemian creativity and a certain melancholy that is not sadness but depth. Budapest earns its reputation. Give it three days at minimum, and leave room in your schedule to get thoroughly lost.
