@@ -22,17 +22,64 @@ gradientColors: "from-amber-900 via-red-800 to-orange-900"
 relatedDestinations:
   - "budapest"
   - "krakow"
-faqItems:
-  - { question: "Is Prague expensive compared to other Eastern European cities?", answer: "Prague is pricier than Budapest or Krakow but still significantly cheaper than Western Europe. Beer costs around €1.50-2 in local pubs, and a full meal can be had for €5-8. Stick to neighbourhoods outside the tourist core for the best value." }
-  - { question: "How many days do I need in Prague?", answer: "Three to four days is the sweet spot. That gives you time to cover the main sights — Prague Castle, Charles Bridge, Old Town — plus a day to explore lesser-known neighbourhoods like Vinohrady or Zizkov and enjoy the beer culture at a relaxed pace." }
-affiliatePicks: []
+affiliatePicks:
+  - type: hotel
+    provider: booking
+    label: "Best-rated hotels in Prague"
+    url: "https://www.booking.com/search.html?ss=prague&aid=1245953"
+  - type: tour
+    provider: gyg
+    label: "Walking tours, castle tickets, and thermal bath entry"
+    url: "https://www.getyourguide.com/s/?q=prague&partner_id=PARTNER"
+  - type: transport
+    provider: omio
+    label: "Book trains across Eastern Europe"
+    url: "https://www.omio.com"
+  - type: gear
+    provider: amazon
+    label: "Type C/F EU travel adapter"
+    url: "https://www.amazon.com/s?k=europe+type+c+travel+adapter&tag=discovereasterneurope-20"
+  - type: gear
+    provider: amazon
+    label: "Packing cubes for multi-country travel"
+    url: "https://www.amazon.com/s?k=packing+cubes+travel&tag=discovereasterneurope-20"
+
 contentStatus: "published"
 draft: false
+scottTips:
+  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views."
+  - "Prague is beautiful but intensely touristy in the center — walk ten minutes from Old Town Square toward Vinohrady or Zizkov for authenticity and lower prices."
+  - "Eastern Europe is budget-friendly compared to Western Europe — €40–70/day covers accommodation, food, and activities comfortably in most cities."
+  - "Low-cost carriers (Wizz Air, Ryanair) make hopping between Warsaw, Budapest, Prague, and Bucharest very affordable — check luggage fees before booking."
+  - "Tipping 10% is appreciated at sit-down restaurants but not universal — observe local custom and round up rather than leaving a percentage."
+  - "Each country has its own currency — Czech koruna, Hungarian forint, Polish zloty, Romanian leu. Euro is not accepted in most Eastern European countries."
+  - "Overnight trains connecting major cities (Vienna–Budapest, Prague–Warsaw) are making a comeback — book months ahead for the best sleeper berths."
+faqItems:
+  - question: "Is Prague safe?"
+    answer: "Prague is a safe destination for tourists. Eastern European cities generally have low violent crime rates. Exercise normal caution around busy tourist areas, watch for pickpockets in crowded markets and on public transport, and stay aware of your surroundings at night."
+  - question: "Is Prague worth visiting?"
+    answer: "Prague is absolutely worth visiting. Eastern Europe offers extraordinary history, architecture, and culture at prices that make Western Europe look extravagant — and most cities see far fewer crowds than Paris, Rome, or Amsterdam."
+  - question: "Best time to visit Prague?"
+    answer: "May–June and September–October are ideal — pleasant temperatures, manageable crowds, and full cultural programming. July–August is peak season. Winter (December–February) is cold but magical for Christmas markets and very affordable."
+  - question: "How much does Prague cost per day?"
+    answer: "Eastern Europe is excellent value. Budget travelers can manage on €30–50/day, mid-range visitors should plan €70–120/day, and even luxury travel rarely exceeds €200/day. Costs are roughly half of Western European equivalents."
+  - question: "How many days in Prague?"
+    answer: "Two to three days covers the main highlights. Four days allows for a relaxed pace plus a day trip to the surrounding region. Eastern European cities reward slow travel — the longer you stay, the more you discover beyond the tourist core."
+  - question: "Prague on a budget — is it possible?"
+    answer: "Eastern Europe is one of the world's great budget destinations. Beer costs €1.50–2.50, full meals run €5–10, and accommodation is a fraction of Western European prices. Wizz Air and Ryanair connect major cities from as little as €15."
+  - question: "What is Prague famous for?"
+    answer: "Prague is famous for its remarkably preserved historic architecture, its complex and fascinating history spanning multiple empires, its vibrant food and nightlife scenes, and the warmth of its people — who are accustomed to fewer tourists than their Western European counterparts."
+  - question: "How do I get to Prague?"
+    answer: "Low-cost carriers (Wizz Air, Ryanair, EasyJet) connect Eastern European cities affordably from across Europe. Rail connections link major cities — Vienna to Budapest takes 2.5 hours, Prague to Berlin 4.5 hours. Within the region, overnight trains are a scenic and practical option."
+
+aeoLede: "Prague is one of Europe's most beautiful cities — a Gothic, Baroque, and Art Nouveau masterpiece that survived both World Wars essentially intact, with Charles Bridge, Prague Castle, and Old Town Square forming one of the most photogenic historic centres in the world. It is busy with tourists in the centre but authenticity is just a ten-minute walk away."
 ---
 
 Prague grabbed me the moment I stepped off the tram and saw the Vltava River glinting under a line of Gothic spires. There is something about this city that feels frozen in a fairy tale — except the beer is cheap, the food is hearty, and the streets are alive with a creative energy that no storybook could capture. I have visited dozens of European capitals, and Prague consistently ranks among the ones I tell people to visit first if they have never been to this part of the world.
 
 ## Why Prague Belongs on Your List
+
+<ImmersiveBreakInline videoSrc="/videos/destinations/prague-hero.mp4" />
 
 The Czech capital survived both World Wars largely intact, which means the architecture you see today is genuinely centuries old — not a reconstruction. Walking from Old Town Square through Mala Strana and up to Prague Castle, you pass through Romanesque, Gothic, Baroque, and Art Nouveau in a single afternoon. That layered history gives Prague a density of beauty that few cities can match.
 

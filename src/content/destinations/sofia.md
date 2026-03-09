@@ -22,15 +22,62 @@ gradientColors: "from-rose-900 via-pink-800 to-fuchsia-900"
 relatedDestinations:
   - "bucharest"
   - "belgrade"
-faqItems:
-  - { question: "How many days do I need in Sofia?", answer: "Three full days is ideal for covering the main sights, enjoying the food scene, and fitting in a half-day hike on Vitosha Mountain. Add an extra day if you want to visit the Rila Monastery as a day trip." }
-  - { question: "Is Sofia walkable?", answer: "The city center is very walkable. Most major attractions are within a 20-minute walk of each other. The metro is useful for reaching Vitosha Mountain and the bus stations, but you can cover the historic core entirely on foot." }
-affiliatePicks: []
+affiliatePicks:
+  - type: hotel
+    provider: booking
+    label: "Best-rated hotels in Sofia"
+    url: "https://www.booking.com/search.html?ss=sofia&aid=1245953"
+  - type: tour
+    provider: gyg
+    label: "Walking tours, castle tickets, and thermal bath entry"
+    url: "https://www.getyourguide.com/s/?q=sofia&partner_id=PARTNER"
+  - type: transport
+    provider: omio
+    label: "Book trains across Eastern Europe"
+    url: "https://www.omio.com"
+  - type: gear
+    provider: amazon
+    label: "Type C/F EU travel adapter"
+    url: "https://www.amazon.com/s?k=europe+type+c+travel+adapter&tag=discovereasterneurope-20"
+  - type: gear
+    provider: amazon
+    label: "Packing cubes for multi-country travel"
+    url: "https://www.amazon.com/s?k=packing+cubes+travel&tag=discovereasterneurope-20"
+
 contentStatus: "published"
 draft: false
+scottTips:
+  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views."
+  - "Prague is beautiful but intensely touristy in the center — walk ten minutes from Old Town Square toward Vinohrady or Zizkov for authenticity and lower prices."
+  - "Eastern Europe is budget-friendly compared to Western Europe — €40–70/day covers accommodation, food, and activities comfortably in most cities."
+  - "Low-cost carriers (Wizz Air, Ryanair) make hopping between Warsaw, Budapest, Prague, and Bucharest very affordable — check luggage fees before booking."
+  - "Tipping 10% is appreciated at sit-down restaurants but not universal — observe local custom and round up rather than leaving a percentage."
+  - "Each country has its own currency — Czech koruna, Hungarian forint, Polish zloty, Romanian leu. Euro is not accepted in most Eastern European countries."
+  - "Overnight trains connecting major cities (Vienna–Budapest, Prague–Warsaw) are making a comeback — book months ahead for the best sleeper berths."
+faqItems:
+  - question: "Is Sofia safe?"
+    answer: "Sofia is a safe destination for tourists. Eastern European cities generally have low violent crime rates. Exercise normal caution around busy tourist areas, watch for pickpockets in crowded markets and on public transport, and stay aware of your surroundings at night."
+  - question: "Is Sofia worth visiting?"
+    answer: "Sofia is absolutely worth visiting. Eastern Europe offers extraordinary history, architecture, and culture at prices that make Western Europe look extravagant — and most cities see far fewer crowds than Paris, Rome, or Amsterdam."
+  - question: "Best time to visit Sofia?"
+    answer: "May–June and September–October are ideal — pleasant temperatures, manageable crowds, and full cultural programming. July–August is peak season. Winter (December–February) is cold but magical for Christmas markets and very affordable."
+  - question: "How much does Sofia cost per day?"
+    answer: "Eastern Europe is excellent value. Budget travelers can manage on €30–50/day, mid-range visitors should plan €70–120/day, and even luxury travel rarely exceeds €200/day. Costs are roughly half of Western European equivalents."
+  - question: "How many days in Sofia?"
+    answer: "Two to three days covers the main highlights. Four days allows for a relaxed pace plus a day trip to the surrounding region. Eastern European cities reward slow travel — the longer you stay, the more you discover beyond the tourist core."
+  - question: "Sofia on a budget — is it possible?"
+    answer: "Eastern Europe is one of the world's great budget destinations. Beer costs €1.50–2.50, full meals run €5–10, and accommodation is a fraction of Western European prices. Wizz Air and Ryanair connect major cities from as little as €15."
+  - question: "What is Sofia famous for?"
+    answer: "Sofia is famous for its remarkably preserved historic architecture, its complex and fascinating history spanning multiple empires, its vibrant food and nightlife scenes, and the warmth of its people — who are accustomed to fewer tourists than their Western European counterparts."
+  - question: "How do I get to Sofia?"
+    answer: "Low-cost carriers (Wizz Air, Ryanair, EasyJet) connect Eastern European cities affordably from across Europe. Rail connections link major cities — Vienna to Budapest takes 2.5 hours, Prague to Berlin 4.5 hours. Within the region, overnight trains are a scenic and practical option."
+
+aeoLede: "Sofia is Bulgaria's compact, affordable capital at the foot of Mount Vitosha — a city where Roman ruins, Byzantine churches, Ottoman mosques, and Soviet-era monuments sit within walking distance of each other, and where some of Europe's best-value restaurants and craft beer bars have opened in recent years."
 ---
 
 ## Why Sofia Surprised Me
+
+<ImmersiveBreakInline videoSrc="/videos/destinations/sofia-hero.mp4" />
 
 I will be honest: Sofia was not originally high on my list. But this Bulgarian capital turned out to be one of the most rewarding cities I have visited in Eastern Europe. It is a place where you can stand on a glass platform above Roman ruins in a modern metro station, hike a 2,290-meter mountain before lunch, and eat one of the best meals of your trip for under €8. Sofia operates on a different rhythm than Western European capitals — slower, less polished, but deeply authentic.
 

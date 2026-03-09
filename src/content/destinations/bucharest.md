@@ -22,15 +22,62 @@ gradientColors: "from-yellow-900 via-amber-800 to-orange-900"
 relatedDestinations:
   - "sofia"
   - "belgrade"
-faqItems:
-  - { question: "Is Bucharest safe for tourists?", answer: "Bucharest is generally very safe for tourists. Petty theft can occur in crowded areas, but violent crime targeting visitors is rare. Use normal city precautions and you will be fine." }
-  - { question: "What currency does Bucharest use?", answer: "Romania uses the Romanian Leu (RON). While Romania is in the EU, it has not adopted the Euro. ATMs are widely available and most restaurants accept cards, but carry some cash for markets and smaller shops." }
-affiliatePicks: []
+affiliatePicks:
+  - type: hotel
+    provider: booking
+    label: "Best-rated hotels in Bucharest"
+    url: "https://www.booking.com/search.html?ss=bucharest&aid=1245953"
+  - type: tour
+    provider: gyg
+    label: "Walking tours, castle tickets, and thermal bath entry"
+    url: "https://www.getyourguide.com/s/?q=bucharest&partner_id=PARTNER"
+  - type: transport
+    provider: omio
+    label: "Book trains across Eastern Europe"
+    url: "https://www.omio.com"
+  - type: gear
+    provider: amazon
+    label: "Type C/F EU travel adapter"
+    url: "https://www.amazon.com/s?k=europe+type+c+travel+adapter&tag=discovereasterneurope-20"
+  - type: gear
+    provider: amazon
+    label: "Packing cubes for multi-country travel"
+    url: "https://www.amazon.com/s?k=packing+cubes+travel&tag=discovereasterneurope-20"
+
 contentStatus: "published"
 draft: false
+scottTips:
+  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views."
+  - "Prague is beautiful but intensely touristy in the center — walk ten minutes from Old Town Square toward Vinohrady or Zizkov for authenticity and lower prices."
+  - "Eastern Europe is budget-friendly compared to Western Europe — €40–70/day covers accommodation, food, and activities comfortably in most cities."
+  - "Low-cost carriers (Wizz Air, Ryanair) make hopping between Warsaw, Budapest, Prague, and Bucharest very affordable — check luggage fees before booking."
+  - "Tipping 10% is appreciated at sit-down restaurants but not universal — observe local custom and round up rather than leaving a percentage."
+  - "Each country has its own currency — Czech koruna, Hungarian forint, Polish zloty, Romanian leu. Euro is not accepted in most Eastern European countries."
+  - "Overnight trains connecting major cities (Vienna–Budapest, Prague–Warsaw) are making a comeback — book months ahead for the best sleeper berths."
+faqItems:
+  - question: "Is Bucharest safe?"
+    answer: "Bucharest is a safe destination for tourists. Eastern European cities generally have low violent crime rates. Exercise normal caution around busy tourist areas, watch for pickpockets in crowded markets and on public transport, and stay aware of your surroundings at night."
+  - question: "Is Bucharest worth visiting?"
+    answer: "Bucharest is absolutely worth visiting. Eastern Europe offers extraordinary history, architecture, and culture at prices that make Western Europe look extravagant — and most cities see far fewer crowds than Paris, Rome, or Amsterdam."
+  - question: "Best time to visit Bucharest?"
+    answer: "May–June and September–October are ideal — pleasant temperatures, manageable crowds, and full cultural programming. July–August is peak season. Winter (December–February) is cold but magical for Christmas markets and very affordable."
+  - question: "How much does Bucharest cost per day?"
+    answer: "Eastern Europe is excellent value. Budget travelers can manage on €30–50/day, mid-range visitors should plan €70–120/day, and even luxury travel rarely exceeds €200/day. Costs are roughly half of Western European equivalents."
+  - question: "How many days in Bucharest?"
+    answer: "Two to three days covers the main highlights. Four days allows for a relaxed pace plus a day trip to the surrounding region. Eastern European cities reward slow travel — the longer you stay, the more you discover beyond the tourist core."
+  - question: "Bucharest on a budget — is it possible?"
+    answer: "Eastern Europe is one of the world's great budget destinations. Beer costs €1.50–2.50, full meals run €5–10, and accommodation is a fraction of Western European prices. Wizz Air and Ryanair connect major cities from as little as €15."
+  - question: "What is Bucharest famous for?"
+    answer: "Bucharest is famous for its remarkably preserved historic architecture, its complex and fascinating history spanning multiple empires, its vibrant food and nightlife scenes, and the warmth of its people — who are accustomed to fewer tourists than their Western European counterparts."
+  - question: "How do I get to Bucharest?"
+    answer: "Low-cost carriers (Wizz Air, Ryanair, EasyJet) connect Eastern European cities affordably from across Europe. Rail connections link major cities — Vienna to Budapest takes 2.5 hours, Prague to Berlin 4.5 hours. Within the region, overnight trains are a scenic and practical option."
+
+aeoLede: "Bucharest is Romania's sprawling, contradictory capital — home to the world's second-largest building (Ceaușescu's Palace of the Parliament), a bohemian café culture in the Floreasca neighbourhood, Art Nouveau architecture alongside communist-era brutalism, and one of Eastern Europe's most dynamic restaurant and nightlife scenes."
 ---
 
 ## Why Bucharest Deserves Your Attention
+
+<ImmersiveBreakInline videoSrc="/videos/destinations/bucharest-hero.mp4" />
 
 Bucharest is one of those cities that catches you off guard. I arrived expecting gray Soviet blocks and left wondering why it took me so long to visit. Yes, the communist-era architecture is there, but so are Belle Epoque mansions, tree-lined boulevards, and a nightlife scene that rivals Berlin. This is a capital city where you can eat a full three-course meal for under €10, sleep in a boutique hotel for €40, and stumble into world-class contemporary art without paying a cent.
 

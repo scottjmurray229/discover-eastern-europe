@@ -22,17 +22,64 @@ gradientColors: "from-sky-900 via-cyan-800 to-teal-900"
 relatedDestinations:
   - "dubrovnik"
   - "ljubljana"
-faqItems:
-  - { question: "How does Split compare to Dubrovnik?", answer: "Split is less polished and more authentic. Dubrovnik is a museum-city; Split is a working port where Roman ruins serve as apartment walls and restaurants operate inside ancient cellars. Split is also more affordable, less crowded, and better positioned as a base for island hopping. Many travellers prefer it precisely because it feels more real." }
-  - { question: "Which islands should I visit from Split?", answer: "Hvar is the most popular — glamorous, with excellent restaurants and nightlife. Brac has Zlatni Rat, one of Croatia's most photographed beaches. Vis is the most remote and unspoiled. For a single day trip, Brac is easiest (50 minutes by catamaran). For an overnight, Hvar is the best all-round experience." }
-affiliatePicks: []
+affiliatePicks:
+  - type: hotel
+    provider: booking
+    label: "Best-rated hotels in Split"
+    url: "https://www.booking.com/search.html?ss=split&aid=1245953"
+  - type: tour
+    provider: gyg
+    label: "Walking tours, castle tickets, and thermal bath entry"
+    url: "https://www.getyourguide.com/s/?q=split&partner_id=PARTNER"
+  - type: transport
+    provider: omio
+    label: "Book trains across Eastern Europe"
+    url: "https://www.omio.com"
+  - type: gear
+    provider: amazon
+    label: "Type C/F EU travel adapter"
+    url: "https://www.amazon.com/s?k=europe+type+c+travel+adapter&tag=discovereasterneurope-20"
+  - type: gear
+    provider: amazon
+    label: "Packing cubes for multi-country travel"
+    url: "https://www.amazon.com/s?k=packing+cubes+travel&tag=discovereasterneurope-20"
+
 contentStatus: "published"
 draft: false
+scottTips:
+  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views."
+  - "Prague is beautiful but intensely touristy in the center — walk ten minutes from Old Town Square toward Vinohrady or Zizkov for authenticity and lower prices."
+  - "Eastern Europe is budget-friendly compared to Western Europe — €40–70/day covers accommodation, food, and activities comfortably in most cities."
+  - "Low-cost carriers (Wizz Air, Ryanair) make hopping between Warsaw, Budapest, Prague, and Bucharest very affordable — check luggage fees before booking."
+  - "Tipping 10% is appreciated at sit-down restaurants but not universal — observe local custom and round up rather than leaving a percentage."
+  - "Each country has its own currency — Czech koruna, Hungarian forint, Polish zloty, Romanian leu. Euro is not accepted in most Eastern European countries."
+  - "Overnight trains connecting major cities (Vienna–Budapest, Prague–Warsaw) are making a comeback — book months ahead for the best sleeper berths."
+faqItems:
+  - question: "Is Split safe?"
+    answer: "Split is a safe destination for tourists. Eastern European cities generally have low violent crime rates. Exercise normal caution around busy tourist areas, watch for pickpockets in crowded markets and on public transport, and stay aware of your surroundings at night."
+  - question: "Is Split worth visiting?"
+    answer: "Split is absolutely worth visiting. Eastern Europe offers extraordinary history, architecture, and culture at prices that make Western Europe look extravagant — and most cities see far fewer crowds than Paris, Rome, or Amsterdam."
+  - question: "Best time to visit Split?"
+    answer: "May–June and September–October are ideal — pleasant temperatures, manageable crowds, and full cultural programming. July–August is peak season. Winter (December–February) is cold but magical for Christmas markets and very affordable."
+  - question: "How much does Split cost per day?"
+    answer: "Eastern Europe is excellent value. Budget travelers can manage on €30–50/day, mid-range visitors should plan €70–120/day, and even luxury travel rarely exceeds €200/day. Costs are roughly half of Western European equivalents."
+  - question: "How many days in Split?"
+    answer: "Two to three days covers the main highlights. Four days allows for a relaxed pace plus a day trip to the surrounding region. Eastern European cities reward slow travel — the longer you stay, the more you discover beyond the tourist core."
+  - question: "Split on a budget — is it possible?"
+    answer: "Eastern Europe is one of the world's great budget destinations. Beer costs €1.50–2.50, full meals run €5–10, and accommodation is a fraction of Western European prices. Wizz Air and Ryanair connect major cities from as little as €15."
+  - question: "What is Split famous for?"
+    answer: "Split is famous for its remarkably preserved historic architecture, its complex and fascinating history spanning multiple empires, its vibrant food and nightlife scenes, and the warmth of its people — who are accustomed to fewer tourists than their Western European counterparts."
+  - question: "How do I get to Split?"
+    answer: "Low-cost carriers (Wizz Air, Ryanair, EasyJet) connect Eastern European cities affordably from across Europe. Rail connections link major cities — Vienna to Budapest takes 2.5 hours, Prague to Berlin 4.5 hours. Within the region, overnight trains are a scenic and practical option."
+
+aeoLede: "Split is Croatia's most vibrant city — built literally inside the walls of Roman Emperor Diocletian's 4th-century palace, where people live, eat, drink, and run cafés in rooms that were originally imperial apartments. The old town is a UNESCO World Heritage Site and the main hub for ferries to the Dalmatian islands."
 ---
 
 Split is not a preserved monument. It is a living, breathing, slightly chaotic city built inside and around a Roman emperor's retirement palace. That distinction matters. Where Dubrovnik can feel like a beautiful stage set, Split feels like a place where people actually live — because they do. Locals hang laundry from windows set into 1,700-year-old walls, restaurants serve grilled fish in converted Roman cellars, and the cathedral was literally built inside the emperor's mausoleum. I walked into Diocletian's Palace through the Bronze Gate, and within five minutes I had passed a Roman column, a medieval church, a modern cafe, and a grandmother yelling down to the street from her apartment. That is Split in a nutshell.
 
 ## Diocletian's Palace
+
+<ImmersiveBreakInline videoSrc="/videos/destinations/split-hero.mp4" />
 
 ### Understanding the Palace
 

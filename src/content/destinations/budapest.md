@@ -22,17 +22,64 @@ gradientColors: "from-red-900 via-rose-800 to-pink-900"
 relatedDestinations:
   - "prague"
   - "bratislava"
-faqItems:
-  - { question: "Are the thermal baths worth visiting?", answer: "Absolutely. The thermal baths are not a tourist gimmick — they are a genuine part of Hungarian daily life dating back to the Ottoman era. Szechenyi is the most famous, but Gellert offers a more Art Nouveau experience and Rudas has a rooftop pool with Danube views. Budget around €15-25 for entry depending on the bath." }
-  - { question: "What is the best area to stay in Budapest?", answer: "District VII (the Jewish Quarter) puts you in the middle of the ruin bar and restaurant scene. District V (Belvaros) is more upscale and central. Buda side is quieter and more residential. For first-time visitors, District VII offers the best combination of atmosphere, food, nightlife, and value." }
-affiliatePicks: []
+affiliatePicks:
+  - type: hotel
+    provider: booking
+    label: "Best-rated hotels in Budapest"
+    url: "https://www.booking.com/search.html?ss=budapest&aid=1245953"
+  - type: tour
+    provider: gyg
+    label: "Walking tours, castle tickets, and thermal bath entry"
+    url: "https://www.getyourguide.com/s/?q=budapest&partner_id=PARTNER"
+  - type: transport
+    provider: omio
+    label: "Book trains across Eastern Europe"
+    url: "https://www.omio.com"
+  - type: gear
+    provider: amazon
+    label: "Type C/F EU travel adapter"
+    url: "https://www.amazon.com/s?k=europe+type+c+travel+adapter&tag=discovereasterneurope-20"
+  - type: gear
+    provider: amazon
+    label: "Packing cubes for multi-country travel"
+    url: "https://www.amazon.com/s?k=packing+cubes+travel&tag=discovereasterneurope-20"
+
 contentStatus: "published"
 draft: false
+scottTips:
+  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views."
+  - "Prague is beautiful but intensely touristy in the center — walk ten minutes from Old Town Square toward Vinohrady or Zizkov for authenticity and lower prices."
+  - "Eastern Europe is budget-friendly compared to Western Europe — €40–70/day covers accommodation, food, and activities comfortably in most cities."
+  - "Low-cost carriers (Wizz Air, Ryanair) make hopping between Warsaw, Budapest, Prague, and Bucharest very affordable — check luggage fees before booking."
+  - "Tipping 10% is appreciated at sit-down restaurants but not universal — observe local custom and round up rather than leaving a percentage."
+  - "Each country has its own currency — Czech koruna, Hungarian forint, Polish zloty, Romanian leu. Euro is not accepted in most Eastern European countries."
+  - "Overnight trains connecting major cities (Vienna–Budapest, Prague–Warsaw) are making a comeback — book months ahead for the best sleeper berths."
+faqItems:
+  - question: "Is Budapest safe?"
+    answer: "Budapest is a safe destination for tourists. Eastern European cities generally have low violent crime rates. Exercise normal caution around busy tourist areas, watch for pickpockets in crowded markets and on public transport, and stay aware of your surroundings at night."
+  - question: "Is Budapest worth visiting?"
+    answer: "Budapest is absolutely worth visiting. Eastern Europe offers extraordinary history, architecture, and culture at prices that make Western Europe look extravagant — and most cities see far fewer crowds than Paris, Rome, or Amsterdam."
+  - question: "Best time to visit Budapest?"
+    answer: "May–June and September–October are ideal — pleasant temperatures, manageable crowds, and full cultural programming. July–August is peak season. Winter (December–February) is cold but magical for Christmas markets and very affordable."
+  - question: "How much does Budapest cost per day?"
+    answer: "Eastern Europe is excellent value. Budget travelers can manage on €30–50/day, mid-range visitors should plan €70–120/day, and even luxury travel rarely exceeds €200/day. Costs are roughly half of Western European equivalents."
+  - question: "How many days in Budapest?"
+    answer: "Two to three days covers the main highlights. Four days allows for a relaxed pace plus a day trip to the surrounding region. Eastern European cities reward slow travel — the longer you stay, the more you discover beyond the tourist core."
+  - question: "Budapest on a budget — is it possible?"
+    answer: "Eastern Europe is one of the world's great budget destinations. Beer costs €1.50–2.50, full meals run €5–10, and accommodation is a fraction of Western European prices. Wizz Air and Ryanair connect major cities from as little as €15."
+  - question: "What is Budapest famous for?"
+    answer: "Budapest is famous for its remarkably preserved historic architecture, its complex and fascinating history spanning multiple empires, its vibrant food and nightlife scenes, and the warmth of its people — who are accustomed to fewer tourists than their Western European counterparts."
+  - question: "How do I get to Budapest?"
+    answer: "Low-cost carriers (Wizz Air, Ryanair, EasyJet) connect Eastern European cities affordably from across Europe. Rail connections link major cities — Vienna to Budapest takes 2.5 hours, Prague to Berlin 4.5 hours. Within the region, overnight trains are a scenic and practical option."
+
+aeoLede: "Budapest is one of Europe's great capitals — the 'Paris of the East' — where thermal baths fed by natural hot springs, ruin bars in crumbling 19th-century buildings, stunning Art Nouveau architecture, and a food scene ranging from hearty goulash to Michelin-starred tasting menus coexist in a city that is still significantly more affordable than Western Europe."
 ---
 
 Budapest is really two cities stitched together by bridges. Buda rises on the western bank — hilly, regal, and quiet. Pest sprawls across the east — flat, bustling, and full of the kind of creative chaos that makes a city feel truly alive. The Danube runs between them, and from almost any vantage point along its banks, the view is staggering. I have stood on the Chain Bridge at dusk watching Parliament light up gold against the darkening sky, and it is one of those travel moments that genuinely stops you in your tracks.
 
 ## Why Budapest Stands Out
+
+<ImmersiveBreakInline videoSrc="/videos/destinations/budapest-hero.mp4" />
 
 Budapest punches well above its weight. The city has thermal baths fed by natural hot springs that have been in use since the Ottoman occupation, a nightlife scene built inside crumbling pre-war buildings, Art Nouveau architecture that rivals Vienna's, and food that ranges from hearty paprika-laden stews to Michelin-starred tasting menus. And it does all of this at prices that make Western European capitals look absurd. A sit-down lunch with a beer rarely costs more than €8. Entry to the famous Szechenyi Baths is about €25 for a full day. You can live well here on a modest budget.
 

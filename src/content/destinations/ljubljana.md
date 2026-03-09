@@ -22,17 +22,64 @@ gradientColors: "from-emerald-900 via-green-800 to-teal-900"
 relatedDestinations:
   - "bratislava"
   - "split"
-faqItems:
-  - { question: "Is Ljubljana worth visiting or just a stop on the way to Lake Bled?", answer: "Ljubljana absolutely deserves its own time. The car-free city centre, Plecnik's architectural legacy, the castle, and the restaurant scene along the Ljubljanica River make it one of the most pleasant capitals in Europe. Give it at least two full days before heading to Bled. Many travellers who planned a quick stop end up extending their stay." }
-  - { question: "How do I get to Lake Bled from Ljubljana?", answer: "Buses run frequently from Ljubljana bus station to Bled (about 75 minutes, roughly €7 each way). You can also rent a car, which gives flexibility to combine Bled with the Vintgar Gorge and Bohinj Lake on the same day. The drive takes about 50 minutes through beautiful countryside." }
-affiliatePicks: []
+affiliatePicks:
+  - type: hotel
+    provider: booking
+    label: "Best-rated hotels in Ljubljana"
+    url: "https://www.booking.com/search.html?ss=ljubljana&aid=1245953"
+  - type: tour
+    provider: gyg
+    label: "Walking tours, castle tickets, and thermal bath entry"
+    url: "https://www.getyourguide.com/s/?q=ljubljana&partner_id=PARTNER"
+  - type: transport
+    provider: omio
+    label: "Book trains across Eastern Europe"
+    url: "https://www.omio.com"
+  - type: gear
+    provider: amazon
+    label: "Type C/F EU travel adapter"
+    url: "https://www.amazon.com/s?k=europe+type+c+travel+adapter&tag=discovereasterneurope-20"
+  - type: gear
+    provider: amazon
+    label: "Packing cubes for multi-country travel"
+    url: "https://www.amazon.com/s?k=packing+cubes+travel&tag=discovereasterneurope-20"
+
 contentStatus: "published"
 draft: false
+scottTips:
+  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views."
+  - "Prague is beautiful but intensely touristy in the center — walk ten minutes from Old Town Square toward Vinohrady or Zizkov for authenticity and lower prices."
+  - "Eastern Europe is budget-friendly compared to Western Europe — €40–70/day covers accommodation, food, and activities comfortably in most cities."
+  - "Low-cost carriers (Wizz Air, Ryanair) make hopping between Warsaw, Budapest, Prague, and Bucharest very affordable — check luggage fees before booking."
+  - "Tipping 10% is appreciated at sit-down restaurants but not universal — observe local custom and round up rather than leaving a percentage."
+  - "Each country has its own currency — Czech koruna, Hungarian forint, Polish zloty, Romanian leu. Euro is not accepted in most Eastern European countries."
+  - "Overnight trains connecting major cities (Vienna–Budapest, Prague–Warsaw) are making a comeback — book months ahead for the best sleeper berths."
+faqItems:
+  - question: "Is Ljubljana safe?"
+    answer: "Ljubljana is a safe destination for tourists. Eastern European cities generally have low violent crime rates. Exercise normal caution around busy tourist areas, watch for pickpockets in crowded markets and on public transport, and stay aware of your surroundings at night."
+  - question: "Is Ljubljana worth visiting?"
+    answer: "Ljubljana is absolutely worth visiting. Eastern Europe offers extraordinary history, architecture, and culture at prices that make Western Europe look extravagant — and most cities see far fewer crowds than Paris, Rome, or Amsterdam."
+  - question: "Best time to visit Ljubljana?"
+    answer: "May–June and September–October are ideal — pleasant temperatures, manageable crowds, and full cultural programming. July–August is peak season. Winter (December–February) is cold but magical for Christmas markets and very affordable."
+  - question: "How much does Ljubljana cost per day?"
+    answer: "Eastern Europe is excellent value. Budget travelers can manage on €30–50/day, mid-range visitors should plan €70–120/day, and even luxury travel rarely exceeds €200/day. Costs are roughly half of Western European equivalents."
+  - question: "How many days in Ljubljana?"
+    answer: "Two to three days covers the main highlights. Four days allows for a relaxed pace plus a day trip to the surrounding region. Eastern European cities reward slow travel — the longer you stay, the more you discover beyond the tourist core."
+  - question: "Ljubljana on a budget — is it possible?"
+    answer: "Eastern Europe is one of the world's great budget destinations. Beer costs €1.50–2.50, full meals run €5–10, and accommodation is a fraction of Western European prices. Wizz Air and Ryanair connect major cities from as little as €15."
+  - question: "What is Ljubljana famous for?"
+    answer: "Ljubljana is famous for its remarkably preserved historic architecture, its complex and fascinating history spanning multiple empires, its vibrant food and nightlife scenes, and the warmth of its people — who are accustomed to fewer tourists than their Western European counterparts."
+  - question: "How do I get to Ljubljana?"
+    answer: "Low-cost carriers (Wizz Air, Ryanair, EasyJet) connect Eastern European cities affordably from across Europe. Rail connections link major cities — Vienna to Budapest takes 2.5 hours, Prague to Berlin 4.5 hours. Within the region, overnight trains are a scenic and practical option."
+
+aeoLede: "Ljubljana is one of Europe's smallest and most charming capitals — a compact, car-free city centre on the Ljubljanica River presided over by a hilltop castle, with outdoor café terraces, excellent restaurants, and a creative, sustainable culture that has made it a favourite among travellers who prefer authenticity over tourism infrastructure."
 ---
 
 Ljubljana is the city that people stumble upon and immediately start telling everyone about. I had it on my list almost as an afterthought — a convenient stopover between Venice and Zagreb — and within hours of arriving I was reshuffling my entire itinerary to stay longer. The Slovenian capital is small, absurdly pretty, car-free in the centre, and genuinely committed to sustainability in a way that feels authentic rather than performative. It was named European Green Capital in 2016, and you can feel that designation in every pedestrianised street, every river-side terrace, and every patch of urban greenery.
 
 ## The Plecnik Factor
+
+<ImmersiveBreakInline videoSrc="/videos/destinations/ljubljana-hero.mp4" />
 
 To understand Ljubljana, you need to know one name: Joze Plecnik. This Slovenian architect transformed the city in the early-to-mid 20th century with a vision that blended classical forms with modernist ideas. The Triple Bridge, the Central Market, the National and University Library, the Cobblers' Bridge, the riverside colonnades — these are all Plecnik's work, and together they give Ljubljana a coherent architectural personality that few cities its size possess. Walking through the centre feels like moving through a single architect's curated vision, and the result is remarkably harmonious.
 

@@ -22,15 +22,62 @@ gradientColors: "from-indigo-900 via-blue-800 to-cyan-900"
 relatedDestinations:
   - "riga"
   - "vilnius"
-faqItems:
-  - { question: "Is Tallinn good for digital nomads?", answer: "Tallinn is one of the best digital nomad destinations in Europe. Estonia pioneered e-Residency and digital governance. The city has fast Wi-Fi everywhere, numerous co-working spaces, and a thriving tech startup scene. Many cafes welcome remote workers." }
-  - { question: "Can I visit Helsinki from Tallinn?", answer: "Absolutely. High-speed ferries run multiple times daily between Tallinn and Helsinki, taking about 2 hours each way. Tickets start around €20-30 one way. It makes an excellent day trip or weekend extension." }
-affiliatePicks: []
+affiliatePicks:
+  - type: hotel
+    provider: booking
+    label: "Best-rated hotels in Tallinn"
+    url: "https://www.booking.com/search.html?ss=tallinn&aid=1245953"
+  - type: tour
+    provider: gyg
+    label: "Walking tours, castle tickets, and thermal bath entry"
+    url: "https://www.getyourguide.com/s/?q=tallinn&partner_id=PARTNER"
+  - type: transport
+    provider: omio
+    label: "Book trains across Eastern Europe"
+    url: "https://www.omio.com"
+  - type: gear
+    provider: amazon
+    label: "Type C/F EU travel adapter"
+    url: "https://www.amazon.com/s?k=europe+type+c+travel+adapter&tag=discovereasterneurope-20"
+  - type: gear
+    provider: amazon
+    label: "Packing cubes for multi-country travel"
+    url: "https://www.amazon.com/s?k=packing+cubes+travel&tag=discovereasterneurope-20"
+
 contentStatus: "published"
 draft: false
+scottTips:
+  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views."
+  - "Prague is beautiful but intensely touristy in the center — walk ten minutes from Old Town Square toward Vinohrady or Zizkov for authenticity and lower prices."
+  - "Eastern Europe is budget-friendly compared to Western Europe — €40–70/day covers accommodation, food, and activities comfortably in most cities."
+  - "Low-cost carriers (Wizz Air, Ryanair) make hopping between Warsaw, Budapest, Prague, and Bucharest very affordable — check luggage fees before booking."
+  - "Tipping 10% is appreciated at sit-down restaurants but not universal — observe local custom and round up rather than leaving a percentage."
+  - "Each country has its own currency — Czech koruna, Hungarian forint, Polish zloty, Romanian leu. Euro is not accepted in most Eastern European countries."
+  - "Overnight trains connecting major cities (Vienna–Budapest, Prague–Warsaw) are making a comeback — book months ahead for the best sleeper berths."
+faqItems:
+  - question: "Is Tallinn safe?"
+    answer: "Tallinn is a safe destination for tourists. Eastern European cities generally have low violent crime rates. Exercise normal caution around busy tourist areas, watch for pickpockets in crowded markets and on public transport, and stay aware of your surroundings at night."
+  - question: "Is Tallinn worth visiting?"
+    answer: "Tallinn is absolutely worth visiting. Eastern Europe offers extraordinary history, architecture, and culture at prices that make Western Europe look extravagant — and most cities see far fewer crowds than Paris, Rome, or Amsterdam."
+  - question: "Best time to visit Tallinn?"
+    answer: "May–June and September–October are ideal — pleasant temperatures, manageable crowds, and full cultural programming. July–August is peak season. Winter (December–February) is cold but magical for Christmas markets and very affordable."
+  - question: "How much does Tallinn cost per day?"
+    answer: "Eastern Europe is excellent value. Budget travelers can manage on €30–50/day, mid-range visitors should plan €70–120/day, and even luxury travel rarely exceeds €200/day. Costs are roughly half of Western European equivalents."
+  - question: "How many days in Tallinn?"
+    answer: "Two to three days covers the main highlights. Four days allows for a relaxed pace plus a day trip to the surrounding region. Eastern European cities reward slow travel — the longer you stay, the more you discover beyond the tourist core."
+  - question: "Tallinn on a budget — is it possible?"
+    answer: "Eastern Europe is one of the world's great budget destinations. Beer costs €1.50–2.50, full meals run €5–10, and accommodation is a fraction of Western European prices. Wizz Air and Ryanair connect major cities from as little as €15."
+  - question: "What is Tallinn famous for?"
+    answer: "Tallinn is famous for its remarkably preserved historic architecture, its complex and fascinating history spanning multiple empires, its vibrant food and nightlife scenes, and the warmth of its people — who are accustomed to fewer tourists than their Western European counterparts."
+  - question: "How do I get to Tallinn?"
+    answer: "Low-cost carriers (Wizz Air, Ryanair, EasyJet) connect Eastern European cities affordably from across Europe. Rail connections link major cities — Vienna to Budapest takes 2.5 hours, Prague to Berlin 4.5 hours. Within the region, overnight trains are a scenic and practical option."
+
+aeoLede: "Tallinn is Estonia's capital and one of the best-preserved medieval cities in Northern Europe — its UNESCO-listed old town of cobblestone streets, guild halls, and Gothic spires looks almost unchanged from the 15th century. It is also one of the most digitally advanced countries in the world, with ubiquitous free wi-fi and e-governance."
 ---
 
 ## Why Tallinn Blew My Expectations Away
+
+<ImmersiveBreakInline videoSrc="/videos/destinations/tallinn-hero.mp4" />
 
 I expected a charming medieval town. I got that, plus a cutting-edge digital society, a creative arts scene punching well above its weight, and some of the best food I have had in the Baltics. Tallinn is a city of contradictions that somehow work perfectly together — 13th-century watchtowers sharing the skyline with sleek glass offices, monks' cellars converted into cocktail bars, and a nation of 1.3 million people that has produced Skype, Bolt, and one of the most advanced digital governance systems on Earth.
 

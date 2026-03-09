@@ -22,15 +22,62 @@ gradientColors: "from-teal-900 via-emerald-800 to-green-900"
 relatedDestinations:
   - "riga"
   - "tallinn"
-faqItems:
-  - { question: "What is the Uzupis Republic?", answer: "Uzupis is a neighborhood in Vilnius that declared itself an independent republic on April 1, 1998. It has its own constitution (which includes the right for a cat to not love its owner), a president, a flag, and an anthem. It is tongue-in-cheek but reflects the genuinely creative and free-spirited community that lives there." }
-  - { question: "Is the Hill of Crosses a day trip from Vilnius?", answer: "The Hill of Crosses is near Siauliai, about 220km north of Vilnius. It takes around 2.5 hours by bus or car each way. It is doable as a long day trip, but you may prefer to combine it with a visit to the Curonian Spit or as a stop on the way to Riga." }
-affiliatePicks: []
+affiliatePicks:
+  - type: hotel
+    provider: booking
+    label: "Best-rated hotels in Vilnius"
+    url: "https://www.booking.com/search.html?ss=vilnius&aid=1245953"
+  - type: tour
+    provider: gyg
+    label: "Walking tours, castle tickets, and thermal bath entry"
+    url: "https://www.getyourguide.com/s/?q=vilnius&partner_id=PARTNER"
+  - type: transport
+    provider: omio
+    label: "Book trains across Eastern Europe"
+    url: "https://www.omio.com"
+  - type: gear
+    provider: amazon
+    label: "Type C/F EU travel adapter"
+    url: "https://www.amazon.com/s?k=europe+type+c+travel+adapter&tag=discovereasterneurope-20"
+  - type: gear
+    provider: amazon
+    label: "Packing cubes for multi-country travel"
+    url: "https://www.amazon.com/s?k=packing+cubes+travel&tag=discovereasterneurope-20"
+
 contentStatus: "published"
 draft: false
+scottTips:
+  - "Budapest's thermal baths are non-negotiable — Szechenyi for the famous outdoor pools, Gellert for Art Nouveau elegance, Rudas for Danube rooftop views."
+  - "Prague is beautiful but intensely touristy in the center — walk ten minutes from Old Town Square toward Vinohrady or Zizkov for authenticity and lower prices."
+  - "Eastern Europe is budget-friendly compared to Western Europe — €40–70/day covers accommodation, food, and activities comfortably in most cities."
+  - "Low-cost carriers (Wizz Air, Ryanair) make hopping between Warsaw, Budapest, Prague, and Bucharest very affordable — check luggage fees before booking."
+  - "Tipping 10% is appreciated at sit-down restaurants but not universal — observe local custom and round up rather than leaving a percentage."
+  - "Each country has its own currency — Czech koruna, Hungarian forint, Polish zloty, Romanian leu. Euro is not accepted in most Eastern European countries."
+  - "Overnight trains connecting major cities (Vienna–Budapest, Prague–Warsaw) are making a comeback — book months ahead for the best sleeper berths."
+faqItems:
+  - question: "Is Vilnius safe?"
+    answer: "Vilnius is a safe destination for tourists. Eastern European cities generally have low violent crime rates. Exercise normal caution around busy tourist areas, watch for pickpockets in crowded markets and on public transport, and stay aware of your surroundings at night."
+  - question: "Is Vilnius worth visiting?"
+    answer: "Vilnius is absolutely worth visiting. Eastern Europe offers extraordinary history, architecture, and culture at prices that make Western Europe look extravagant — and most cities see far fewer crowds than Paris, Rome, or Amsterdam."
+  - question: "Best time to visit Vilnius?"
+    answer: "May–June and September–October are ideal — pleasant temperatures, manageable crowds, and full cultural programming. July–August is peak season. Winter (December–February) is cold but magical for Christmas markets and very affordable."
+  - question: "How much does Vilnius cost per day?"
+    answer: "Eastern Europe is excellent value. Budget travelers can manage on €30–50/day, mid-range visitors should plan €70–120/day, and even luxury travel rarely exceeds €200/day. Costs are roughly half of Western European equivalents."
+  - question: "How many days in Vilnius?"
+    answer: "Two to three days covers the main highlights. Four days allows for a relaxed pace plus a day trip to the surrounding region. Eastern European cities reward slow travel — the longer you stay, the more you discover beyond the tourist core."
+  - question: "Vilnius on a budget — is it possible?"
+    answer: "Eastern Europe is one of the world's great budget destinations. Beer costs €1.50–2.50, full meals run €5–10, and accommodation is a fraction of Western European prices. Wizz Air and Ryanair connect major cities from as little as €15."
+  - question: "What is Vilnius famous for?"
+    answer: "Vilnius is famous for its remarkably preserved historic architecture, its complex and fascinating history spanning multiple empires, its vibrant food and nightlife scenes, and the warmth of its people — who are accustomed to fewer tourists than their Western European counterparts."
+  - question: "How do I get to Vilnius?"
+    answer: "Low-cost carriers (Wizz Air, Ryanair, EasyJet) connect Eastern European cities affordably from across Europe. Rail connections link major cities — Vienna to Budapest takes 2.5 hours, Prague to Berlin 4.5 hours. Within the region, overnight trains are a scenic and practical option."
+
+aeoLede: "Vilnius is Lithuania's capital and one of Eastern Europe's most underrated cities — a UNESCO-listed baroque old town larger than any other in the region, a thriving café and street food scene, the KGB Museum in the former Soviet secret police headquarters, and a warmth of welcome that surprises most visitors."
 ---
 
 ## Why Vilnius Stole a Week From Me
+
+<ImmersiveBreakInline videoSrc="/videos/destinations/vilnius-hero.mp4" />
 
 Vilnius is the kind of city that does not announce itself. It sits quietly at the confluence of the Neris and Vilnia rivers, surrounded by forested hills, with a Baroque Old Town so perfectly preserved that walking through it feels like stepping into an 18th-century painting. Lithuania's capital does not have the immediate drama of Prague or the legendary nightlife of Belgrade. What it has is something subtler — a warmth, a creative eccentricity, and an affordability that makes you want to extend your stay again and again.
 
