@@ -70,7 +70,7 @@ async function sendWelcomeEmail(apiKey: string, to: string, guideName: string): 
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'Discover Eastern Europe <hello@discovereasterneurope.info>',
+      from: 'Discover Eastern Europe <hello@discovermore.travel>',
       to: [to],
       reply_to: 'info@discovermore.travel',
       subject: `Your ${guideName} — Welcome to Discover Eastern Europe`,

@@ -7,7 +7,7 @@ heroImage: ""
 heroVideo: ""
 author: "Scott"
 tags: ["budapest", "prague", "comparison", "planning", "eastern-europe"]
-category: "comparison"
+category: "city-guide"
 relatedDestinations: ["budapest", "prague", "bratislava", "vienna"]
 draft: false
 fmContentType: blog
