@@ -11,6 +11,7 @@ const { pageType, data = {}, faqItems, breadcrumbs } = Astro.props;
 const baseUrl = (Astro.site || new URL('https://discovereasterneurope.info')).toString().replace(/\/$/, '');
 const currentPath = Astro.url.pathname;
 const currentUrl = `${baseUrl}${currentPath}`;
+const authorSlug = ((data.author as string) || 'scott').toLowerCase();
 
 // --- Schema builders ---
 

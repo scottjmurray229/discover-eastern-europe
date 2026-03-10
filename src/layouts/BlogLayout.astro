@@ -24,6 +24,7 @@ interface Props {
 const { frontmatter, locale } = Astro.props;
 
 const authorName = frontmatter.author || 'Scott';
+const authorSlug = authorName.toLowerCase();
 
 const breadcrumbs = [
   { name: 'Home', url: '/' },
