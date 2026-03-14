@@ -7,6 +7,36 @@ export const EASTERN_EUROPE_ESSENTIALS: PackingItem[] = [
   { id: 'ee-walkshoes', name: 'Comfortable Walking Shoes (cobblestone)', category: 'destination', description: 'Prague, Krakow, Budapest, and Tallinn are cobblestone cities. Heels and thin-soled shoes are painful within an hour. Supportive sneakers or walking shoes are the correct choice.', essential: true, amazonSearchFallback: 'comfortable+walking+shoes+cobblestone', affiliatePrice: '$70–120' },
   { id: 'ee-adapter', name: 'Type C/F Adapter', category: 'destination', description: 'All Eastern European countries use 230V European sockets. American plugs don\'t fit without an adapter.', essential: true, amazonSearchFallback: 'european+travel+adapter+type+c+f', affiliatePrice: '$12–20' },
   { id: 'ee-modest', name: 'Modest Clothing for Churches / Synagogues', category: 'destination', description: 'Prague, Krakow (Auschwitz), and Budapest\'s Great Synagogue require covered shoulders as a sign of respect. A lightweight scarf or cardigan handles every situation.', essential: false, amazonSearchFallback: 'lightweight+scarf+travel+cover+up' },
+  {
+    id: 'vpn-subscription',
+    name: 'VPN Subscription',
+    category: 'electronics',
+    description: 'Secure your data on public WiFi — essential for hotel, airport, and cafe networks abroad.',
+    essential: false,
+    affiliateUrl: 'https://go.nordvpn.net/aff_c?offer_id=15&aff_id=XXXXX&url_id=902',
+    affiliatePrice: '~$3/month',
+    affiliatePartner: 'NordVPN',
+  },
+  {
+    id: '360-camera',
+    name: '360° Camera',
+    category: 'gear',
+    description: 'Capture immersive views of architecture, cityscapes, and landmarks.',
+    essential: false,
+    affiliateUrl: 'https://www.insta360.com/sal/x5?utm_source=AffiliateCenter&utm_medium=copylink&utm_term=INRSG7H5RTR',
+    affiliatePrice: '~$499',
+    affiliatePartner: 'Insta360',
+  },
+  {
+    id: 'phone-gimbal',
+    name: 'Phone Gimbal for Travel Vlogging',
+    category: 'electronics',
+    description: 'Stabilized video from your phone — no editing needed.',
+    essential: false,
+    affiliateUrl: 'https://www.insta360.com/sal/flow-2-pro?utm_source=AffiliateCenter&utm_medium=copylink&utm_term=INRSG7H5RTR',
+    affiliatePrice: '~$149',
+    affiliatePartner: 'Insta360',
+  },
 ];
 
 export const EASTERN_EUROPE_GEAR_RECOMMENDATIONS: GearRecommendation[] = [
